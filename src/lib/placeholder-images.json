@@ -55,12 +55,6 @@
       "imageHint": "artisan woman"
     },
     {
-      "id": "map-location",
-      "description": "Map showing the location of Sonali Shokal Somobay Somity",
-      "imageUrl": "https://images.unsplash.com/photo-1550693445-737398ed6775?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyb2FkJTIwbWFwfGVufDB8fHx8MTc2OTMzMjM2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "road map"
-    },
-    {
       "id": "registration-cert",
       "description": "Government registration certificate",
       "imageUrl": "https://images.unsplash.com/photo-1769038947088-62455c949efc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvZmZpY2lhbCUyMGNlcnRpZmljYXRlfGVufDB8fHx8MTc2OTMzMjM2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
