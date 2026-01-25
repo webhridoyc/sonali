@@ -1,3 +1,70 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-dairy",
+      "description": "Cows on a dairy farm",
+      "imageUrl": "https://images.unsplash.com/photo-1573731399281-6540bc50ed91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGFpcnklMjBmYXJtfGVufDB8fHx8MTc2OTMzMjM2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dairy farm"
+    },
+    {
+      "id": "hero-pottery",
+      "description": "Artisan making pottery",
+      "imageUrl": "https://images.unsplash.com/photo-1695740639466-7baecca4224d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwb3R0ZXJ5JTIwbWFraW5nfGVufDB8fHx8MTc2OTI3NzMwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pottery making"
+    },
+    {
+      "id": "hero-textile",
+      "description": "Woman weaving on a loom",
+      "imageUrl": "https://images.unsplash.com/photo-1719462193102-93fd0138f171?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3ZWF2aW5nJTIwbG9vbXxlbnwwfHx8fDE3NjkzMzIzNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "weaving loom"
+    },
+    {
+      "id": "project-cows",
+      "description": "Healthy cows in a field",
+      "imageUrl": "https://images.unsplash.com/photo-1629745295768-1a1db7213367?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb3dzJTIwZmllbGR8ZW58MHx8fHwxNzY5MzMyMzY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cows field"
+    },
+    {
+      "id": "project-goats",
+      "description": "Goats on a farm",
+      "imageUrl": "https://images.unsplash.com/photo-1687704488504-2d5018a64a24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmYXJtJTIwZ29hdHN8ZW58MHx8fHwxNzY5MzMyMzY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "farm goats"
+    },
+    {
+      "id": "project-ducks",
+      "description": "Ducks swimming in a pond",
+      "imageUrl": "https://images.unsplash.com/photo-1642799829907-8368607b9527?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkdWNrcyUyMHBvbmR8ZW58MHx8fHwxNzY5MzMyMzY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ducks pond"
+    },
+    {
+      "id": "project-pottery-work",
+      "description": "Finished pottery products on display",
+      "imageUrl": "https://images.unsplash.com/photo-1597696929644-a2157a251a43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3R0ZXJ5JTIwZGlzcGxheXxlbnwwfHx8fDE3NjkzMzIzNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pottery display"
+    },
+    {
+      "id": "project-weaving",
+      "description": "Close-up of colorful woven fabric",
+      "imageUrl": "https://images.unsplash.com/photo-1754638987551-22fb7608436f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb2xvcmZ1bCUyMGZhYnJpY3xlbnwwfHx8fDE3NjkzMzIzNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "colorful fabric"
+    },
+    {
+      "id": "project-artisan",
+      "description": "An artisan woman smiling",
+      "imageUrl": "https://images.unsplash.com/photo-1719154717749-0d05f61a0588?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhcnRpc2FuJTIwd29tYW58ZW58MHx8fHwxNzY5MzMyMzY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "artisan woman"
+    },
+    {
+      "id": "map-location",
+      "description": "Map showing the location of Sonali Shokal Somobay Somity",
+      "imageUrl": "https://images.unsplash.com/photo-1550693445-737398ed6775?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyb2FkJTIwbWFwfGVufDB8fHx8MTc2OTMzMjM2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "road map"
+    },
+    {
+      "id": "registration-cert",
+      "description": "Government registration certificate",
+      "imageUrl": "https://images.unsplash.com/photo-1769038947088-62455c949efc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvZmZpY2lhbCUyMGNlcnRpZmljYXRlfGVufDB8fHx8MTc2OTMzMjM2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "official certificate"
+    }
+  ]
 }
