@@ -6,6 +6,7 @@ import { useLanguage } from '@/context/language-context';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Download } from 'lucide-react';
+import { translations } from '@/lib/translations';
 
 export default function AboutPage() {
   const { t, lang } = useLanguage();
@@ -34,10 +35,10 @@ export default function AboutPage() {
           <Card>
             <CardContent className="p-6">
               <ul className="space-y-4">
-                {t('about.committee').map((member, index) => (
+                {translations.about.committee.map((member, index) => (
                   <li key={index} className="flex justify-between items-center border-b pb-2 last:border-b-0">
-                    <span className="font-semibold text-primary">{member.post}</span>
-                    <span className="text-muted-foreground">{member.name}</span>
+                    <span className="font-semibold text-primary">{member.post[lang]}</span>
+                    <span className="text-muted-foreground">{member.name[lang]}</span>
                   </li>
                 ))}
               </ul>
