@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Phone } from 'lucide-react';
 import { Logo } from '@/components/layout/logo';
 import { MainNav } from '@/components/layout/main-nav';
@@ -28,10 +28,14 @@ export function Header() {
             </Button>
           </SheetTrigger>
           <SheetContent side="left">
-            <Link href="/" className="mr-6 flex items-center space-x-2">
-              <Logo className="h-8 w-8" />
-              <span className="font-bold font-headline">Sonali Shokal</span>
-            </Link>
+            <SheetHeader className="text-left">
+              <SheetTitle asChild>
+                <Link href="/" className="flex items-center space-x-2">
+                  <Logo className="h-8 w-8" />
+                  <span className="font-bold font-headline">Sonali Shokal</span>
+                </Link>
+              </SheetTitle>
+            </SheetHeader>
             <div className="mt-6 flex flex-col gap-4">
                <Link href="/" className="text-lg font-medium">{t('nav.home')}</Link>
                <Link href="/about" className="text-lg font-medium text-muted-foreground">{t('nav.about')}</Link>
