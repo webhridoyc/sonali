@@ -18,8 +18,17 @@ export function Map() {
     if (loadError) {
         return (
             <Card>
-                <CardContent className="h-[480px] w-full flex items-center justify-center p-4">
-                   <p className="text-muted-foreground text-center">Map cannot be loaded. <br /> Please ensure you have a valid Google Maps API key set as NEXT_PUBLIC_GOOGLE_MAPS_API_KEY in your environment variables.</p>
+                <CardContent className="h-[480px] w-full flex items-center justify-center p-6">
+                   <div className="text-muted-foreground text-center space-y-4">
+                    <p className="font-semibold text-lg">Map cannot be loaded.</p>
+                    <p>The "ApiProjectMapError" suggests an issue with your Google Maps API setup. Please check the following in your Google Cloud Console:</p>
+                    <ol className="text-left list-decimal list-inside space-y-2">
+                        <li>The <strong>Maps JavaScript API</strong> is enabled for your project.</li>
+                        <li>The API key has the correct <strong>Application restrictions</strong> (e.g., HTTP referrers) to work with this website's domain.</li>
+                        <li>Your project has a valid <strong>billing account</strong> attached.</li>
+                    </ol>
+                    <p>Make sure the correct API key is in your <code>.env.local</code> file.</p>
+                   </div>
                 </CardContent>
             </Card>
         );
