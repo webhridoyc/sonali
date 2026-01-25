@@ -1,9 +1,24 @@
 import type { Metadata, Viewport } from 'next';
+import { Poppins, Hind_Siliguri } from 'next/font/google';
 import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { LanguageProvider } from '@/context/language-context';
 import './globals.css';
+
+const poppins = Poppins({
+  subsets: ['latin', 'latin-ext'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-poppins',
+  display: 'swap',
+});
+
+const hindSiliguri = Hind_Siliguri({
+  subsets: ['bengali', 'latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  variable: '--font-hind-siliguri',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: 'Sonali Shokal Somobay Somity | Official Website',
@@ -16,6 +31,11 @@ export const metadata: Metadata = {
     'cooperative society Dhaka',
     'সোনালী সকাল সমবায় সমিতি',
   ],
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
 };
 
 export const viewport: Viewport = {
@@ -28,23 +48,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
-      </head>
+    <html
+      lang="en"
+      className={`${poppins.variable} ${hindSiliguri.variable}`}
+      suppressHydrationWarning
+    >
+      <head />
       <body className="font-body antialiased">
         <LanguageProvider>
           <div className="flex min-h-screen flex-col">
