@@ -2,7 +2,7 @@
 
 import { useLanguage } from '@/context/language-context';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { MapPin, Phone, Facebook } from 'lucide-react';
+import { MapPin, Phone, Facebook, Mail } from 'lucide-react';
 import { Map } from '@/components/contact/map';
 import { ContactForm } from '@/components/contact/contact-form';
 import { Button } from '@/components/ui/button';
@@ -41,7 +41,11 @@ export default function ContactPage() {
               </div>
               <div className="flex items-center space-x-4">
                 <Phone className="h-6 w-6 text-primary" />
-                <a href="tel:+8801234567890" className="hover:underline">+880 1234 567890</a>
+                <a href="tel:+8801883088338" className="hover:underline">+880 1883-088338</a>
+              </div>
+              <div className="flex items-center space-x-4">
+                <Mail className="h-6 w-6 text-primary" />
+                <a href="mailto:sonalisokalsomobaysomiti@gmail.com" className="hover:underline break-all">sonalisokalsomobaysomiti@gmail.com</a>
               </div>
             </CardContent>
           </Card>
@@ -52,7 +56,7 @@ export default function ContactPage() {
             </CardHeader>
             <CardContent>
               <Button asChild className="w-full" variant="outline">
-                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/sonalisokalss" target="_blank" rel="noopener noreferrer">
                   <Facebook className="mr-2 h-5 w-5 text-blue-600" />
                   {t('contact.facebook')}
                 </a>

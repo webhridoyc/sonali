@@ -104,7 +104,7 @@ export const translations = {
     savings: { en: 'Savings Program', bn: 'সঞ্চয় திட்டம்' },
     terms: { en: 'Terms & Conditions', bn: 'শর্তাবলী' },
     contactInfo: { en: 'Contact Information', bn: 'যোগাযোগের তথ্য' },
-    address: { en: 'Pagla Bazar, Ashulia, Savar, Dhaka, Bangladesh', bn: 'পাগলা বাজার, আশুলিয়া, সাভার, ঢাকা, বাংলাদেশ' },
+    address: { en: 'Baid Gao, Pagla Bazar, Kabirpur, Ashulia, Savar, Dhaka', bn: 'বাইদ গাও, পাগলা বাজার, কবিরপুর, আশুলিয়া, সাভার, ঢাকা' },
     copyright: { en: 'Designed and Developed for Sonali Shokal Somobay Somity', bn: 'সোনালী সকাল সমবায় সমিতির জন্য ডিজাইন ও ডেভেলপ করা হয়েছে' },
   },
   formValidation: {

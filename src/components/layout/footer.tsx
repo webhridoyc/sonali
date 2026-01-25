@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { Logo } from '@/components/layout/logo';
 import { useLanguage } from '@/context/language-context';
+import { Mail, Phone } from 'lucide-react';
 
 export function Footer() {
   const { t, lang } = useLanguage();
@@ -34,7 +35,17 @@ export function Footer() {
           {/* Right: Address & Map Link */}
           <div className="space-y-4">
             <h4 className={`font-semibold text-lg ${lang === 'en' ? 'font-headline' : 'font-body'}`}>{t('footer.contactInfo')}</h4>
-            <p className="text-sm text-muted-foreground">{t('footer.address')}</p>
+            <div className="space-y-2 text-sm text-muted-foreground">
+                <p>{t('footer.address')}</p>
+                <div className="flex items-center justify-center md:justify-start gap-2">
+                    <Phone className="h-4 w-4" />
+                    <a href="tel:+8801883088338" className="hover:text-primary">+880 1883-088338</a>
+                </div>
+                <div className="flex items-center justify-center md:justify-start gap-2">
+                    <Mail className="h-4 w-4" />
+                    <a href="mailto:sonalisokalsomobaysomiti@gmail.com" className="hover:text-primary break-all">sonalisokalsomobaysomiti@gmail.com</a>
+                </div>
+            </div>
             <Link href="/contact#map" className="text-sm text-primary hover:underline">
               {lang === 'en' ? 'View on Map' : 'মানচিত্রে দেখুন'}
             </Link>
