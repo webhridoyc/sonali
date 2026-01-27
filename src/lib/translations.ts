@@ -75,7 +75,7 @@ export const translations = {
     joinTitle: { en: 'Join Our Cooperative', bn: 'আমাদের সমবায়ে যোগ দিন' },
     joinDesc: { en: 'Interested in becoming a part of our community? You can apply online or download the form.', bn: 'আমাদের সম্প্রদায়ের অংশ হতে আগ্রহী? আপনি অনলাইনে আবেদন করতে পারেন অথবা ফর্মটি ডাউনলোড করতে পারেন।' },
     applyOnline: { en: 'Apply Online', bn: 'অনলাইনে আবেদন করুন' },
-    downloadForm: { en: 'Download Form', bn: 'ফর্ম ডাউনলোড করুন' },
+    downloadForm: { en: 'Download Form', bn: 'Download' },
     onlineApplicationTitle: { en: 'Online Membership Application', bn: 'অনলাইন সদস্যপদ আবেদন' },
     formName: { en: 'Full Name (Capital Letter)', bn: 'পুরো নাম (বড় হাতের অক্ষরে)' },
     formNid: { en: 'National ID (NID) Number', bn: 'জাতীয় পরিচয়পত্র (NID) নম্বর' },
