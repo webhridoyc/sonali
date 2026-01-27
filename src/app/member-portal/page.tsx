@@ -3,8 +3,16 @@
 import { useLanguage } from '@/context/language-context';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Download } from 'lucide-react';
+import { Download, FileText, Edit } from 'lucide-react';
 import { ApplicationForm } from '@/components/member-portal/application-form';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import { ScrollArea } from '@/components/ui/scroll-area';
 
 export default function MemberPortalPage() {
   const { t, lang } = useLanguage();
@@ -47,15 +55,37 @@ export default function MemberPortalPage() {
         </section>
 
         <section id="application">
-          <Card>
-            <CardHeader>
-              <CardTitle>{t('memberPortal.joinTitle')}</CardTitle>
-              <CardDescription>{t('memberPortal.joinDesc')}</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ApplicationForm />
-            </CardContent>
-          </Card>
+          <Dialog>
+            <Card>
+              <CardHeader>
+                <CardTitle>{t('memberPortal.joinTitle')}</CardTitle>
+                <CardDescription>{t('memberPortal.joinDesc')}</CardDescription>
+              </CardHeader>
+              <CardContent className="flex flex-col sm:flex-row gap-4">
+                <DialogTrigger asChild>
+                  <Button className="w-full">
+                    <Edit className="mr-2 h-4 w-4" />
+                    {t('memberPortal.applyOnline')}
+                  </Button>
+                </DialogTrigger>
+                <Button asChild variant="secondary" className="w-full">
+                  <a href="/docs/application-form.pdf" download>
+                    <FileText className="mr-2 h-4 w-4" />
+                    {t('memberPortal.downloadForm')}
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <DialogContent className="max-w-4xl">
+              <DialogHeader>
+                <DialogTitle>{t('memberPortal.onlineApplicationTitle')}</DialogTitle>
+              </DialogHeader>
+              <ScrollArea className="h-[70vh] pr-6">
+                <ApplicationForm />
+              </ScrollArea>
+            </DialogContent>
+          </Dialog>
         </section>
       </div>
     </div>
