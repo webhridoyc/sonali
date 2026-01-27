@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     'সোনালী সকাল সমবায় সমিতি',
   ],
   icons: {
-    icon: 'https://placehold.co/40x40/1B5E20/F9A825?text=S',
-    shortcut: 'https://placehold.co/40x40/1B5E20/F9A825?text=S',
-    apple: 'https://placehold.co/40x40/1B5E20/F9A825?text=S',
+    icon: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='50' fill='%23146b3a'/%3e%3ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='60' font-family='sans-serif' font-weight='bold' fill='%23f9a825'%3eS%3c/text%3e%3c/svg%3e",
+    shortcut: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='50' fill='%23146b3a'/%3e%3ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='60' font-family='sans-serif' font-weight='bold' fill='%23f9a825'%3eS%3c/text%3e%3c/svg%3e",
+    apple: "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3e%3ccircle cx='50' cy='50' r='50' fill='%23146b3a'/%3e%3ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-size='60' font-family='sans-serif' font-weight='bold' fill='%23f9a825'%3eS%3c/text%3e%3c/svg%3e",
   },
 };
 
