@@ -31,7 +31,7 @@ export function Map() {
 
             map.current.on('load', () => {
                 setIsLoaded(true);
-                new maplibregl.Marker({ color: "#1B5E20" })
+                new maplibregl.Marker({ color: "#1A854D" })
                     .setLngLat(center)
                     .addTo(map.current!);
             });

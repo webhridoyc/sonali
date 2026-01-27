@@ -34,14 +34,14 @@ export const metadata: Metadata = {
     'সোনালী সকাল সমবায় সমিতি',
   ],
   icons: {
-    icon: 'https://placehold.co/40x40/1B5E20/FFB300.png?text=S',
-    shortcut: 'https://placehold.co/40x40/1B5E20/FFB300.png?text=S',
-    apple: 'https://placehold.co/40x40/1B5E20/FFB300.png?text=S',
+    icon: 'https://placehold.co/40x40/1A854D/EEAA0A.png?text=S',
+    shortcut: 'https://placehold.co/40x40/1A854D/EEAA0A.png?text=S',
+    apple: 'https://placehold.co/40x40/1A854D/EEAA0A.png?text=S',
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: '#1b5e20',
+  themeColor: '#1A854D',
 };
 
 export default function RootLayout({
