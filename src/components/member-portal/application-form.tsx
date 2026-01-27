@@ -113,24 +113,31 @@ export function ApplicationForm() {
   const isSameAddress = form.watch('isSameAddress');
 
   useEffect(() => {
-    const presentAddress = {
-      village: form.getValues('presentAddressVillage'),
-      post: form.getValues('presentAddressPost'),
-      upazila: form.getValues('presentAddressUpazila'),
-      district: form.getValues('presentAddressDistrict'),
-    };
-    if (isSameAddress) {
-      form.setValue('permanentAddressVillage', presentAddress.village);
-      form.setValue('permanentAddressPost', presentAddress.post);
-      form.setValue('permanentAddressUpazila', presentAddress.upazila);
-      form.setValue('permanentAddressDistrict', presentAddress.district);
-    } else {
-        form.setValue('permanentAddressVillage', '');
-        form.setValue('permanentAddressPost', '');
-        form.setValue('permanentAddressUpazila', '');
-        form.setValue('permanentAddressDistrict', '');
+    if (form.formState.isDirty) {
+        const subscription = form.watch((value, { name, type }) => {
+            if (name === 'isSameAddress' && type === 'change') {
+                const presentAddress = {
+                    village: value.presentAddressVillage,
+                    post: value.presentAddressPost,
+                    upazila: value.presentAddressUpazila,
+                    district: value.presentAddressDistrict,
+                };
+                if (value.isSameAddress) {
+                    form.setValue('permanentAddressVillage', presentAddress.village);
+                    form.setValue('permanentAddressPost', presentAddress.post);
+                    form.setValue('permanentAddressUpazila', presentAddress.upazila);
+                    form.setValue('permanentAddressDistrict', presentAddress.district);
+                } else {
+                    form.setValue('permanentAddressVillage', '');
+                    form.setValue('permanentAddressPost', '');
+                    form.setValue('permanentAddressUpazila', '');
+                    form.setValue('permanentAddressDistrict', '');
+                }
+            }
+        });
+        return () => subscription.unsubscribe();
     }
-  }, [isSameAddress, form]);
+  }, [form, isSameAddress]);
 
   const generatePdf = async () => {
     const input = pdfRef.current;
@@ -352,97 +359,124 @@ export function ApplicationForm() {
 }
 
 
-const ApplicationPDF = ({ data, t }: { data: FormValues, t: (key: string) => string }) => {
-    return (
-      <div className="p-8 bg-white text-black font-sans" style={{ width: '210mm', minHeight: '297mm', fontFamily: 'sans-serif' }}>
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold">Sonali Shokal Somobay Somity</h1>
-          <p className="text-lg">Membership Application Form</p>
+const ApplicationPDF = ({ data }: { data: FormValues; t: (key: string) => string }) => {
+  return (
+    <div className="p-12 bg-white text-black font-body text-base" style={{ width: '210mm', minHeight: '297mm' }}>
+      {/* Header */}
+      <div className="text-center">
+        <p>গণপ্রজাতন্ত্রী বাংলাদেশ সরকার কর্তৃক অনুমোদিত</p>
+        <h1 className="text-2xl font-bold mt-2">সোনালী সকাল সমবায় সমিতি</h1>
+        <p className="text-sm">স্থাপিতঃ ২০২২ইং | গভঃ রেজিঃ নং-০০০৩৪</p>
+        <p className="text-sm">বাইদগাঁও, পাগলা বাজার, কবিরপুর, আশুলিয়া, সাভার, ঢাকা।</p>
+      </div>
+
+      {/* Title */}
+      <div className="text-center my-6">
+        <h2 className="text-xl font-bold inline-block border-2 border-black px-4 py-1">ভর্তি ফরম</h2>
+        <p className="mt-1 text-sm">সদস্য/সদস্যা পদের জন্য আবেদন।</p>
+      </div>
+      
+      <p className="text-right text-sm">ক্রমিক নং: _________________</p>
+      
+      {/* Preamble */}
+      <p className="mt-4 text-sm leading-relaxed">
+          আমি নিম্ন স্বাক্ষরকারী অত্র সমিতির গঠনতন্ত্র অনুযায়ী সমিতির আদর্শ, উদ্দেশ্য ও বিধি-বিধান মান্য করিয়া চলিব এবং সমিতির গঠনতন্ত্র বিরোধী যে কোন কাজ হইতে বিরত থাকিব। আমি আরও প্রতিজ্ঞা করিতেছি যে, সমিতির বিধি-বিধান যখন যাহা প্রবর্তিত হইবে, তাহাও মানিয়া চলিব এবং সাপ্তাহিক/ মাসিক/ টাকা নিয়মিত ভাবে পরিশোধ করিতে বাধ্য থাকিব। এমতাবস্থায়, অত্র সমিতির সদস্যপদ গ্রহণের জন্য আবেদন করিলাম।
+      </p>
+
+      {/* Main form body */}
+      <div className="mt-6 space-y-4 text-sm">
+        <h3 className="font-bold text-base -mb-2">ব্যক্তিগত তথ্য:</h3>
+        
+        <div className="flex items-baseline">
+          <span className="flex-shrink-0">১. আবেদনকারীর নাম:</span>
+          <span className="border-b border-black flex-grow ml-2 text-left">{data.name}</span>
+          <span className="flex-shrink-0 ml-4">Full name (Capital Letter):</span>
+          <span className="border-b border-black flex-grow ml-2 text-left">{data.nameEn}</span>
         </div>
-  
-        <div className="space-y-6">
-          {/* Personal Information */}
-          <section>
-            <h2 className="text-xl font-semibold mb-3 border-b-2 border-black pb-1">
-              {t('memberPortal.formSectionPersonal')}
-            </h2>
-            <div className="grid grid-cols-2 gap-x-8 gap-y-2 text-sm">
-              <div><strong>{t('memberPortal.formName')}:</strong> {data.name}</div>
-              <div><strong>{t('memberPortal.formNameEn')}:</strong> {data.nameEn}</div>
-              <div><strong>{t('memberPortal.formFatherName')}:</strong> {data.fatherName}</div>
-              <div><strong>{t('memberPortal.formMotherName')}:</strong> {data.motherName}</div>
-              <div><strong>{t('memberPortal.formSpouseName')}:</strong> {data.spouseName || 'N/A'}</div>
-            </div>
-          </section>
-  
-          {/* Address Details */}
-          <section>
-            <h2 className="text-xl font-semibold mb-3 border-b-2 border-black pb-1">
-              {t('memberPortal.formSectionAddress')}
-            </h2>
-            <div className="space-y-4 text-sm">
-              <div>
-                <h3 className="font-semibold">{t('memberPortal.formPresentAddress')}</h3>
-                <p>
-                  {t('memberPortal.formVillage')}: {data.presentAddressVillage}, {t('memberPortal.formPostOffice')}: {data.presentAddressPost}, 
-                  {t('memberPortal.formUpazila')}: {data.presentAddressUpazila}, {t('memberPortal.formDistrict')}: {data.presentAddressDistrict}
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold">{t('memberPortal.formPermanentAddress')}</h3>
-                {data.isSameAddress ? (
-                  <p>{t('memberPortal.formSameAsPresent')}</p>
-                ) : (
-                  <p>
-                    {t('memberPortal.formVillage')}: {data.permanentAddressVillage}, {t('memberPortal.formPostOffice')}: {data.permanentAddressPost}, 
-                    {t('memberPortal.formUpazila')}: {data.permanentAddressUpazila}, {t('memberPortal.formDistrict')}: {data.permanentAddressDistrict}
-                  </p>
-                )}
-              </div>
-            </div>
-          </section>
-  
-          {/* Additional Information */}
-          <section>
-            <h2 className="text-xl font-semibold mb-3 border-b-2 border-black pb-1">
-              {t('memberPortal.formSectionOther')}
-            </h2>
-            <div className="grid grid-cols-2 gap-x-8 gap-y-2 text-sm">
-              <div><strong>{t('memberPortal.formNationality')}:</strong> {data.nationality}</div>
-              <div><strong>{t('memberPortal.formReligion')}:</strong> {data.religion}</div>
-              <div><strong>{t('memberPortal.formMaritalStatus')}:</strong> {data.maritalStatus}</div>
-              <div><strong>{t('memberPortal.formGender')}:</strong> {data.gender}</div>
-              <div><strong>{t('memberPortal.formPhone')}:</strong> {data.phone}</div>
-              <div><strong>{t('memberPortal.formNid')}:</strong> {data.nid}</div>
-              <div><strong>{t('memberPortal.formPassport')}:</strong> {data.passport || 'N/A'}</div>
-              <div><strong>{t('memberPortal.formBloodGroup')}:</strong> {data.bloodGroup || 'N/A'}</div>
-            </div>
-          </section>
-  
-          {/* Nominee Information */}
-          <section>
-            <h2 className="text-xl font-semibold mb-3 border-b-2 border-black pb-1">
-              {t('memberPortal.formNomineeInfo')}
-            </h2>
-            <div className="grid grid-cols-2 gap-x-8 gap-y-2 text-sm">
-              <div><strong>{t('memberPortal.formNomineeName')}:</strong> {data.nomineeName}</div>
-              <div><strong>{t('memberPortal.formNomineeRelationship')}:</strong> {data.nomineeRelationship}</div>
-              <div><strong>{t('memberPortal.formNomineePhone')}:</strong> {data.nomineePhone}</div>
-              <div><strong>{t('memberPortal.formNomineeAddress')}:</strong> {data.nomineeAddress}</div>
-            </div>
-          </section>
+        
+        <div className="flex items-baseline">
+          <span className="flex-shrink-0">২. পিতার নাম:</span>
+          <span className="border-b border-black flex-grow ml-2 text-left">{data.fatherName}</span>
         </div>
-  
-        <div className="mt-16 text-sm">
-          <div className="flex justify-between">
-              <div className="w-1/3 text-center">
-                  <p className="border-t border-black pt-2 mt-8">Applicant's Signature</p>
-              </div>
-              <div className="w-1/3 text-center">
-                  <p className="border-t border-black pt-2 mt-8">Nominee's Signature</p>
-              </div>
+
+        <div className="flex items-baseline">
+          <span className="flex-shrink-0">৩. মাতার নাম:</span>
+          <span className="border-b border-black flex-grow ml-2 text-left">{data.motherName}</span>
+        </div>
+
+        <div className="flex items-baseline">
+          <span className="flex-shrink-0">৪. স্বামী/স্ত্রীর নাম:</span>
+          <span className="border-b border-black flex-grow ml-2 text-left">{data.spouseName || ''}</span>
+        </div>
+
+        <div>
+          <p>৫. বর্তমান ঠিকানা: গ্রাম/মহল্লা: <span className="font-sans border-b border-black px-2">{data.presentAddressVillage}</span>, ইউনিয়ন/পৌরসভা: <span className="border-b border-black">_________________</span>, পো: <span className="font-sans border-b border-black px-2">{data.presentAddressPost}</span>, থানা: <span className="font-sans border-b border-black px-2">{data.presentAddressUpazila}</span>, জেলা: <span className="font-sans border-b border-black px-2">{data.presentAddressDistrict}</span></p>
+        </div>
+        
+        <div>
+          <p>৬. স্থায়ী ঠিকানা: {data.isSameAddress ? 'বর্তমান ঠিকানার অনুরূপ' : `গ্রাম/মহল্লা: ${data.permanentAddressVillage}, ইউনিয়ন/পৌরসভা: _________________, পো: ${data.permanentAddressPost}, থানা: ${data.permanentAddressUpazila}, জেলা: ${data.permanentAddressDistrict}`}</p>
+        </div>
+        
+        <div className="flex items-baseline">
+          <span className="flex-shrink-0">৭. জাতীয়তা:</span>
+          <span className="border-b border-black w-24 ml-2">{data.nationality}</span>
+          <span className="ml-4 flex-shrink-0">ধর্ম:</span>
+          <span className="border-b border-black w-24 ml-2">{data.religion}</span>
+          <span className="ml-4 flex-shrink-0">মোবাইল নম্বর:</span>
+          <span className="border-b border-black flex-grow ml-2">{data.phone}</span>
+        </div>
+
+        <div className="flex items-baseline">
+          <span className="flex-shrink-0">৮. বৈবাহিক অবস্থা:</span>
+          <span className="border-b border-black w-24 ml-2">{data.maritalStatus}</span>
+          <span className="ml-4 flex-shrink-0">লিঙ্গ:</span>
+          <span className="border-b border-black w-24 ml-2">{data.gender}</span>
+          <span className="ml-4 flex-shrink-0">রক্তের গ্রুপ:</span>
+          <span className="border-b border-black flex-grow ml-2">{data.bloodGroup || ''}</span>
+        </div>
+        
+        <div className="flex items-baseline">
+          <span className="flex-shrink-0">৯. জাতীয় পরিচয়পত্র:</span>
+          <span className="border-b border-black flex-grow ml-2">{data.nid}</span>
+        </div>
+        <div className="flex justify-between items-baseline">
+          <div className="flex items-baseline w-1/2">
+              <span className="flex-shrink-0">পাসপোর্ট নম্বর:</span>
+              <span className="border-b border-black flex-grow ml-2">{data.passport || ''}</span>
+          </div>
+          <div className="flex items-baseline w-1/3">
+              <span className="flex-shrink-0">আবেদনকারীর স্বাক্ষর:</span>
+              <span className="border-b border-black flex-grow ml-2"></span>
+          </div>
+        </div>
+
+        <h3 className="font-bold text-base pt-4 -mb-2">নমিনীর তথ্য:</h3>
+        <div className="flex items-baseline">
+          <span className="flex-shrink-0">নমিনীর নাম:</span>
+          <span className="border-b border-black flex-grow ml-2">{data.nomineeName}</span>
+        </div>
+        <div className="flex items-baseline">
+          <span className="flex-shrink-0">সম্পর্ক:</span>
+          <span className="border-b border-black w-1/3 ml-2">{data.nomineeRelationship}</span>
+          <span className="ml-4 flex-shrink-0">মোবাইল নম্বর:</span>
+          <span className="border-b border-black flex-grow ml-2">{data.nomineePhone}</span>
+        </div>
+        <p>ঠিকানা: গ্রাম/মহল্লা: <span className="border-b border-black">{data.nomineeAddress}</span>, ইউনিয়ন/পৌরসভা: <span className="border-b border-black">_________________</span>, পোস্ট: <span className="border-b border-black">_________________</span>, থানা: <span className="border-b border-black">_________________</span>, জেলা: <span className="border-b border-black">_________________</span></p>
+        <div className="flex justify-end">
+          <div className="flex items-baseline w-1/3">
+              <span className="flex-shrink-0">নমিনীর স্বাক্ষর:</span>
+              <span className="border-b border-black flex-grow ml-2"></span>
           </div>
         </div>
       </div>
-    );
-  };
+      
+      {/* Signature Footer */}
+      <div className="flex justify-between mt-24 text-center text-sm">
+          <div className="pt-8"><p className="border-t border-black px-8">ফিল্ড অফিসার</p></div>
+          <div className="pt-8"><p className="border-t border-black px-8">যাচাইকারী</p></div>
+          <div className="pt-8"><p className="border-t border-black px-8">ম্যানেজার</p></div>
+      </div>
+
+    </div>
+  );
+};
