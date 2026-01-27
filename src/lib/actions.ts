@@ -1,3 +1,4 @@
+
 "use server";
 
 import * as z from 'zod';
@@ -7,6 +8,7 @@ const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 const applicationSchema = z.object({
   name: z.string().min(1),
+  nameEn: z.string().min(1),
   fatherName: z.string().min(1),
   motherName: z.string().min(1),
   spouseName: z.string().optional(),

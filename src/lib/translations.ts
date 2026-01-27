@@ -1,3 +1,4 @@
+
 export const translations = {
   nav: {
     home: { en: 'Home', bn: 'হোম' },
@@ -77,7 +78,8 @@ export const translations = {
     applyOnline: { en: 'Apply Online', bn: 'অনলাইনে আবেদন করুন' },
     downloadForm: { en: 'Download', bn: 'Download' },
     onlineApplicationTitle: { en: 'Online Membership Application', bn: 'অনলাইন সদস্যপদ আবেদন' },
-    formName: { en: 'Full Name (Capital Letter)', bn: 'পুরো নাম (বড় হাতের অক্ষরে)' },
+    formName: { en: 'Full Name (As per NID, in Bangla)', bn: 'পুরো নাম (এনআইডি অনুযায়ী, বাংলায়)' },
+    formNameEn: { en: 'Full Name (In English Capital Letters)', bn: 'পুরো নাম (ইংরেজি বড় হাতের অক্ষরে)' },
     formNid: { en: 'National ID (NID) Number', bn: 'জাতীয় পরিচয়পত্র (NID) নম্বর' },
     formPhone: { en: 'Phone Number', bn: 'ফোন নম্বর' },
     formAddress: { en: 'Full Address', bn: 'পূর্ণ ঠিকানা' },

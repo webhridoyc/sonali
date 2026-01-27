@@ -30,6 +30,7 @@ export function ApplicationForm() {
 
   const formSchema = z.object({
     name: z.string().min(1, { message: t('formValidation.required') }),
+    nameEn: z.string().min(1, { message: t('formValidation.required') }),
     fatherName: z.string().min(1, { message: t('formValidation.required') }),
     motherName: z.string().min(1, { message: t('formValidation.required') }),
     spouseName: z.string().optional(),
@@ -77,6 +78,7 @@ export function ApplicationForm() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: '',
+      nameEn: '',
       fatherName: '',
       motherName: '',
       spouseName: '',
@@ -151,6 +153,12 @@ export function ApplicationForm() {
               <FormField control={form.control} name="name" render={({ field }) => (
                 <FormItem>
                   <FormLabel>{t('memberPortal.formName')}</FormLabel>
+                  <FormControl><Input {...field} /></FormControl><FormMessage />
+                </FormItem>
+              )}/>
+              <FormField control={form.control} name="nameEn" render={({ field }) => (
+                <FormItem>
+                  <FormLabel>{t('memberPortal.formNameEn')}</FormLabel>
                   <FormControl><Input {...field} /></FormControl><FormMessage />
                 </FormItem>
               )}/>
