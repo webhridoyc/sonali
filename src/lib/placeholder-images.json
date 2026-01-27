@@ -59,6 +59,30 @@
       "description": "Government registration certificate",
       "imageUrl": "https://images.unsplash.com/photo-1769038947088-62455c949efc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvZmZpY2lhbCUyMGNlcnRpZmljYXRlfGVufDB8fHx8MTc2OTMzMjM2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "official certificate"
+    },
+    {
+      "id": "impact-rahima",
+      "description": "A woman weaving a colorful fabric on a traditional loom.",
+      "imageUrl": "https://images.unsplash.com/photo-1599422083659-90c00739cb9d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3b21hbiUyMHdlYXZpbmd8ZW58MHx8fHwxNzcwMDgzMzA5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman weaving"
+    },
+    {
+      "id": "impact-water-pump",
+      "description": "A village child happily drinking water from a newly installed hand pump.",
+      "imageUrl": "https://images.unsplash.com/photo-1599596165582-808b50b74148?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2aWxsYWdlJTIwd2F0ZXIlMjBwdW1wfGVufDB8fHx8MTc3MDA4MzM5OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "village waterpump"
+    },
+    {
+      "id": "impact-pottery-man",
+      "description": "A male artisan focused on shaping a clay pot on a pottery wheel.",
+      "imageUrl": "https://images.unsplash.com/photo-1555198229-4c62b3c0a526?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBwb3R0ZXJ5fGVufDB8fHx8MTc3MDA4MjMwNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man pottery"
+    },
+    {
+      "id": "impact-handicraft-women",
+      "description": "A group of smiling women sitting together and working on intricate handicrafts.",
+      "imageUrl": "https://images.unsplash.com/photo-1605332205492-747f3b4e268a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3b21lbiUyMGhhbmRpY3JhZnR8ZW58MHx8fHwxNzcwMDgyMzQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "women handicraft"
     }
   ]
 }

@@ -56,8 +56,28 @@ export const translations = {
     livestockTitle: { en: 'Livestock Gallery', bn: 'গবাদিপশু গ্যালারি' },
     artisanTitle: { en: 'Artisans at Work', bn: 'কর্মরত কারিগর' },
     impactTitle: { en: 'Impact Stories', bn: 'সাফল্যের গল্প' },
-    impactStory1: { en: 'Rahima Begum, a mother of two, joined our textile program with basic weaving skills. Through training and access to better equipment, she now earns a stable income, allowing her to send both her children to school and build a new home for her family.', bn: 'দুই সন্তানের জননী রহিমা বেগম, বুননের প্রাথমিক দক্ষতা নিয়ে আমাদের বস্ত্র প্রকল্পে যোগ দেন। প্রশিক্ষণ এবং উন্নত সরঞ্জামের মাধ্যমে, তিনি এখন একটি স্থিতিশীল আয় করছেন, যা তাকে তার দুই সন্তানকে স্কুলে পাঠাতে এবং পরিবারের জন্য একটি নতুন বাড়ি তৈরি করতে সাহায্য করেছে।' },
-    impactStory2: { en: 'The village of Pagla Bazar faced water scarcity issues affecting their livestock. Our cooperative funded the installation of a new tube well, ensuring a consistent water supply for the animals and improving the overall health and productivity of the local farms.', bn: 'পাগলা বাজার গ্রামটি পানির ঘাটতিতে ভুগছিল যা তাদের গবাদিপশুর উপর প্রভাব ফেলছিল। আমাদের সমবায় একটি নতুন টিউবওয়েল স্থাপনের জন্য অর্থায়ন করেছে, যা পশুদের জন্য একটি ধারাবাহিক পানি সরবরাহ নিশ্চিত করেছে এবং স্থানীয় খামারগুলির সামগ্রিক স্বাস্থ্য ও উৎপাদনশীলতা উন্নত করেছে।' },
+    impactStories: [
+      {
+        imageId: "impact-rahima",
+        title: { en: "Rahima's Story", bn: "রাহিমার গল্প" },
+        story: { en: 'Rahima Begum, a mother of two, joined our textile program with basic weaving skills. Through training and access to better equipment, she now earns a stable income, allowing her to send both her children to school and build a new home for her family.', bn: 'দুই সন্তানের জননী রহিমা বেগম, বুননের প্রাথমিক দক্ষতা নিয়ে আমাদের বস্ত্র প্রকল্পে যোগ দেন। প্রশিক্ষণ এবং উন্নত সরঞ্জামের মাধ্যমে, তিনি এখন একটি স্থিতিশীল আয় করছেন, যা তাকে তার দুই সন্তানকে স্কুলে পাঠাতে এবং পরিবারের জন্য একটি নতুন বাড়ি তৈরি করতে সাহায্য করেছে।' }
+      },
+      {
+        imageId: "impact-water-pump",
+        title: { en: "Pagla Bazar's Progress", bn: "পাগলা বাজারের অগ্রগতি" },
+        story: { en: 'The village of Pagla Bazar faced water scarcity issues affecting their livestock. Our cooperative funded the installation of a new tube well, ensuring a consistent water supply for the animals and improving the overall health and productivity of the local farms.', bn: 'পাগলা বাজার গ্রামটি পানির ঘাটতিতে ভুগছিল যা তাদের গবাদিপশুর উপর প্রভাব ফেলছিল। আমাদের সমবায় একটি নতুন টিউবওয়েল স্থাপনের জন্য অর্থায়ন করেছে, যা পশুদের জন্য একটি ধারাবাহিক পানি সরবরাহ নিশ্চিত করেছে এবং স্থানীয় খামারগুলির সামগ্রিক স্বাস্থ্য ও উৎপাদনশীলতা উন্নত করেছে।' }
+      },
+      {
+        imageId: "impact-pottery-man",
+        title: { en: "Karim's Pottery Venture", bn: "করিমের মৃৎশিল্প উদ্যোগ" },
+        story: { en: 'Young entrepreneur Karim received a micro-loan to start his own pottery workshop. Today, his beautiful creations are sold in city markets, providing him with a sustainable livelihood and inspiring other youths in the village.', bn: 'তরুণ উদ্যোক্তা করিম তার নিজের মৃৎশিল্প কর্মশালা শুরু করার জন্য একটি ক্ষুদ্রঋণ পেয়েছিলেন। আজ, তার সুন্দর সৃষ্টি শহরের বাজারে বিক্রি হয়, যা তাকে একটি টেকসই জীবিকা প্রদান করে এবং গ্রামের অন্যান্য যুবকদের অনুপ্রাণিত করে।' }
+      },
+      {
+        imageId: "impact-handicraft-women",
+        title: { en: "Jamuna's Handicraft Collective", bn: "যমুনার হস্তশিল্প সমবায়" },
+        story: { en: "A group of women led by Jamuna started a handicraft collective with support from the society. They produce and sell jute products, empowering themselves financially and preserving a traditional craft of Bangladesh.", bn: 'যমুনার নেতৃত্বে একদল নারী সমিতির সহায়তায় একটি হস্তশিল্প সমবায় শুরু করেন। তারা পাটের পণ্য উৎপাদন ও বিক্রয় করে, নিজেদের আর্থিকভাবে স্বাবলম্বী করে এবং বাংলাদেশের একটি ঐতিহ্যবাহী শিল্পকে সংরক্ষণ করে।' }
+      }
+    ],
     cows: { en: "Dairy Cows", bn: "দুগ্ধবতী গাভী" },
     goats: { en: "Goat Farming", bn: "ছাগল পালন" },
     ducks: { en: "Duck Rearing", bn: "হাঁস পালন" },

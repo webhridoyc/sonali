@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { useLanguage } from '@/context/language-context';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { translations } from '@/lib/translations';
 
 export default function ProjectsPage() {
   const { t, lang } = useLanguage();
@@ -20,6 +21,8 @@ export default function ProjectsPage() {
       { id: 'project-artisan', title: t('projects.artisan') },
     ],
   };
+
+  const impactStories = translations.projects.impactStories;
 
   const GallerySection = ({ title, images }) => (
     <section className="mb-16">
@@ -64,22 +67,32 @@ export default function ProjectsPage() {
       <section id="impact" className="py-12 bg-secondary/50 rounded-lg">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">{t('projects.impactTitle')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <Card>
-            <CardHeader>
-              <CardTitle>Rahima's Story</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground leading-relaxed">{t('projects.impactStory1')}</p>
-            </CardContent>
-          </Card>
-          <Card>
-            <CardHeader>
-              <CardTitle>Pagla Bazar's Progress</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground leading-relaxed">{t('projects.impactStory2')}</p>
-            </CardContent>
-          </Card>
+            {impactStories.map((story, index) => {
+                const imageData = PlaceHolderImages.find((i) => i.id === story.imageId);
+                return (
+                    <Card key={index} className="overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300">
+                        {imageData && (
+                            <CardContent className="p-0">
+                                <div className="relative aspect-[3/2] w-full">
+                                    <Image
+                                        src={imageData.imageUrl}
+                                        alt={story.title[lang]}
+                                        data-ai-hint={imageData.imageHint}
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
+                            </CardContent>
+                        )}
+                        <CardHeader>
+                            <CardTitle>{story.title[lang]}</CardTitle>
+                        </CardHeader>
+                        <CardContent className="flex-grow">
+                            <p className="text-muted-foreground leading-relaxed">{story.story[lang]}</p>
+                        </CardContent>
+                    </Card>
+                );
+            })}
         </div>
       </section>
     </div>
