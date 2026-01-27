@@ -2,6 +2,7 @@
 "use server";
 
 import * as z from 'zod';
+import { Resend } from 'resend';
 
 // Mock database delay
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -61,13 +62,39 @@ export async function applyForMembership(values: z.infer<typeof applicationSchem
     return { error: 'Invalid fields! Please check the form and try again.', success: false };
   }
   
+  const { photo, nomineePhoto, ...formData } = validatedFields.data;
+
+  // --- Uncomment to send email with Resend ---
+  /*
+  try {
+    // Make sure to add RESEND_API_KEY to your environment variables
+    const resend = new Resend(process.env.RESEND_API_KEY);
+
+    // Note: File uploads need to be handled separately. A common approach is to upload
+    // them to a service like Firebase Storage and include the links in the email.
+    
+    await resend.emails.send({
+      from: 'forms@your-verified-domain.com', // Must be a domain you've verified with Resend
+      to: 'your-personal-email@example.com', // The inbox you want to receive applications
+      subject: `New Membership Application: ${formData.nameEn}`,
+      html: `
+        <h1>New Membership Application</h1>
+        <pre><code>${JSON.stringify(formData, null, 2)}</code></pre>
+      `
+    });
+  } catch (error) {
+    console.error('Email sending failed:', error);
+    // You might want to return an error to the user so they know the email failed.
+    // return { success: false, error: 'Application submitted, but failed to send email notification.' };
+  }
+  */
+  // --- End of email sending code ---
+
   await sleep(1000);
 
   // We are not handling file uploads here, just logging the metadata
-  const { photo, nomineePhoto, ...rest } = validatedFields.data;
-  
   console.log('New Membership Application:', {
-      ...rest,
+      ...formData,
       photo: photo ? { name: photo.name, size: photo.size, type: photo.type } : 'No photo uploaded',
       nomineePhoto: nomineePhoto ? { name: nomineePhoto.name, size: nomineePhoto.size, type: nomineePhoto.type } : 'No photo uploaded',
   });
@@ -93,6 +120,29 @@ export async function submitInquiry(values: z.infer<typeof contactSchema>) {
         return { error: 'Invalid fields!', success: false };
     }
     
+    // --- Uncomment to send email with Resend ---
+    /*
+    try {
+      // Make sure to add RESEND_API_KEY to your environment variables
+      const resend = new Resend(process.env.RESEND_API_KEY);
+      
+      await resend.emails.send({
+        from: 'forms@your-verified-domain.com', // Must be a domain you've verified with Resend
+        to: 'your-personal-email@example.com', // The inbox you want to receive inquiries
+        subject: `New Contact Inquiry from ${validatedFields.data.name}`,
+        html: `
+          <h1>New Contact Inquiry</h1>
+          <p><strong>Name:</strong> ${validatedFields.data.name}</p>
+          <p><strong>Phone:</strong> ${validatedFields.data.phone}</p>
+          <p><strong>Inquiry:</strong> ${validatedFields.data.inquiry}</p>
+        `
+      });
+    } catch (error) {
+      console.error('Email sending failed:', error);
+    }
+    */
+    // --- End of email sending code ---
+
     await sleep(1000);
     
     console.log('New Contact Inquiry:', validatedFields.data);
