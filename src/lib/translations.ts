@@ -92,6 +92,10 @@ export const translations = {
   gallery: {
     title: { en: 'Our Photo Gallery', bn: 'আমাদের ফটো গ্যালারি' },
     desc: { en: "A collection of moments and milestones from our cooperative's journey.", bn: "আমাদের সমবায়ের যাত্রার মুহূর্ত এবং মাইলফলকগুলির একটি সংগ্রহ।" },
+    article1Title: { en: 'The Spirit of Cooperation', bn: 'সমবায়ের চেতনা' },
+    article1Content: { en: 'Our strength lies in our unity. By pooling resources and skills, we create opportunities that were once out of reach, building a self-reliant and prosperous community for all.', bn: 'আমাদের শক্তি আমাদের ঐক্যের মধ্যে। সম্পদ এবং দক্ষতা একত্রিত করে, আমরা এমন সুযোগ তৈরি করি যা একসময় নাগালের বাইরে ছিল, সকলের জন্য একটি আত্মনির্ভরশীল এবং সমৃদ্ধশালী সম্প্রদায় গড়ে তুলি।' },
+    article2Title: { en: 'Empowerment Through Enterprise', bn: 'উদ্যোগের মাধ্যমে ক্ষমতায়ন' },
+    article2Content: { en: 'From livestock rearing to intricate handicrafts, each project is a step towards financial independence for our members, preserving traditions while embracing a brighter future.', bn: 'গবাদিপশু পালন থেকে শুরু করে জটিল হস্তশিল্প পর্যন্ত, প্রতিটি প্রকল্প আমাদের সদস্যদের আর্থিক স্বাধীনতার দিকে এক ধাপ এগিয়ে নিয়ে যায়, ঐতিহ্য সংরক্ষণ করে একটি উজ্জ্বল ভবিষ্যতকে আলিঙ্গন করে।' },
   },
   memberPortal: {
     title: { en: 'Member Portal', bn: 'সদস্য পোর্টাল' },
@@ -179,3 +183,4 @@ export const translations = {
 };
 
     
+

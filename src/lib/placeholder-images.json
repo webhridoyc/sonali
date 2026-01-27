@@ -63,26 +63,56 @@
     {
       "id": "impact-rahima",
       "description": "A Bangladeshi woman works on a traditional weaving loom.",
-      "imageUrl": "https://images.unsplash.com/photo-1509423350717-c7803d242130?q=80&w=1080&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1598967936145-481358b5327e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYW5nbGFkZXNoaSUyMHdvbWFuJTIwd2VhdmluZ3xlbnwwfHx8fDE3Njk2NTQ3NTV8MA&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "bangladeshi weaving"
     },
     {
       "id": "impact-water-pump",
       "description": "Village children gather to collect fresh water from a hand pump.",
-      "imageUrl": "https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=1080&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1620532152811-a23b3631985c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYW5nbGFkZXNoaSUyMGNoaWxkJTIwd2F0ZXJwdW1wfGVufDB8fHx8fDE3Njk2NTQ5NDN8MA&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "village children"
     },
     {
       "id": "impact-pottery-man",
       "description": "An experienced Bangladeshi potter shapes clay on his wheel.",
-      "imageUrl": "https://images.unsplash.com/photo-1582239459521-3a4b33535cf4?q=80&w=1080&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1557954932-840e83a66938?q=80&w=1080&auto=format&fit=crop",
       "imageHint": "bangladeshi potter"
     },
     {
       "id": "impact-handicraft-women",
       "description": "A group of women in a Bangladeshi village work together at sewing machines.",
-      "imageUrl": "https://images.unsplash.com/photo-1558238784-245f74577a40?q=80&w=1080&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1610258285516-249c5a09e0f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYW5nbGFkZXNoaSUyMHdvbWVuJTIwc2V3aW5nfGVufDB8fHx8fDE3Njk2NTUxNTV8MA&ixlib=rb-4.0.3&q=80&w=1080",
       "imageHint": "women sewing"
+    },
+    {
+      "id": "gallery-jute-harvest",
+      "description": "Woman harvesting jute in a field",
+      "imageUrl": "https://images.unsplash.com/photo-1618960192869-50518a22a7a5?q=80&w=1080&auto=format&fit=crop",
+      "imageHint": "jute harvest"
+    },
+    {
+      "id": "gallery-fishing-net",
+      "description": "Fisherman casting a net in the river",
+      "imageUrl": "https://images.unsplash.com/photo-1547783938-1a58c0355b25?q=80&w=1080&auto=format&fit=crop",
+      "imageHint": "fishing net"
+    },
+    {
+      "id": "gallery-village-play",
+      "description": "Children playing football in a village",
+      "imageUrl": "https://images.unsplash.com/photo-1599228642909-5d392552e6f4?q=80&w=1080&auto=format&fit=crop",
+      "imageHint": "children playing"
+    },
+    {
+      "id": "gallery-market",
+      "description": "A bustling village vegetable market",
+      "imageUrl": "https://images.unsplash.com/photo-1595085409393-e35f792a77d5?q=80&w=1080&auto=format&fit=crop",
+      "imageHint": "village market"
+    },
+    {
+      "id": "gallery-jute-crafts",
+      "description": "Handmade jute crafts",
+      "imageUrl": "https://images.unsplash.com/photo-1579979219313-059e19a62235?q=80&w=1080&auto=format&fit=crop",
+      "imageHint": "jute crafts"
     }
   ]
 }
