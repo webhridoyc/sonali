@@ -139,7 +139,7 @@ export const translations = {
     terms: { en: 'Terms & Conditions', bn: 'শর্তাবলী' },
     contactInfo: { en: 'Contact Information', bn: 'যোগাযোগের তথ্য' },
     address: { en: 'Baid Gao, Pagla Bazar, Kabirpur, Ashulia, Savar, Dhaka', bn: 'বাইদ গাও, পাগলা বাজার, কবিরপুর, আশুলিয়া, সাভার, ঢাকা' },
-    copyright: { en: 'Designed and Developed for Sonali Shokal Somobay Somity', bn: 'সোনালী সকাল সমবায় সমিতির জন্য ডিজাইন ও ডেভেলপ করা হয়েছে' },
+    copyright: { en: 'Sonali Shokal Somobay Somity', bn: 'সোনালী সকাল সমবায় সমিতি' },
   },
   formValidation: {
     required: { en: "This field is required", bn: "এই ঘরটি পূরণ করা আবশ্যক" },
@@ -149,3 +149,5 @@ export const translations = {
     photoDesc: { en: "Upload a recent passport-size photo.", bn: "সাম্প্রতিক পাসপোর্ট সাইজের ছবি আপলোড করুন।" }
   }
 };
+
+    
