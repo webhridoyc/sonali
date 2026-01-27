@@ -27,7 +27,7 @@ export const translations = {
     potteryDesc: { en: 'Crafting clay into beautiful and functional art pieces.', bn: 'মাটিকে সুন্দর ও কার্যকরী শিল্পকর্মে রূপান্তর করা।' },
   },
   sanchay: {
-    title: { en: 'The Sanchay (Savings) Program', bn: 'সঞ্চয় திட்டம்' },
+    title: { en: 'The Sanchay (Savings) Program', bn: 'সঞ্চয় কার্যক্রম' },
     slogan: { en: 'Small Savings Build a Bright Future.', bn: 'অল্প অল্প সঞ্চয়, গড়বে উজ্জ্বল ভবিষ্যৎ।' },
     desc: { en: 'Our cooperative encourages regular savings among members, fostering financial discipline and providing a safety net. These collective funds are then reinvested into our projects, creating a cycle of growth and prosperity for all.', bn: 'আমাদের সমবায় সদস্যদের মধ্যে নিয়মিত সঞ্চয়কে উৎসাহিত করে, আর্থিক শৃঙ্খলা বৃদ্ধি করে এবং একটি সুরক্ষা জাল প্রদান করে। এই সম্মিলিত তহবিলগুলি আমাদের প্রকল্পগুলিতে পুনরায় বিনিয়োগ করা হয়, যা সকলের জন্য বৃদ্ধি এবং সমৃদ্ধির একটি চক্র তৈরি করে।' },
     learnMore: { en: 'Learn More', bn: 'আরও জানুন' },
@@ -101,7 +101,7 @@ export const translations = {
     intro: { en: 'A Govt. registered cooperative society dedicated to community upliftment.', bn: 'সম্প্রদায়ের উন্নয়নে নিবেদিত একটি সরকারি নিবন্ধিত সমবায় সমিতি।' },
     quickLinks: { en: 'Quick Links', bn: 'দ্রুত লিঙ্ক' },
     about: { en: 'About Us', bn: 'আমাদের সম্পর্কে' },
-    savings: { en: 'Savings Program', bn: 'সঞ্চয় திட்டம்' },
+    savings: { en: 'Savings Program', bn: 'সঞ্চয় কার্যক্রম' },
     terms: { en: 'Terms & Conditions', bn: 'শর্তাবলী' },
     contactInfo: { en: 'Contact Information', bn: 'যোগাযোগের তথ্য' },
     address: { en: 'Baid Gao, Pagla Bazar, Kabirpur, Ashulia, Savar, Dhaka', bn: 'বাইদ গাও, পাগলা বাজার, কবিরপুর, আশুলিয়া, সাভার, ঢাকা' },
