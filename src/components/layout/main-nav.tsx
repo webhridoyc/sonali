@@ -22,7 +22,7 @@ export function MainNav() {
     <div className="mr-4 hidden md:flex">
       <Link href="/" className="mr-6 flex items-center space-x-2">
         <Logo className="h-8 w-8" />
-        <span className={cn('font-bold', lang === 'en' ? 'font-headline' : 'font-body')}>{t('site.name')}</span>
+        <span className={cn('font-bold text-primary', lang === 'en' ? 'font-headline' : 'font-body')}>{t('site.name')}</span>
       </Link>
       <nav className="flex items-center space-x-6 text-sm font-medium">
         {navItems.map((item) => (

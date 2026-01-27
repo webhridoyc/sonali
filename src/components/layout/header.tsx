@@ -33,7 +33,7 @@ export function Header() {
               <SheetTitle asChild>
                 <Link href="/" className="flex items-center space-x-2">
                   <Logo className="h-8 w-8" />
-                  <span className={cn('font-bold', lang === 'en' ? 'font-headline' : 'font-body')}>{t('site.name')}</span>
+                  <span className={cn('font-bold text-primary', lang === 'en' ? 'font-headline' : 'font-body')}>{t('site.name')}</span>
                 </Link>
               </SheetTitle>
             </SheetHeader>
