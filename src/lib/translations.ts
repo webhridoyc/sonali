@@ -7,6 +7,7 @@ export const translations = {
     home: { en: 'Home', bn: 'হোম' },
     about: { en: 'About Us', bn: 'আমাদের সম্পর্কে' },
     projects: { en: 'Projects', bn: 'প্রকল্প' },
+    gallery: { en: 'Gallery', bn: 'গ্যালারি' },
     members: { en: 'Member Portal', bn: 'সদস্য পোর্টাল' },
     contact: { en: 'Contact', bn: 'যোগাযোগ' },
     callNow: { en: 'Call Now', bn: 'কল করুন' },
@@ -87,6 +88,10 @@ export const translations = {
     pottery: { en: "Pottery Craft", bn: "মৃৎশিল্প" },
     weaving: { en: "Handloom Weaving", bn: "তাঁত বুনন" },
     artisan: { en: "Empowered Artisan", bn: "স্বাবলম্বী কারিগর" },
+  },
+  gallery: {
+    title: { en: 'Our Photo Gallery', bn: 'আমাদের ফটো গ্যালারি' },
+    desc: { en: "A collection of moments and milestones from our cooperative's journey.", bn: "আমাদের সমবায়ের যাত্রার মুহূর্ত এবং মাইলফলকগুলির একটি সংগ্রহ।" },
   },
   memberPortal: {
     title: { en: 'Member Portal', bn: 'সদস্য পোর্টাল' },

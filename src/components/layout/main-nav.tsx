@@ -14,6 +14,7 @@ export function MainNav() {
     { href: '/', label: t('nav.home') },
     { href: '/about', label: t('nav.about') },
     { href: '/projects', label: t('nav.projects') },
+    { href: '/gallery', label: t('nav.gallery') },
     { href: '/member-portal', label: t('nav.members') },
     { href: '/contact', label: t('nav.contact') },
   ];

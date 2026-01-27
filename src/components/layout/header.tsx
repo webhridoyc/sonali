@@ -41,6 +41,7 @@ export function Header() {
                <Link href="/" className="text-lg font-medium">{t('nav.home')}</Link>
                <Link href="/about" className="text-lg font-medium text-muted-foreground">{t('nav.about')}</Link>
                <Link href="/projects" className="text-lg font-medium text-muted-foreground">{t('nav.projects')}</Link>
+               <Link href="/gallery" className="text-lg font-medium text-muted-foreground">{t('nav.gallery')}</Link>
                <Link href="/member-portal" className="text-lg font-medium text-muted-foreground">{t('nav.members')}</Link>
                <Link href="/contact" className="text-lg font-medium text-muted-foreground">{t('nav.contact')}</Link>
             </div>
