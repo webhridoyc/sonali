@@ -17,7 +17,7 @@ export function Footer() {
           <div className="space-y-4 flex flex-col items-center md:items-start">
             <div className="flex items-center space-x-2">
               <Logo className="h-10 w-10" />
-              <span className={`text-xl font-bold ${lang === 'en' ? 'font-headline' : 'font-body'}`}>Sonali Shokal</span>
+              <span className={`text-xl font-bold ${lang === 'en' ? 'font-headline' : 'font-body'}`}>{t('site.name')}</span>
             </div>
             <p className="max-w-xs text-sm text-muted-foreground">{t('footer.intro')}</p>
           </div>

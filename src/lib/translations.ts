@@ -1,5 +1,8 @@
 
 export const translations = {
+  site: {
+    name: { en: 'Sonali Shokal', bn: 'সোনালী সকাল' }
+  },
   nav: {
     home: { en: 'Home', bn: 'হোম' },
     about: { en: 'About Us', bn: 'আমাদের সম্পর্কে' },
@@ -96,7 +99,7 @@ export const translations = {
     joinTitle: { en: 'Join Our Cooperative', bn: 'আমাদের সমবায়ে যোগ দিন' },
     joinDesc: { en: 'Interested in becoming a part of our community? You can apply online or download the form.', bn: 'আমাদের সম্প্রদায়ের অংশ হতে আগ্রহী? আপনি অনলাইনে আবেদন করতে পারেন অথবা ফর্মটি ডাউনলোড করতে পারেন।' },
     applyOnline: { en: 'Apply Online', bn: 'অনলাইনে আবেদন করুন' },
-    downloadForm: { en: 'Download', bn: 'Download' },
+    downloadForm: { en: 'Download', bn: 'ডাউনলোড' },
     onlineApplicationTitle: { en: 'Online Membership Application', bn: 'অনলাইন সদস্যপদ আবেদন' },
     formName: { en: 'Full Name (As per NID, in Bangla)', bn: 'পুরো নাম (এনআইডি অনুযায়ী, বাংলায়)' },
     formNameEn: { en: 'Full Name (In English Capital Letters)', bn: 'পুরো নাম (ইংরেজি বড় হাতের অক্ষরে)' },

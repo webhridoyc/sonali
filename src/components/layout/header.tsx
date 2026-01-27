@@ -8,9 +8,10 @@ import { Logo } from '@/components/layout/logo';
 import { MainNav } from '@/components/layout/main-nav';
 import { LanguageToggle } from '@/components/layout/language-toggle';
 import { useLanguage } from '@/context/language-context';
+import { cn } from '@/lib/utils';
 
 export function Header() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -32,7 +33,7 @@ export function Header() {
               <SheetTitle asChild>
                 <Link href="/" className="flex items-center space-x-2">
                   <Logo className="h-8 w-8" />
-                  <span className="font-bold font-headline">Sonali Shokal</span>
+                  <span className={cn('font-bold', lang === 'en' ? 'font-headline' : 'font-body')}>{t('site.name')}</span>
                 </Link>
               </SheetTitle>
             </SheetHeader>
