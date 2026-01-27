@@ -71,7 +71,7 @@ export default function MemberPortalPage() {
                 <Button asChild variant="secondary" className="w-full">
                   <a href="/docs/application-form.pdf" download>
                     <FileText className="mr-2 h-4 w-4" />
-                    {t('memberPortal.downloadForm')}
+                    Download
                   </a>
                 </Button>
               </CardContent>
