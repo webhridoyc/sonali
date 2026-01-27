@@ -66,23 +66,23 @@ export async function applyForMembership(values: z.infer<typeof applicationSchem
 
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
+    const recipient = process.env.RESEND_RECIPIENT_EMAIL;
 
-    // Note: File uploads need to be handled separately (e.g., upload to storage
-    // and include links). This email will contain the text data.
-    
-    await resend.emails.send({
-      from: 'onboarding@resend.dev', // Resend's default "from" email for testing
-      to: 'sonalisokalsomobaysomiti@gmail.com',
-      subject: `New Membership Application: ${formData.nameEn}`,
-      html: `
-        <h1>New Membership Application</h1>
-        <pre><code>${JSON.stringify(formData, null, 2)}</code></pre>
-      `
-    });
+    if (recipient) {
+      await resend.emails.send({
+        from: 'onboarding@resend.dev',
+        to: recipient,
+        subject: `New Membership Application: ${formData.nameEn}`,
+        html: `
+          <h1>New Membership Application</h1>
+          <pre><code>${JSON.stringify(formData, null, 2)}</code></pre>
+        `
+      });
+    } else {
+        console.warn("RESEND_RECIPIENT_EMAIL environment variable not set. Skipping email.")
+    }
   } catch (error) {
     console.error('Email sending failed:', error);
-    // In a production app, you might want to return a more user-friendly error.
-    // For now, we'll let the submission succeed but log the email failure.
   }
 
   await sleep(1000);
@@ -112,19 +112,24 @@ export async function submitInquiry(values: z.infer<typeof contactSchema>) {
     
     try {
       const resend = new Resend(process.env.RESEND_API_KEY);
-      
-      await resend.emails.send({
-        from: 'onboarding@resend.dev', // Resend's default "from" email for testing
-        to: 'sonalisokalsomobaysomiti@gmail.com',
-        subject: `New Contact Inquiry from ${validatedFields.data.name}`,
-        html: `
-          <h1>New Contact Inquiry</h1>
-          <p><strong>Name:</strong> ${validatedFields.data.name}</p>
-          <p><strong>Phone:</strong> ${validatedFields.data.phone}</p>
-          <p><strong>Inquiry:</strong></p>
-          <p>${validatedFields.data.inquiry}</p>
-        `
-      });
+      const recipient = process.env.RESEND_RECIPIENT_EMAIL;
+
+      if (recipient) {
+        await resend.emails.send({
+            from: 'onboarding@resend.dev',
+            to: recipient,
+            subject: `New Contact Inquiry from ${validatedFields.data.name}`,
+            html: `
+            <h1>New Contact Inquiry</h1>
+            <p><strong>Name:</strong> ${validatedFields.data.name}</p>
+            <p><strong>Phone:</strong> ${validatedFields.data.phone}</p>
+            <p><strong>Inquiry:</strong></p>
+            <p>${validatedFields.data.inquiry}</p>
+            `
+        });
+      } else {
+        console.warn("RESEND_RECIPIENT_EMAIL environment variable not set. Skipping email.")
+      }
     } catch (error) {
       console.error('Email sending failed:', error);
     }
