@@ -5,7 +5,7 @@ export function Logo({ className, ...props }: React.HTMLAttributes<HTMLDivElemen
   return (
     <div className={cn("relative h-8 w-8", className)} {...props}>
         <Image
-            src="/logo.png"
+            src="https://placehold.co/40x40/1B5E20/FFB300?text=S"
             alt="Sonali Shokal Somobay Somity Logo"
             fill
             sizes="40px"

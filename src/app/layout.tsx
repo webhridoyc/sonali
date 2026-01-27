@@ -34,9 +34,9 @@ export const metadata: Metadata = {
     'সোনালী সকাল সমবায় সমিতি',
   ],
   icons: {
-    icon: '/logo.png',
-    shortcut: '/logo.png',
-    apple: '/logo.png',
+    icon: 'https://placehold.co/40x40/1B5E20/FFB300?text=S',
+    shortcut: 'https://placehold.co/40x40/1B5E20/FFB300?text=S',
+    apple: 'https://placehold.co/40x40/1B5E20/FFB300?text=S',
   },
 };
 
