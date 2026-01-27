@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useEffect } from 'react';
@@ -103,21 +104,20 @@ export function ApplicationForm() {
   });
 
   const isSameAddress = form.watch('isSameAddress');
-  const presentAddress = form.watch(['presentAddressVillage', 'presentAddressPost', 'presentAddressUpazila', 'presentAddressDistrict']);
 
   useEffect(() => {
     if (isSameAddress) {
-      form.setValue('permanentAddressVillage', presentAddress[0]);
-      form.setValue('permanentAddressPost', presentAddress[1]);
-      form.setValue('permanentAddressUpazila', presentAddress[2]);
-      form.setValue('permanentAddressDistrict', presentAddress[3]);
+      form.setValue('permanentAddressVillage', form.getValues('presentAddressVillage'));
+      form.setValue('permanentAddressPost', form.getValues('presentAddressPost'));
+      form.setValue('permanentAddressUpazila', form.getValues('presentAddressUpazila'));
+      form.setValue('permanentAddressDistrict', form.getValues('presentAddressDistrict'));
     } else {
         form.setValue('permanentAddressVillage', '');
         form.setValue('permanentAddressPost', '');
         form.setValue('permanentAddressUpazila', '');
         form.setValue('permanentAddressDistrict', '');
     }
-  }, [isSameAddress, presentAddress, form]);
+  }, [isSameAddress, form]);
 
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
