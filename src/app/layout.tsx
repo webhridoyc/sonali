@@ -1,3 +1,4 @@
+
 import type { Metadata, Viewport } from 'next';
 import { Poppins, Hind_Siliguri } from 'next/font/google';
 import { Toaster } from '@/components/ui/toaster';
@@ -5,6 +6,7 @@ import { Header } from '@/components/layout/header';
 import { Footer } from '@/components/layout/footer';
 import { LanguageProvider } from '@/context/language-context';
 import './globals.css';
+import { FirebaseClientProvider } from '@/firebase/client-provider';
 
 const poppins = Poppins({
   subsets: ['latin', 'latin-ext'],
@@ -55,14 +57,16 @@ export default function RootLayout({
     >
       <head />
       <body className="font-body antialiased">
-        <LanguageProvider>
-          <div className="flex min-h-screen flex-col">
-            <Header />
-            <main className="flex-grow">{children}</main>
-            <Footer />
-          </div>
-          <Toaster />
-        </LanguageProvider>
+        <FirebaseClientProvider>
+          <LanguageProvider>
+            <div className="flex min-h-screen flex-col">
+              <Header />
+              <main className="flex-grow">{children}</main>
+              <Footer />
+            </div>
+            <Toaster />
+          </LanguageProvider>
+        </FirebaseClientProvider>
       </body>
     </html>
   );
