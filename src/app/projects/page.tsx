@@ -68,22 +68,8 @@ export default function ProjectsPage() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">{t('projects.impactTitle')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
             {impactStories.map((story, index) => {
-                const imageData = PlaceHolderImages.find((i) => i.id === story.imageId);
                 return (
                     <Card key={index} className="overflow-hidden flex flex-col hover:shadow-xl transition-shadow duration-300">
-                        {imageData && (
-                            <CardContent className="p-0">
-                                <div className="relative aspect-[3/2] w-full">
-                                    <Image
-                                        src={imageData.imageUrl}
-                                        alt={story.title[lang]}
-                                        data-ai-hint={imageData.imageHint}
-                                        fill
-                                        className="object-cover"
-                                    />
-                                </div>
-                            </CardContent>
-                        )}
                         <CardHeader>
                             <CardTitle>{story.title[lang]}</CardTitle>
                         </CardHeader>
