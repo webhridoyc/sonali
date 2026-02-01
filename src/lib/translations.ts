@@ -201,10 +201,58 @@ export const translations = {
     phone: { en: "Please enter a valid Bangladeshi phone number", bn: "অনুগ্রহ করে একটি বৈধ বাংলাদেশী ফোন নম্বর দিন" },
     permAddress: { en: "Permanent address is required when different from present address.", bn: "স্থায়ী ঠিকানা প্রয়োজন যখন বর্তমান ঠিকানা থেকে ভিন্ন হয়।" },
     photoDesc: { en: "Upload a recent passport-size photo.", bn: "সাম্প্রতিক পাসপোর্ট সাইজের ছবি আপলোড করুন।" }
+  },
+  terms: {
+    title: { en: 'Terms and Conditions', bn: 'শর্তাবলী' },
+    lastUpdated: { en: 'Last Updated: July 27, 2024', bn: 'সর্বশেষ আপডেট: ২৭ জুলাই, ২০২৪' },
+    introduction: {
+      title: { en: '1. Introduction', bn: '১. ভূমিকা' },
+      content: {
+        en: 'Welcome to Sonali Shokal Somobay Somity. These Terms and Conditions govern your use of our website and services. By accessing or using our website, you agree to be bound by these terms. If you disagree with any part of the terms, you may not access the service.',
+        bn: 'সোনালী সকাল সমবায় সমিতিতে আপনাকে স্বাগতম। এই শর্তাবলী আমাদের ওয়েবসাইট এবং পরিষেবাগুলির আপনার ব্যবহার পরিচালনা করে। আমাদের ওয়েবসাইট অ্যাক্সেস বা ব্যবহার করে, আপনি এই শর্তাবলীতে আবদ্ধ হতে সম্মত হন। যদি আপনি শর্তাবলীর কোনো অংশের সাথে দ্বিমত পোষণ করেন, তবে আপনি পরিষেবাটি অ্যাক্সেস করতে পারবেন না।'
+      }
+    },
+    membership: {
+      title: { en: '2. Membership', bn: '২. সদস্যপদ' },
+      content: {
+        en: 'Membership is subject to the bylaws of the Sonali Shokal Somobay Somity. Applications for membership are reviewed by the executive committee, and approval is at their sole discretion. All members are expected to adhere to the cooperative\'s code of conduct and participate in its activities.',
+        bn: 'সদস্যপদ সোনালী সকাল সমবায় সমিতির উপবিধি সাপেক্ষে। সদস্যপদের জন্য আবেদন কার্যনির্বাহী কমিটি দ্বারা পর্যালোচনা করা হয় এবং অনুমোদন তাদের নিজস্ব বিবেচনার উপর নির্ভর করে। সকল সদস্যকে সমবায়ের আচরণবিধি মেনে চলতে এবং এর কার্যক্রমে অংশগ্রহণ করতে উৎসাহিত করা হয়।'
+      }
+    },
+    websiteUse: {
+      title: { en: '3. Use of the Website', bn: '৩. ওয়েবসাইটের ব্যবহার' },
+      content: {
+        en: 'You agree to use our website for lawful purposes only. You must not use our website in any way that is fraudulent, or has any unlawful or fraudulent purpose or effect. The content on this website is for your general information and use only. It is subject to change without notice.',
+        bn: 'আপনি শুধুমাত্র আইনানুগ উদ্দেশ্যে আমাদের ওয়েবসাইট ব্যবহার করতে সম্মত। আপনি আমাদের ওয়েবসাইটটি কোনো প্রতারণামূলক উপায়ে ব্যবহার করবেন না, বা কোনো বেআইনি বা প্রতারণামূলক উদ্দেশ্য বা প্রভাব রয়েছে এমনভাবে ব্যবহার করবেন না। এই ওয়েবসাইটের বিষয়বস্তু শুধুমাত্র আপনার সাধারণ তথ্য এবং ব্যবহারের জন্য। এটি বিজ্ঞপ্তি ছাড়াই পরিবর্তন সাপেক্ষে।'
+      }
+    },
+    intellectualProperty: {
+      title: { en: '4. Intellectual Property', bn: '৪. বৌদ্ধিক সম্পত্তি' },
+      content: {
+        en: 'The content, logo, and other visual media created by us is our property and is protected by copyright laws. Unauthorized use of this material may give rise to a claim for damages and/or be a criminal offense.',
+        bn: 'আমাদের দ্বারা তৈরি বিষয়বস্তু, লোগো এবং অন্যান্য ভিজ্যুয়াল মিডিয়া আমাদের সম্পত্তি এবং কপিরাইট আইন দ্বারা সুরক্ষিত। এই উপাদানটির অননুমোদিত ব্যবহার ক্ষতির জন্য একটি দাবি উত্থাপন করতে পারে এবং/অথবা একটি ফৌজদারি অপরাধ হতে পারে।'
+      }
+    },
+    limitation: {
+      title: { en: '5. Limitation of Liability', bn: '৫. দায়বদ্ধতার সীমাবদ্ধতা' },
+      content: {
+        en: 'In no event shall Sonali Shokal Somobay Somity, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the service.',
+        bn: 'কোনো অবস্থাতেই সোনালী সকাল সমবায় সমিতি, বা এর পরিচালক, কর্মচারী, অংশীদার, এজেন্ট, সরবরাহকারী, বা সহযোগীরা কোনো পরোক্ষ, আনুষঙ্গিক, বিশেষ, পরিণতিমূলক বা শাস্তিমূলক ক্ষতির জন্য দায়ী থাকবে না, যার মধ্যে সীমাবদ্ধতা ছাড়াই, লাভ, ডেটা, ব্যবহার, সদিচ্ছা, বা অন্যান্য অস্পষ্ট ক্ষতি, যা আপনার পরিষেবা অ্যাক্সেস বা ব্যবহার বা অ্যাক্সেস বা ব্যবহারে অক্ষমতার ফলে ঘটে।'
+      }
+    },
+    governingLaw: {
+      title: { en: '6. Governing Law', bn: '৬. নিয়ন্ত্রক আইন' },
+      content: {
+        en: 'These Terms shall be governed and construed in accordance with the laws of Bangladesh, without regard to its conflict of law provisions.',
+        bn: 'এই শর্তাবলী বাংলাদেশের আইন অনুসারে পরিচালিত এবং ব্যাখ্যা করা হবে, এর আইনের বিধানগুলির দ্বন্দ্বকে বিবেচনা না করে।'
+      }
+    },
+    contact: {
+      title: { en: '7. Contact Us', bn: '৭. আমাদের সাথে যোগাযোগ করুন' },
+      content: {
+        en: 'If you have any questions about these Terms, please contact us.',
+        bn: 'এই শর্তাবলী সম্পর্কে আপনার কোনো প্রশ্ন থাকলে, অনুগ্রহ করে আমাদের সাথে যোগাযোগ করুন।'
+      }
+    }
   }
 };
-
-    
-
-
-
