@@ -67,10 +67,11 @@ export async function applyForMembership(values: z.infer<typeof applicationSchem
   try {
     const resend = new Resend(process.env.RESEND_API_KEY);
     const recipient = process.env.RESEND_RECIPIENT_EMAIL;
+    const from = process.env.RESEND_FROM_EMAIL;
 
-    if (recipient) {
+    if (recipient && from) {
       await resend.emails.send({
-        from: 'onboarding@resend.dev',
+        from,
         to: recipient,
         subject: `New Membership Application: ${formData.nameEn}`,
         html: `
@@ -79,7 +80,7 @@ export async function applyForMembership(values: z.infer<typeof applicationSchem
         `
       });
     } else {
-        console.warn("RESEND_RECIPIENT_EMAIL environment variable not set. Skipping email.")
+        console.warn("RESEND_RECIPIENT_EMAIL or RESEND_FROM_EMAIL environment variable not set. Skipping email.")
     }
   } catch (error) {
     console.error('Email sending failed:', error);
@@ -113,10 +114,11 @@ export async function submitInquiry(values: z.infer<typeof contactSchema>) {
     try {
       const resend = new Resend(process.env.RESEND_API_KEY);
       const recipient = process.env.RESEND_RECIPIENT_EMAIL;
+      const from = process.env.RESEND_FROM_EMAIL;
 
-      if (recipient) {
+      if (recipient && from) {
         await resend.emails.send({
-            from: 'onboarding@resend.dev',
+            from,
             to: recipient,
             subject: `New Contact Inquiry from ${validatedFields.data.name}`,
             html: `
@@ -128,7 +130,7 @@ export async function submitInquiry(values: z.infer<typeof contactSchema>) {
             `
         });
       } else {
-        console.warn("RESEND_RECIPIENT_EMAIL environment variable not set. Skipping email.")
+        console.warn("RESEND_RECIPIENT_EMAIL or RESEND_FROM_EMAIL environment variable not set. Skipping email.")
       }
     } catch (error) {
       console.error('Email sending failed:', error);
