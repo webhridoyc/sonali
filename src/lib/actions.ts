@@ -63,36 +63,33 @@ export async function applyForMembership(values: z.infer<typeof applicationSchem
   }
   
   const { photo, nomineePhoto, ...formData } = validatedFields.data;
+  
+  const resendApiKey = process.env.RESEND_API_KEY;
+  const recipient = process.env.RESEND_RECIPIENT_EMAIL;
+  const from = process.env.RESEND_FROM_EMAIL;
+
+  if (!resendApiKey || !recipient || !from) {
+    console.error("Resend environment variables are not set. Please check RESEND_API_KEY, RESEND_RECIPIENT_EMAIL, and RESEND_FROM_EMAIL.");
+    return { error: 'Server is not configured to send emails.', success: false };
+  }
 
   try {
-    const resend = new Resend(process.env.RESEND_API_KEY);
-    const recipient = process.env.RESEND_RECIPIENT_EMAIL;
-    const from = process.env.RESEND_FROM_EMAIL;
-
-    if (recipient && from) {
-      await resend.emails.send({
-        from,
-        to: recipient,
-        subject: `New Membership Application: ${formData.nameEn}`,
-        html: `
-          <h1>New Membership Application</h1>
-          <pre><code>${JSON.stringify(formData, null, 2)}</code></pre>
-        `
-      });
-    } else {
-        console.warn("RESEND_RECIPIENT_EMAIL or RESEND_FROM_EMAIL environment variable not set. Skipping email.")
-    }
+    const resend = new Resend(resendApiKey);
+    await resend.emails.send({
+      from,
+      to: recipient,
+      subject: `New Membership Application: ${formData.nameEn}`,
+      html: `
+        <h1>New Membership Application</h1>
+        <pre><code>${JSON.stringify(formData, null, 2)}</code></pre>
+      `
+    });
   } catch (error) {
     console.error('Email sending failed:', error);
+    return { error: 'Failed to send email due to a server error.', success: false };
   }
 
   await sleep(1000);
-
-  console.log('New Membership Application:', {
-      ...formData,
-      photo: photo ? { name: photo.name, size: photo.size, type: photo.type } : 'No photo uploaded',
-      nomineePhoto: nomineePhoto ? { name: nomineePhoto.name, size: nomineePhoto.size, type: nomineePhoto.type } : 'No photo uploaded',
-  });
 
   return { success: true };
 }
@@ -110,35 +107,36 @@ export async function submitInquiry(values: z.infer<typeof contactSchema>) {
     if (!validatedFields.success) {
         return { error: 'Invalid fields!', success: false };
     }
+
+    const resendApiKey = process.env.RESEND_API_KEY;
+    const recipient = process.env.RESEND_RECIPIENT_EMAIL;
+    const from = process.env.RESEND_FROM_EMAIL;
+
+    if (!resendApiKey || !recipient || !from) {
+      console.error("Resend environment variables are not set. Please check RESEND_API_KEY, RESEND_RECIPIENT_EMAIL, and RESEND_FROM_EMAIL.");
+      return { error: 'Server is not configured to send emails.', success: false };
+    }
     
     try {
-      const resend = new Resend(process.env.RESEND_API_KEY);
-      const recipient = process.env.RESEND_RECIPIENT_EMAIL;
-      const from = process.env.RESEND_FROM_EMAIL;
-
-      if (recipient && from) {
-        await resend.emails.send({
-            from,
-            to: recipient,
-            subject: `New Contact Inquiry from ${validatedFields.data.name}`,
-            html: `
-            <h1>New Contact Inquiry</h1>
-            <p><strong>Name:</strong> ${validatedFields.data.name}</p>
-            <p><strong>Phone:</strong> ${validatedFields.data.phone}</p>
-            <p><strong>Inquiry:</strong></p>
-            <p>${validatedFields.data.inquiry}</p>
-            `
-        });
-      } else {
-        console.warn("RESEND_RECIPIENT_EMAIL or RESEND_FROM_EMAIL environment variable not set. Skipping email.")
-      }
+      const resend = new Resend(resendApiKey);
+      await resend.emails.send({
+          from,
+          to: recipient,
+          subject: `New Contact Inquiry from ${validatedFields.data.name}`,
+          html: `
+          <h1>New Contact Inquiry</h1>
+          <p><strong>Name:</strong> ${validatedFields.data.name}</p>
+          <p><strong>Phone:</strong> ${validatedFields.data.phone}</p>
+          <p><strong>Inquiry:</strong></p>
+          <p>${validatedFields.data.inquiry}</p>
+          `
+      });
     } catch (error) {
       console.error('Email sending failed:', error);
+      return { error: 'Failed to send email due to a server error.', success: false };
     }
 
     await sleep(1000);
-    
-    console.log('New Contact Inquiry:', validatedFields.data);
     
     return { success: true };
 }
