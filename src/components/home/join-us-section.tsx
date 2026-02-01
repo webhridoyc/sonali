@@ -1,4 +1,3 @@
-
 "use client";
 
 import Link from 'next/link';
@@ -16,6 +15,18 @@ export function JoinUsSection() {
     'hero-pottery',
     'hero-textile',
     'impact-rahima',
+    'project-cows',
+    'project-goats',
+    'project-ducks',
+    'impact-water-pump',
+    'project-pottery-work',
+    'project-weaving',
+    'project-artisan',
+    'impact-pottery-man',
+    'impact-handicraft-women',
+    'gallery-jute-harvest',
+    'gallery-fishing-net',
+    'gallery-market',
   ].map(id => PlaceHolderImages.find(img => img.id === id)).filter(img => !!img);
 
 
@@ -23,7 +34,7 @@ export function JoinUsSection() {
     <section id="join-us" className="relative py-20 md:py-32 overflow-hidden">
       {/* Background Image Collage */}
       <div className="absolute inset-0 w-full h-full">
-        <div className="grid grid-cols-2 grid-rows-2 h-full w-full">
+        <div className="grid grid-cols-4 grid-rows-4 h-full w-full">
           {collageImages.map((image) => (
             image && (
               <div key={image.id} className="relative w-full h-full">
@@ -33,7 +44,7 @@ export function JoinUsSection() {
                   data-ai-hint={image.imageHint}
                   fill
                   className="object-cover"
-                  sizes="50vw"
+                  sizes="25vw"
                 />
               </div>
             )
