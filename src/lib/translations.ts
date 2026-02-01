@@ -203,55 +203,55 @@ export const translations = {
     photoDesc: { en: "Upload a recent passport-size photo.", bn: "সাম্প্রতিক পাসপোর্ট সাইজের ছবি আপলোড করুন।" }
   },
   terms: {
-    title: { en: 'Terms and Conditions', bn: 'শর্তাবলী' },
+    title: { en: 'Our Community Guidelines', bn: 'আমাদের সম্প্রদায়ের নির্দেশিকা' },
     lastUpdated: { en: 'Last Updated: July 27, 2024', bn: 'সর্বশেষ আপডেট: ২৭ জুলাই, ২০২৪' },
     introduction: {
-      title: { en: '1. Introduction', bn: '১. ভূমিকা' },
+      title: { en: 'Welcome to Our Community', bn: 'আমাদের সম্প্রদায়ে স্বাগতম' },
       content: {
-        en: 'Welcome to Sonali Shokal Somobay Somity. These Terms and Conditions govern your use of our website and services. By accessing or using our website, you agree to be bound by these terms. If you disagree with any part of the terms, you may not access the service.',
-        bn: 'সোনালী সকাল সমবায় সমিতিতে আপনাকে স্বাগতম। এই শর্তাবলী আমাদের ওয়েবসাইট এবং পরিষেবাগুলির আপনার ব্যবহার পরিচালনা করে। আমাদের ওয়েবসাইট অ্যাক্সেস বা ব্যবহার করে, আপনি এই শর্তাবলীতে আবদ্ধ হতে সম্মত হন। যদি আপনি শর্তাবলীর কোনো অংশের সাথে দ্বিমত পোষণ করেন, তবে আপনি পরিষেবাটি অ্যাক্সেস করতে পারবেন না।'
+        en: 'Welcome to the official online home of Sonali Shokal Somobay Somity. This space is created for our members, partners, and anyone interested in our mission to build a self-reliant community. By using our website, you become a part of our digital community. We ask that you read and respect these guidelines, which are designed to ensure a positive and productive environment for everyone.',
+        bn: 'সোনালী সকাল সমবায় সমিতির অফিসিয়াল অনলাইন হোমে আপনাকে স্বাগতম। এই স্থানটি আমাদের সদস্য, অংশীদার এবং আমাদের আত্মনির্ভরশীল সম্প্রদায় গঠনের মিশনে আগ্রহী যে কারো জন্য তৈরি করা হয়েছে। আমাদের ওয়েবসাইট ব্যবহার করে, আপনি আমাদের ডিজিটাল সম্প্রদায়ের অংশ হয়ে ওঠেন। আমরা অনুরোধ করছি আপনি এই নির্দেশিকাগুলি পড়ুন এবং সম্মান করুন, যা প্রত্যেকের জন্য একটি ইতিবাচক এবং উৎপাদনশীল পরিবেশ নিশ্চিত করার জন্য ডিজাইন করা হয়েছে।'
       }
     },
     membership: {
-      title: { en: '2. Membership', bn: '২. সদস্যপদ' },
+      title: { en: 'On Becoming a Member', bn: 'সদস্য হওয়া প্রসঙ্গে' },
       content: {
-        en: 'Membership is subject to the bylaws of the Sonali Shokal Somobay Somity. Applications for membership are reviewed by the executive committee, and approval is at their sole discretion. All members are expected to adhere to the cooperative\'s code of conduct and participate in its activities.',
-        bn: 'সদস্যপদ সোনালী সকাল সমবায় সমিতির উপবিধি সাপেক্ষে। সদস্যপদের জন্য আবেদন কার্যনির্বাহী কমিটি দ্বারা পর্যালোচনা করা হয় এবং অনুমোদন তাদের নিজস্ব বিবেচনার উপর নির্ভর করে। সকল সদস্যকে সমবায়ের আচরণবিধি মেনে চলতে এবং এর কার্যক্রমে অংশগ্রহণ করতে উৎসাহিত করা হয়।'
+        en: 'Joining our cooperative means becoming part of a family dedicated to mutual growth and support. Membership is guided by our official bylaws, which ensure fairness and transparency. Every application is thoughtfully reviewed by our executive committee. As a member, you are a vital part of our mission, and your active participation and adherence to our shared values are what make our community strong.',
+        bn: 'আমাদের সমবায়ে যোগদান করা মানে পারস্পরিক বৃদ্ধি এবং সমর্থনে নিবেদিত একটি পরিবারের অংশ হওয়া। সদস্যপদ আমাদের অফিসিয়াল উপবিধি দ্বারা পরিচালিত হয়, যা ন্যায্যতা এবং স্বচ্ছতা নিশ্চিত করে। প্রতিটি আবেদন আমাদের কার্যনির্বাহী কমিটি দ্বারা যত্নসহকারে পর্যালোচনা করা হয়। একজন সদস্য হিসেবে, আপনি আমাদের মিশনের একটি গুরুত্বপূর্ণ অংশ, এবং আপনার সক্রিয় অংশগ্রহণ এবং আমাদের সম্মিলিত মূল্যবোধের প্রতি আপনার আনুগত্যই আমাদের সম্প্রদায়কে শক্তিশালী করে তোলে।'
       }
     },
     websiteUse: {
-      title: { en: '3. Use of the Website', bn: '৩. ওয়েবসাইটের ব্যবহার' },
+      title: { en: 'Using Our Digital Space', bn: 'আমাদের ডিজিটাল স্থান ব্যবহার' },
       content: {
-        en: 'You agree to use our website for lawful purposes only. You must not use our website in any way that is fraudulent, or has any unlawful or fraudulent purpose or effect. The content on this website is for your general information and use only. It is subject to change without notice.',
-        bn: 'আপনি শুধুমাত্র আইনানুগ উদ্দেশ্যে আমাদের ওয়েবসাইট ব্যবহার করতে সম্মত। আপনি আমাদের ওয়েবসাইটটি কোনো প্রতারণামূলক উপায়ে ব্যবহার করবেন না, বা কোনো বেআইনি বা প্রতারণামূলক উদ্দেশ্য বা প্রভাব রয়েছে এমনভাবে ব্যবহার করবেন না। এই ওয়েবসাইটের বিষয়বস্তু শুধুমাত্র আপনার সাধারণ তথ্য এবং ব্যবহারের জন্য। এটি বিজ্ঞপ্তি ছাড়াই পরিবর্তন সাপেক্ষে।'
+        en: 'This website is a resource for information, connection, and engagement. We expect all interactions to be respectful and lawful. Please use this platform to learn about our projects, apply for membership, and connect with us. Any use of this site for fraudulent or harmful activities is strictly prohibited and goes against the very spirit of our cooperative.',
+        bn: 'এই ওয়েবসাইটটি তথ্য, সংযোগ এবং অংশগ্রহণের জন্য একটি সম্পদ। আমরা আশা করি সকল মিথস্ক্রিয়া সম্মানজনক এবং আইনসম্মত হবে। অনুগ্রহ করে আমাদের প্রকল্পগুলি সম্পর্কে জানতে, সদস্যপদের জন্য আবেদন করতে এবং আমাদের সাথে সংযোগ স্থাপন করতে এই প্ল্যাটফর্মটি ব্যবহার করুন। প্রতারণামূলক বা ক্ষতিকারক কার্যকলাপের জন্য এই সাইটের যেকোনো ব্যবহার কঠোরভাবে নিষিদ্ধ এবং এটি আমাদের সমবায়ের চেতনার পরিপন্থী।'
       }
     },
     intellectualProperty: {
-      title: { en: '4. Intellectual Property', bn: '৪. বৌদ্ধিক সম্পত্তি' },
+      title: { en: 'Our Stories and Identity', bn: 'আমাদের গল্প ও পরিচয়' },
       content: {
-        en: 'The content, logo, and other visual media created by us is our property and is protected by copyright laws. Unauthorized use of this material may give rise to a claim for damages and/or be a criminal offense.',
-        bn: 'আমাদের দ্বারা তৈরি বিষয়বস্তু, লোগো এবং অন্যান্য ভিজ্যুয়াল মিডিয়া আমাদের সম্পত্তি এবং কপিরাইট আইন দ্বারা সুরক্ষিত। এই উপাদানটির অননুমোদিত ব্যবহার ক্ষতির জন্য একটি দাবি উত্থাপন করতে পারে এবং/অথবা একটি ফৌজদারি অপরাধ হতে পারে।'
+        en: 'The name Sonali Shokal, our logo, and all the stories, images, and content shared here represent our collective journey and identity. They are protected by copyright. We are proud of our story and encourage you to share it, but please do so respectfully and do not use our materials for commercial purposes without our permission.',
+        bn: 'সোনালী সকাল নাম, আমাদের লোগো এবং এখানে শেয়ার করা সমস্ত গল্প, ছবি এবং বিষয়বস্তু আমাদের সম্মিলিত যাত্রা এবং পরিচয়ের প্রতিনিধিত্ব করে। সেগুলি কপিরাইট দ্বারা সুরক্ষিত। আমরা আমাদের গল্প নিয়ে গর্বিত এবং আপনাকে এটি শেয়ার করতে উৎসাহিত করি, তবে অনুগ্রহ করে সম্মানपूर्वक তা করুন এবং আমাদের অনুমতি ছাড়া বাণিজ্যিক উদ্দেশ্যে আমাদের উপকরণ ব্যবহার করবেন না।'
       }
     },
     limitation: {
-      title: { en: '5. Limitation of Liability', bn: '৫. দায়বদ্ধতার সীমাবদ্ধতা' },
+      title: { en: 'Our Promise and Its Limits', bn: 'আমাদের প্রতিশ্রুতি এবং এর সীমাবদ্ধতা' },
       content: {
-        en: 'In no event shall Sonali Shokal Somobay Somity, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the service.',
-        bn: 'কোনো অবস্থাতেই সোনালী সকাল সমবায় সমিতি, বা এর পরিচালক, কর্মচারী, অংশীদার, এজেন্ট, সরবরাহকারী, বা সহযোগীরা কোনো পরোক্ষ, আনুষঙ্গিক, বিশেষ, পরিণতিমূলক বা শাস্তিমূলক ক্ষতির জন্য দায়ী থাকবে না, যার মধ্যে সীমাবদ্ধতা ছাড়াই, লাভ, ডেটা, ব্যবহার, সদিচ্ছা, বা অন্যান্য অস্পষ্ট ক্ষতি, যা আপনার পরিষেবা অ্যাক্সেস বা ব্যবহার বা অ্যাক্সেস বা ব্যবহারে অক্ষমতার ফলে ঘটে।'
+        en: 'We are committed to providing accurate information and running our services with integrity. However, Sonali Shokal Somobay Somity and its leadership cannot be held liable for any indirect damages that may arise from using this website. We operate with transparency and good faith, but your use of this service is at your own discretion.',
+        bn: 'আমরা নির্ভুল তথ্য সরবরাহ করতে এবং সততার সাথে আমাদের পরিষেবাগুলি পরিচালনা করতে প্রতিশ্রুতিবদ্ধ। তবে, এই ওয়েবসাইট ব্যবহার থেকে উদ্ভূত হতে পারে এমন কোনো পরোক্ষ ক্ষতির জন্য সোনালী সকাল সমবায় সমিতি এবং এর নেতৃত্বকে দায়ী করা যাবে না। আমরা স্বচ্ছতা এবং সরল বিশ্বাসে কাজ করি, তবে এই পরিষেবার আপনার ব্যবহার আপনার নিজস্ব বিবেচনার উপর নির্ভর করে।'
       }
     },
     governingLaw: {
-      title: { en: '6. Governing Law', bn: '৬. নিয়ন্ত্রক আইন' },
+      title: { en: 'Our Legal Foundation', bn: 'আমাদের আইনি ভিত্তি' },
       content: {
-        en: 'These Terms shall be governed and construed in accordance with the laws of Bangladesh, without regard to its conflict of law provisions.',
-        bn: 'এই শর্তাবলী বাংলাদেশের আইন অনুসারে পরিচালিত এবং ব্যাখ্যা করা হবে, এর আইনের বিধানগুলির দ্বন্দ্বকে বিবেচনা না করে।'
+        en: 'As a registered entity, all our activities, both online and offline, are governed by the laws of Bangladesh. These guidelines are to be understood within the legal framework of our country.',
+        bn: 'একটি নিবন্ধিত সত্তা হিসাবে, আমাদের সমস্ত কার্যকলাপ, অনলাইন এবং অফলাইন উভয়ই, বাংলাদেশের আইন দ্বারা পরিচালিত হয়। এই নির্দেশিকাগুলি আমাদের দেশের আইনি কাঠামোর মধ্যে বুঝতে হবে।'
       }
     },
     contact: {
-      title: { en: '7. Contact Us', bn: '৭. আমাদের সাথে যোগাযোগ করুন' },
+      title: { en: "We're Here to Talk", bn: 'আমরা কথা বলার জন্য এখানে আছি' },
       content: {
-        en: 'If you have any questions about these Terms, please contact us.',
-        bn: 'এই শর্তাবলী সম্পর্কে আপনার কোনো প্রশ্ন থাকলে, অনুগ্রহ করে আমাদের সাথে যোগাযোগ করুন।'
+        en: 'These guidelines are here to create a safe and respectful community. If you have any questions or thoughts about them, please don’t hesitate to reach out to us. Open communication is a cornerstone of our cooperative.',
+        bn: 'এই নির্দেশিকাগুলি একটি নিরাপদ এবং সম্মানজনক সম্প্রদায় তৈরি করার জন্য এখানে রয়েছে। এগুলি সম্পর্কে আপনার কোনো প্রশ্ন বা চিন্তা থাকলে, অনুগ্রহ করে আমাদের সাথে যোগাযোগ করতে দ্বিধা করবেন না। উন্মুক্ত যোগাযোগ আমাদের সমবায়ের একটি ভিত্তিপ্রস্তর।'
       }
     }
   }
