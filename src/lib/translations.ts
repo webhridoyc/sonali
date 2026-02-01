@@ -131,6 +131,7 @@ export const translations = {
     applyOnline: { en: 'Apply Online', bn: 'অনলাইনে আবেদন করুন' },
     downloadForm: { en: 'Download', bn: 'ডাউনলোড' },
     onlineApplicationTitle: { en: 'Online Membership Application', bn: 'অনলাইন সদস্যপদ আবেদন' },
+    haveQuestions: { en: 'Have questions? Get in touch with us.', bn: 'কোন প্রশ্ন আছে? আমাদের সাথে যোগাযোগ করুন।' },
     formName: { en: 'Full Name (As per NID, in Bangla)', bn: 'পুরো নাম (এনআইডি অনুযায়ী, বাংলায়)' },
     formNameEn: { en: 'Full Name (In English Capital Letters)', bn: 'পুরো নাম (ইংরেজি বড় হাতের অক্ষরে)' },
     formNid: { en: 'National ID (NID) Number', bn: 'জাতীয় পরিচয়পত্র (NID) নম্বর' },
@@ -204,5 +205,6 @@ export const translations = {
 };
 
     
+
 
 

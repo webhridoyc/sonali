@@ -1,9 +1,10 @@
+
 "use client";
 
 import { useLanguage } from '@/context/language-context';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { FileText, Edit } from 'lucide-react';
+import { FileText, Edit, Phone } from 'lucide-react';
 import { ApplicationForm } from '@/components/member-portal/application-form';
 import {
   Dialog,
@@ -13,6 +14,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { ScrollArea } from '@/components/ui/scroll-area';
+import Link from 'next/link';
 
 export default function MemberPortalPage() {
   const { t, lang } = useLanguage();
@@ -46,6 +48,15 @@ export default function MemberPortalPage() {
                   </a>
                 </Button>
               </CardContent>
+              <CardFooter className="flex-col items-stretch gap-2 pt-4 border-t">
+                  <p className="text-sm text-center text-muted-foreground">{t('memberPortal.haveQuestions')}</p>
+                  <Button asChild variant="outline">
+                      <Link href="/contact">
+                          <Phone className="mr-2 h-4 w-4" />
+                          {t('contact.title')}
+                      </Link>
+                  </Button>
+              </CardFooter>
             </Card>
 
             <DialogContent className="max-w-4xl">
