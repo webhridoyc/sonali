@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -62,7 +63,7 @@ export function JoinUsSection() {
         <p className="max-w-2xl mx-auto text-lg text-white/90 mb-8">
           {t('home.join.text')}
         </p>
-        <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+        <Button asChild size="lg" className="bg-primary-foreground text-primary hover:bg-primary hover:text-primary-foreground">
           <Link href="/member-portal">{t('home.join.button')}</Link>
         </Button>
       </div>
