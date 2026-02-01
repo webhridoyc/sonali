@@ -12,6 +12,21 @@ export const translations = {
     contact: { en: 'Contact', bn: 'যোগাযোগ' },
     callNow: { en: 'Call Now', bn: 'কল করুন' },
   },
+  home: {
+    intro: {
+      title: { en: 'Welcome to Sonali Shokal Somobay Somity', bn: 'সোনালী সকাল সমবায় সমিতিতে আপনাকে স্বাগতম' },
+      text: { en: 'Founded with the core objective of eradicating rural poverty, we are a government-registered cooperative dedicated to creating a self-reliant community through sustainable livelihood projects in livestock, textiles, handicrafts, and pottery.', bn: 'গ্রামীণ দারিদ্র্য দূরীকরণের মূল উদ্দেশ্য নিয়ে প্রতিষ্ঠিত, আমরা একটি সরকারি নিবন্ধিত সমবায় সমিতি যা গবাদিপশু, বস্ত্র, হস্তশিল্প এবং মৃৎশিল্পে টেকসই জীবিকা প্রকল্পের মাধ্যমে একটি আত্মনির্ভরশীল সমাজ গঠনে নিবেদিত।' }
+    },
+    impact: {
+      title: { en: 'Stories of Change', bn: 'পরিবর্তনের গল্প' },
+      link: { en: 'Explore All Projects', bn: 'সকল প্রকল্প দেখুন' }
+    },
+    join: {
+      title: { en: 'Become a Part of Our Family', bn: 'আমাদের পরিবারের অংশ হোন' },
+      text: { en: 'Join us in our mission to build a self-reliant community and create a brighter future for all. Your participation can make a real difference.', bn: 'একটি আত্মনির্ভরশীল সমাজ গড়তে এবং সকলের জন্য একটি উজ্জ্বল ভবিষ্যৎ তৈরি করতে আমাদের মিশনে যোগ দিন। আপনার অংশগ্রহণ একটি বাস্তব পরিবর্তন আনতে পারে।' },
+      button: { en: 'Apply for Membership', bn: 'সদস্যপদের জন্য আবেদন করুন' }
+    }
+  },
   hero: {
     slide1: { en: 'Strength in Unity, Progress in Development', bn: 'সমবায়ে শক্তি, উন্নয়নে অগ্রগতি' },
     slide2: { en: 'Weaving the Fabric of Community', bn: 'সমিতির বুনন' },
@@ -33,9 +48,9 @@ export const translations = {
   },
   sanchay: {
     title: { en: 'The Sanchay (Savings) Program', bn: 'সঞ্চয় কার্যক্রম' },
-    slogan: { en: 'Small Savings Build a Bright Future.', bn: 'অল্প অল্প সঞ্চয়, গড়বে উজ্জ্বল ভবিষ্যৎ।' },
+    slogan: { en: 'Small Savings Build a Bright Future.', bn: 'অল্প অল্প সঞ্চয়, গড়বে উজ্জ্বল ভবিষ্যৎ।' },
     desc: { en: 'Our cooperative encourages regular savings among members, fostering financial discipline and providing a safety net. These collective funds are then reinvested into our projects, creating a cycle of growth and prosperity for all.', bn: 'আমাদের সমবায় সদস্যদের মধ্যে নিয়মিত সঞ্চয়কে উৎসাহিত করে, আর্থিক শৃঙ্খলা বৃদ্ধি করে এবং একটি সুরক্ষা জাল প্রদান করে। এই সম্মিলিত তহবিলগুলি আমাদের প্রকল্পগুলিতে পুনরায় বিনিয়োগ করা হয়, যা সকলের জন্য বৃদ্ধি এবং সমৃদ্ধির একটি চক্র তৈরি করে।' },
-    learnMore: { en: 'Learn More', bn: 'আরও জানুন' },
+    learnMore: { en: 'Learn About Our Mission', bn: 'আমাদের লক্ষ্য সম্পর্কে জানুন' },
   },
   about: {
     title: { en: 'About Sonali Shokal Somobay Somity', bn: 'সোনালী সকাল সমবায় সমিতি সম্পর্কে' },
@@ -64,22 +79,26 @@ export const translations = {
       {
         imageId: "impact-rahima",
         title: { en: "Rahima's Story", bn: "রাহিমার গল্প" },
-        story: { en: 'Rahima Begum, a mother of two, joined our textile program with basic weaving skills. Through training and access to better equipment, she now earns a stable income, allowing her to send both her children to school and build a new home for her family.', bn: 'দুই সন্তানের জননী রহিমা বেগম, বুননের প্রাথমিক দক্ষতা নিয়ে আমাদের বস্ত্র প্রকল্পে যোগ দেন। প্রশিক্ষণ এবং উন্নত সরঞ্জামের মাধ্যমে, তিনি এখন একটি স্থিতিশীল আয় করছেন, যা তাকে তার দুই সন্তানকে স্কুলে পাঠাতে এবং পরিবারের জন্য একটি নতুন বাড়ি তৈরি করতে সাহায্য করেছে।' }
+        story: { en: 'Rahima Begum, a mother of two, joined our textile program with basic weaving skills. Through training and access to better equipment, she now earns a stable income, allowing her to send both her children to school and build a new home for her family.', bn: 'দুই সন্তানের জননী রহিমা বেগম, বুননের প্রাথমিক দক্ষতা নিয়ে আমাদের বস্ত্র প্রকল্পে যোগ দেন। প্রশিক্ষণ এবং উন্নত সরঞ্জামের মাধ্যমে, তিনি এখন একটি স্থিতিশীল আয় করছেন, যা তাকে তার দুই সন্তানকে স্কুলে পাঠাতে এবং পরিবারের জন্য একটি নতুন বাড়ি তৈরি করতে সাহায্য করেছে।' },
+        summary: { en: 'With new skills from our textile program, Rahima now earns a stable income to support her family and educate her children.', bn: 'আমাদের বস্ত্র প্রকল্প থেকে নতুন দক্ষতা নিয়ে, রহিমা এখন তার পরিবারকে সমর্থন করতে এবং তার সন্তানদের শিক্ষিত করার জন্য একটি স্থিতিশীল আয় করছেন।' }
       },
       {
         imageId: "impact-water-pump",
         title: { en: "Pagla Bazar's Progress", bn: "পাগলা বাজারের অগ্রগতি" },
-        story: { en: 'The village of Pagla Bazar faced water scarcity issues affecting their livestock. Our cooperative funded the installation of a new tube well, ensuring a consistent water supply for the animals and improving the overall health and productivity of the local farms.', bn: 'পাগলা বাজার গ্রামটি পানির ঘাটতিতে ভুগছিল যা তাদের গবাদিপশুর উপর প্রভাব ফেলছিল। আমাদের সমবায় একটি নতুন টিউবওয়েল স্থাপনের জন্য অর্থায়ন করেছে, যা পশুদের জন্য একটি ধারাবাহিক পানি সরবরাহ নিশ্চিত করেছে এবং স্থানীয় খামারগুলির সামগ্রিক স্বাস্থ্য ও উৎপাদনশীলতা উন্নত করেছে।' }
+        story: { en: 'The village of Pagla Bazar faced water scarcity issues affecting their livestock. Our cooperative funded the installation of a new tube well, ensuring a consistent water supply for the animals and improving the overall health and productivity of the local farms.', bn: 'পাগলা বাজার গ্রামটি পানির ঘাটতিতে ভুগছিল যা তাদের গবাদিপশুর উপর প্রভাব ফেলছিল। আমাদের সমবায় একটি নতুন টিউবওয়েল স্থাপনের জন্য অর্থায়ন করেছে, যা পশুদের জন্য একটি ধারাবাহিক পানি সরবরাহ নিশ্চিত করেছে এবং স্থানীয় খামারগুলির সামগ্রিক স্বাস্থ্য ও উৎপাদনশীলতা উন্নত করেছে।' },
+        summary: { en: 'Our cooperative funded a new tube well, resolving water scarcity issues and improving the health of livestock for local farms.', bn: 'আমাদের সমবায় একটি নতুন টিউবওয়েল অর্থায়ন করেছে, যা পানির ঘাটতি সমস্যার সমাধান করেছে এবং স্থানীয় খামারগুলির গবাদিপশুর স্বাস্থ্য উন্নত করেছে।' }
       },
       {
         imageId: "impact-pottery-man",
         title: { en: "Karim's Pottery Venture", bn: "করিমের মৃৎশিল্প উদ্যোগ" },
-        story: { en: 'Young entrepreneur Karim received a micro-loan to start his own pottery workshop. Today, his beautiful creations are sold in city markets, providing him with a sustainable livelihood and inspiring other youths in the village.', bn: 'তরুণ উদ্যোক্তা করিম তার নিজের মৃৎশিল্প কর্মশালা শুরু করার জন্য একটি ক্ষুদ্রঋণ পেয়েছিলেন। আজ, তার সুন্দর সৃষ্টি শহরের বাজারে বিক্রি হয়, যা তাকে একটি টেকসই জীবিকা প্রদান করে এবং গ্রামের অন্যান্য যুবকদের অনুপ্রাণিত করে।' }
+        story: { en: 'Young entrepreneur Karim received a micro-loan to start his own pottery workshop. Today, his beautiful creations are sold in city markets, providing him with a sustainable livelihood and inspiring other youths in the village.', bn: 'তরুণ উদ্যোক্তা করিম তার নিজের মৃৎশিল্প কর্মশালা শুরু করার জন্য একটি ক্ষুদ্রঋণ পেয়েছিলেন। আজ, তার সুন্দর সৃষ্টি শহরের বাজারে বিক্রি হয়, যা তাকে একটি টেকসই জীবিকা প্রদান করে এবং গ্রামের অন্যান্য যুবকদের অনুপ্রাণিত করে।' },
+        summary: { en: 'A micro-loan helped Karim start his pottery workshop. His art is now sold in city markets, securing his livelihood.', bn: 'একটি ক্ষুদ্রঋণ করিমকে তার মৃৎশিল্প কর্মশালা শুরু করতে সাহায্য করেছিল। তার শিল্পকর্ম এখন শহরের বাজারে বিক্রি হয়, যা তার জীবিকা নিশ্চিত করে।' }
       },
       {
         imageId: "impact-handicraft-women",
         title: { en: "Jamuna's Handicraft Collective", bn: "যমুনার হস্তশিল্প সমবায়" },
-        story: { en: "A group of women led by Jamuna started a handicraft collective with support from the society. They produce and sell jute products, empowering themselves financially and preserving a traditional craft of Bangladesh.", bn: 'যমুনার নেতৃত্বে একদল নারী সমিতির সহায়তায় একটি হস্তশিল্প সমবায় শুরু করেন। তারা পাটের পণ্য উৎপাদন ও বিক্রয় করে, নিজেদের আর্থিকভাবে স্বাবলম্বী করে এবং বাংলাদেশের একটি ঐতিহ্যবাহী শিল্পকে সংরক্ষণ করে।' }
+        story: { en: "A group of women led by Jamuna started a handicraft collective with support from the society. They produce and sell jute products, empowering themselves financially and preserving a traditional craft of Bangladesh.", bn: 'যমুনার নেতৃত্বে একদল নারী সমিতির সহায়তায় একটি হস্তশিল্প সমবায় শুরু করেন। তারা পাটের পণ্য উৎপাদন ও বিক্রয় করে, নিজেদের আর্থিকভাবে স্বাবলম্বী করে এবং বাংলাদেশের একটি ঐতিহ্যবাহী শিল্পকে সংরক্ষণ করে।' },
+        summary: { en: "Led by Jamuna, a women's collective now produces and sells jute products, achieving financial independence.", bn: 'যমুনার নেতৃত্বে, একটি মহিলা সমবায় এখন পাটের পণ্য উৎপাদন ও বিক্রয় করে, আর্থিক স্বাধীনতা অর্জন করছে।' }
       }
     ],
     cows: { en: "Dairy Cows", bn: "দুগ্ধবতী গাভী" },
@@ -91,7 +110,7 @@ export const translations = {
   },
   gallery: {
     title: { en: 'Our Photo Gallery', bn: 'আমাদের ফটো গ্যালারি' },
-    desc: { en: "A collection of moments and milestones from our cooperative's journey.", bn: "আমাদের সমবায়ের যাত্রার মুহূর্ত এবং মাইলফলকগুলির একটি সংগ্রহ।" },
+    desc: { en: "A collection of moments and milestones from our cooperative's journey.", bn: "আমাদের সমিতির যাত্রার মুহূর্ত এবং মাইলফলকগুলির একটি সংগ্রহ।" },
     article1Title: { en: 'The Spirit of Cooperation', bn: 'সমবায়ের চেতনা' },
     article1Content: { en: 'Our strength lies in our unity. By pooling resources and skills, we create opportunities that were once out of reach, building a self-reliant and prosperous community for all.', bn: 'আমাদের শক্তি আমাদের ঐক্যের মধ্যে। সম্পদ এবং দক্ষতা একত্রিত করে, আমরা এমন সুযোগ তৈরি করি যা একসময় নাগালের বাইরে ছিল, সকলের জন্য একটি আত্মনির্ভরশীল এবং সমৃদ্ধশালী সমিতি গড়ে তুলি।' },
     article2Title: { en: 'Empowerment Through Enterprise', bn: 'উদ্যোগের মাধ্যমে ক্ষমতায়ন' },

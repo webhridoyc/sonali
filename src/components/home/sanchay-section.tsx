@@ -1,3 +1,4 @@
+
 "use client";
 
 import Link from 'next/link';
@@ -9,7 +10,7 @@ export function SanchaySection() {
   const { t, lang } = useLanguage();
 
   return (
-    <section id="sanchay" className="py-12 md:py-20 bg-secondary/50 rounded-lg mt-16">
+    <section id="sanchay" className="py-16 md:py-24 bg-secondary/50">
       <div className="container mx-auto px-4 text-center">
         <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${lang === 'en' ? 'font-headline' : 'font-body'}`}>
           {t('sanchay.title')}
@@ -23,7 +24,7 @@ export function SanchaySection() {
               {t('sanchay.desc')}
             </p>
             <Button asChild className="mt-6" size="lg">
-              <Link href="/about#sanchay">{t('sanchay.learnMore')}</Link>
+              <Link href="/about">{t('sanchay.learnMore')}</Link>
             </Button>
           </CardContent>
         </Card>
