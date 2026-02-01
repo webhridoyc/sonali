@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { useLanguage } from '@/context/language-context';
-import { Users } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export function JoinUsSection() {
@@ -57,11 +56,6 @@ export function JoinUsSection() {
 
       {/* Content */}
       <div className="relative container mx-auto px-4 text-center">
-        <div className="flex justify-center mb-6">
-            <div className="p-4 bg-white/20 backdrop-blur-sm rounded-full">
-                <Users className="h-12 w-12 text-white" />
-            </div>
-        </div>
         <h2 className={`text-3xl md:text-4xl font-bold mb-4 text-white ${lang === 'en' ? 'font-headline' : 'font-body'}`}>
           {t('home.join.title')}
         </h2>
