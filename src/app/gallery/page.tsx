@@ -38,7 +38,7 @@ export default function GalleryPage() {
     </Card>
   );
 
-  const galleryItems: any[] = [...PlaceHolderImages];
+  const galleryItems: any[] = PlaceHolderImages.filter(img => img.id !== 'registration-cert');
 
   // Interleave article cards
   const articles = [
