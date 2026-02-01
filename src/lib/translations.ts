@@ -96,6 +96,27 @@ export const translations = {
     article1Content: { en: 'Our strength lies in our unity. By pooling resources and skills, we create opportunities that were once out of reach, building a self-reliant and prosperous community for all.', bn: 'আমাদের শক্তি আমাদের ঐক্যের মধ্যে। সম্পদ এবং দক্ষতা একত্রিত করে, আমরা এমন সুযোগ তৈরি করি যা একসময় নাগালের বাইরে ছিল, সকলের জন্য একটি আত্মনির্ভরশীল এবং সমৃদ্ধশালী সম্প্রদায় গড়ে তুলি।' },
     article2Title: { en: 'Empowerment Through Enterprise', bn: 'উদ্যোগের মাধ্যমে ক্ষমতায়ন' },
     article2Content: { en: 'From livestock rearing to intricate handicrafts, each project is a step towards financial independence for our members, preserving traditions while embracing a brighter future.', bn: 'গবাদিপশু পালন থেকে শুরু করে জটিল হস্তশিল্প পর্যন্ত, প্রতিটি প্রকল্প আমাদের সদস্যদের আর্থিক স্বাধীনতার দিকে এক ধাপ এগিয়ে নিয়ে যায়, ঐতিহ্য সংরক্ষণ করে একটি উজ্জ্বল ভবিষ্যতকে আলিঙ্গন করে।' },
+    images: {
+      'hero-dairy': { en: 'Cows on a dairy farm', bn: 'একটি ডেইরি ফার্মে গরু' },
+      'hero-pottery': { en: 'Artisan making pottery', bn: 'কারিগর মৃৎপাত্র তৈরি করছেন' },
+      'hero-textile': { en: 'Woman weaving on a loom', bn: 'তাঁতে বুননরত একজন মহিলা' },
+      'project-cows': { en: 'Healthy cows in a field', bn: 'মাঠে সুস্থ গরু' },
+      'project-goats': { en: 'Goats on a farm', bn: 'খামারে ছাগল' },
+      'project-ducks': { en: 'Ducks swimming in a pond', bn: 'পুকুরে সাঁতাররত হাঁস' },
+      'project-pottery-work': { en: 'Finished pottery products on display', bn: 'প্রদর্শনীতে রাখা সমাপ্ত মৃৎশিল্প' },
+      'project-weaving': { en: 'Close-up of colorful woven fabric', bn: 'রঙিন বোনা কাপড়ের ক্লোজ-আপ' },
+      'project-artisan': { en: 'An artisan woman smiling', bn: 'হাস্যোজ্জ্বল একজন কারিগর মহিলা' },
+      'registration-cert': { en: 'Government registration certificate', bn: 'সরকারি নিবন্ধন সনদ' },
+      'impact-rahima': { en: 'A Bangladeshi woman works on a traditional weaving loom.', bn: 'একজন বাংলাদেশী মহিলা ঐতিহ্যবাহী তাঁতে কাজ করছেন।' },
+      'impact-water-pump': { en: 'Village children gather to collect fresh water from a hand pump.', bn: 'গ্রামের শিশুরা একটি হ্যান্ড পাম্প থেকে বিশুদ্ধ পানি সংগ্রহের জন্য জড়ো হয়েছে।' },
+      'impact-pottery-man': { en: 'An experienced Bangladeshi potter shapes clay on his wheel.', bn: 'একজন অভিজ্ঞ বাংলাদেশী কুমার তার চাকায় কাদামাটিকে আকার দিচ্ছেন।' },
+      'impact-handicraft-women': { en: 'A group of women in a Bangladeshi village work together at sewing machines.', bn: 'বাংলাদেশের একটি গ্রামের একদল মহিলা একসাথে সেলাই মেশিনে কাজ করছেন।' },
+      'gallery-jute-harvest': { en: 'Woman harvesting jute in a field', bn: 'মাঠে পাট কাটছেন এক নারী' },
+      'gallery-fishing-net': { en: 'Fisherman casting a net in the river', bn: 'নদীতে জাল ফেলছেন এক জেলে' },
+      'gallery-village-play': { en: 'Children playing football in a village', bn: 'গ্রামে ফুটবল খেলছে শিশুরা' },
+      'gallery-market': { en: 'A bustling village vegetable market', bn: 'একটি ব্যস্ত গ্রামের সবজি বাজার' },
+      'gallery-jute-crafts': { en: 'Handmade jute crafts', bn: 'হাতে তৈরি পাটের কারুশিল্প' }
+    }
   },
   memberPortal: {
     title: { en: 'Member Portal', bn: 'সদস্য পোর্টাল' },
@@ -183,4 +204,5 @@ export const translations = {
 };
 
     
+
 

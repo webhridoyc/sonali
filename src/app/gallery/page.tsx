@@ -25,7 +25,7 @@ export default function GalleryPage() {
         <div className="relative aspect-square w-full">
           <Image
             src={image.imageUrl}
-            alt={image.description}
+            alt={t(`gallery.images.${image.id}`) || image.description}
             data-ai-hint={image.imageHint}
             fill
             className="object-cover"
@@ -33,7 +33,7 @@ export default function GalleryPage() {
         </div>
       </CardContent>
       <CardFooter className="p-4 bg-background">
-        <p className="font-semibold w-full text-center text-sm">{image.description}</p>
+        <p className="font-semibold w-full text-center text-sm">{t(`gallery.images.${image.id}`) || image.description}</p>
       </CardFooter>
     </Card>
   );
