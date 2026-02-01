@@ -14,7 +14,7 @@ export const translations = {
   },
   hero: {
     slide1: { en: 'Strength in Unity, Progress in Development', bn: 'সমবায়ে শক্তি, উন্নয়নে অগ্রগতি' },
-    slide2: { en: 'Weaving the Fabric of Community', bn: 'সম্প্রদায়ের বুনন' },
+    slide2: { en: 'Weaving the Fabric of Community', bn: 'সমিতির বুনন' },
     slide3: { en: 'Nurturing Livestock, Cultivating Prosperity', bn: 'গবাদিপশু পালন, সমৃদ্ধি চাষ' },
   },
   trustBar: {
@@ -40,7 +40,7 @@ export const translations = {
   about: {
     title: { en: 'About Sonali Shokal Somobay Somity', bn: 'সোনালী সকাল সমবায় সমিতি সম্পর্কে' },
     missionTitle: { en: 'Our Mission & Vision', bn: 'আমাদের লক্ষ্য ও উদ্দেশ্য' },
-    missionText: { en: 'Sonali Shokal Somobay Somity was founded with the core objective of eradicating rural poverty and creating a self-reliant community in the Ashulia region. Our vision is to empower every member through cooperative efforts, providing sustainable livelihood opportunities and fostering socio-economic development. We believe that by working together, we can achieve collective prosperity and build a brighter future for generations to come.', bn: 'গ্রামীণ দারিদ্র্য দূরীকরণ এবং আশুলিয়া অঞ্চলে একটি আত্মনির্ভরশীল সম্প্রদায় তৈরির মূল উদ্দেশ্য নিয়ে সোনালী সকাল সমবায় সমিতি প্রতিষ্ঠিত হয়েছিল। আমাদের লক্ষ্য হলো সমবায় প্রচেষ্টার মাধ্যমে প্রতিটি সদস্যকে ক্ষমতায়ন করা, টেকসই জীবিকার সুযোগ প্রদান এবং আর্থ-সামাজিক উন্নয়নকে উৎসাহিত করা। আমরা বিশ্বাস করি যে একসাথে কাজ করার মাধ্যমে আমরা সম্মিলিত সমৃদ্ধি অর্জন করতে এবং আগামী প্রজন্মের জন্য একটি উজ্জ্বল ভবিষ্যৎ গড়তে পারি।' },
+    missionText: { en: 'Sonali Shokal Somobay Somity was founded with the core objective of eradicating rural poverty and creating a self-reliant community in the Ashulia region. Our vision is to empower every member through cooperative efforts, providing sustainable livelihood opportunities and fostering socio-economic development. We believe that by working together, we can achieve collective prosperity and build a brighter future for generations to come.', bn: 'গ্রামীণ দারিদ্র্য দূরীকরণ এবং আশুলিয়া অঞ্চলে একটি আত্মনির্ভরশীল সমিতি তৈরির মূল উদ্দেশ্য নিয়ে সোনালী সকাল সমবায় সমিতি প্রতিষ্ঠিত হয়েছিল। আমাদের লক্ষ্য হলো সমবায় প্রচেষ্টার মাধ্যমে প্রতিটি সদস্যকে ক্ষমতায়ন করা, টেকসই জীবিকার সুযোগ প্রদান এবং আর্থ-সামাজিক উন্নয়নকে উৎসাহিত করা। আমরা বিশ্বাস করি যে একসাথে কাজ করার মাধ্যমে আমরা সম্মিলিত সমৃদ্ধি অর্জন করতে এবং আগামী প্রজন্মের জন্য একটি উজ্জ্বল ভবিষ্যৎ গড়তে পারি।' },
     structureTitle: { en: 'Executive Committee', bn: 'কার্যনির্বাহী কমিটি' },
     committee: [
       { post: { en: 'President', bn: 'সভাপতি' }, name: { en: 'Md. John Doe', bn: 'মোঃ জন ডো' } },
@@ -93,7 +93,7 @@ export const translations = {
     title: { en: 'Our Photo Gallery', bn: 'আমাদের ফটো গ্যালারি' },
     desc: { en: "A collection of moments and milestones from our cooperative's journey.", bn: "আমাদের সমবায়ের যাত্রার মুহূর্ত এবং মাইলফলকগুলির একটি সংগ্রহ।" },
     article1Title: { en: 'The Spirit of Cooperation', bn: 'সমবায়ের চেতনা' },
-    article1Content: { en: 'Our strength lies in our unity. By pooling resources and skills, we create opportunities that were once out of reach, building a self-reliant and prosperous community for all.', bn: 'আমাদের শক্তি আমাদের ঐক্যের মধ্যে। সম্পদ এবং দক্ষতা একত্রিত করে, আমরা এমন সুযোগ তৈরি করি যা একসময় নাগালের বাইরে ছিল, সকলের জন্য একটি আত্মনির্ভরশীল এবং সমৃদ্ধশালী সম্প্রদায় গড়ে তুলি।' },
+    article1Content: { en: 'Our strength lies in our unity. By pooling resources and skills, we create opportunities that were once out of reach, building a self-reliant and prosperous community for all.', bn: 'আমাদের শক্তি আমাদের ঐক্যের মধ্যে। সম্পদ এবং দক্ষতা একত্রিত করে, আমরা এমন সুযোগ তৈরি করি যা একসময় নাগালের বাইরে ছিল, সকলের জন্য একটি আত্মনির্ভরশীল এবং সমৃদ্ধশালী সমিতি গড়ে তুলি।' },
     article2Title: { en: 'Empowerment Through Enterprise', bn: 'উদ্যোগের মাধ্যমে ক্ষমতায়ন' },
     article2Content: { en: 'From livestock rearing to intricate handicrafts, each project is a step towards financial independence for our members, preserving traditions while embracing a brighter future.', bn: 'গবাদিপশু পালন থেকে শুরু করে জটিল হস্তশিল্প পর্যন্ত, প্রতিটি প্রকল্প আমাদের সদস্যদের আর্থিক স্বাধীনতার দিকে এক ধাপ এগিয়ে নিয়ে যায়, ঐতিহ্য সংরক্ষণ করে একটি উজ্জ্বল ভবিষ্যতকে আলিঙ্গন করে।' },
     images: {
@@ -127,7 +127,7 @@ export const translations = {
     bylaws: { en: 'Society Bylaws', bn: 'সমিতির উপবিধি' },
     download: { en: 'Download PDF', bn: 'পিডিএফ ডাউনলোড' },
     joinTitle: { en: 'Join Our Cooperative', bn: 'আমাদের সমবায়ে যোগ দিন' },
-    joinDesc: { en: 'Interested in becoming a part of our community? You can apply online or download the form.', bn: 'আমাদের সম্প্রদায়ের অংশ হতে আগ্রহী? আপনি অনলাইনে আবেদন করতে পারেন অথবা ফর্মটি ডাউনলোড করতে পারেন।' },
+    joinDesc: { en: 'Interested in becoming a part of our community? You can apply online or download the form.', bn: 'আমাদের সমিতির অংশ হতে আগ্রহী? আপনি অনলাইনে আবেদন করতে পারেন অথবা ফর্মটি ডাউনলোড করতে পারেন।' },
     applyOnline: { en: 'Apply Online', bn: 'অনলাইনে আবেদন করুন' },
     downloadForm: { en: 'Download', bn: 'ডাউনলোড' },
     onlineApplicationTitle: { en: 'Online Membership Application', bn: 'অনলাইন সদস্যপদ আবেদন' },
@@ -203,20 +203,20 @@ export const translations = {
     photoDesc: { en: "Upload a recent passport-size photo.", bn: "সাম্প্রতিক পাসপোর্ট সাইজের ছবি আপলোড করুন।" }
   },
   terms: {
-    title: { en: 'Our Community Guidelines', bn: 'আমাদের সম্প্রদায়ের নির্দেশিকা' },
+    title: { en: 'Our Community Guidelines', bn: 'আমাদের সমিতির নির্দেশিকা' },
     lastUpdated: { en: 'Last Updated: July 27, 2024', bn: 'সর্বশেষ আপডেট: ২৭ জুলাই, ২০২৪' },
     introduction: {
-      title: { en: 'Welcome to Our Community', bn: 'আমাদের সম্প্রদায়ে স্বাগতম' },
+      title: { en: 'Welcome to Our Community', bn: 'আমাদের সমিতিতে স্বাগতম' },
       content: {
         en: 'Welcome to the official online home of Sonali Shokal Somobay Somity. This space is created for our members, partners, and anyone interested in our mission to build a self-reliant community. By using our website, you become a part of our digital community. We ask that you read and respect these guidelines, which are designed to ensure a positive and productive environment for everyone.',
-        bn: 'সোনালী সকাল সমবায় সমিতির অফিসিয়াল অনলাইন হোমে আপনাকে স্বাগতম। এই স্থানটি আমাদের সদস্য, অংশীদার এবং আমাদের আত্মনির্ভরশীল সম্প্রদায় গঠনের মিশনে আগ্রহী যে কারো জন্য তৈরি করা হয়েছে। আমাদের ওয়েবসাইট ব্যবহার করে, আপনি আমাদের ডিজিটাল সম্প্রদায়ের অংশ হয়ে ওঠেন। আমরা অনুরোধ করছি আপনি এই নির্দেশিকাগুলি পড়ুন এবং সম্মান করুন, যা প্রত্যেকের জন্য একটি ইতিবাচক এবং উৎপাদনশীল পরিবেশ নিশ্চিত করার জন্য ডিজাইন করা হয়েছে।'
+        bn: 'সোনালী সকাল সমবায় সমিতির অফিসিয়াল অনলাইন হোমে আপনাকে স্বাগতম। এই স্থানটি আমাদের সদস্য, অংশীদার এবং আমাদের আত্মনির্ভরশীল সমিতি গঠনের মিশনে আগ্রহী যে কারো জন্য তৈরি করা হয়েছে। আমাদের ওয়েবসাইট ব্যবহার করে, আপনি আমাদের ডিজিটাল সমিতির অংশ হয়ে ওঠেন। আমরা অনুরোধ করছি আপনি এই নির্দেশিকাগুলি পড়ুন এবং সম্মান করুন, যা প্রত্যেকের জন্য একটি ইতিবাচক এবং উৎপাদনশীল পরিবেশ নিশ্চিত করার জন্য ডিজাইন করা হয়েছে।'
       }
     },
     membership: {
       title: { en: 'On Becoming a Member', bn: 'সদস্য হওয়া প্রসঙ্গে' },
       content: {
         en: 'Joining our cooperative means becoming part of a family dedicated to mutual growth and support. Membership is guided by our official bylaws, which ensure fairness and transparency. Every application is thoughtfully reviewed by our executive committee. As a member, you are a vital part of our mission, and your active participation and adherence to our shared values are what make our community strong.',
-        bn: 'আমাদের সমবায়ে যোগদান করা মানে পারস্পরিক বৃদ্ধি এবং সমর্থনে নিবেদিত একটি পরিবারের অংশ হওয়া। সদস্যপদ আমাদের অফিসিয়াল উপবিধি দ্বারা পরিচালিত হয়, যা ন্যায্যতা এবং স্বচ্ছতা নিশ্চিত করে। প্রতিটি আবেদন আমাদের কার্যনির্বাহী কমিটি দ্বারা যত্নসহকারে পর্যালোচনা করা হয়। একজন সদস্য হিসেবে, আপনি আমাদের মিশনের একটি গুরুত্বপূর্ণ অংশ, এবং আপনার সক্রিয় অংশগ্রহণ এবং আমাদের সম্মিলিত মূল্যবোধের প্রতি আপনার আনুগত্যই আমাদের সম্প্রদায়কে শক্তিশালী করে তোলে।'
+        bn: 'আমাদের সমবায়ে যোগদান করা মানে পারস্পরিক বৃদ্ধি এবং সমর্থনে নিবেদিত একটি পরিবারের অংশ হওয়া। সদস্যপদ আমাদের অফিসিয়াল উপবিধি দ্বারা পরিচালিত হয়, যা ন্যায্যতা এবং স্বচ্ছতা নিশ্চিত করে। প্রতিটি আবেদন আমাদের কার্যনির্বাহী কমিটি দ্বারা যত্নসহকারে পর্যালোচনা করা হয়। একজন সদস্য হিসেবে, আপনি আমাদের মিশনের একটি গুরুত্বপূর্ণ অংশ, এবং আপনার সক্রিয় অংশগ্রহণ এবং আমাদের সম্মিলিত মূল্যবোধের প্রতি আপনার আনুগত্যই আমাদের সমিতিকে শক্তিশালী করে তোলে।'
       }
     },
     websiteUse: {
@@ -251,7 +251,7 @@ export const translations = {
       title: { en: "We're Here to Talk", bn: 'আমরা কথা বলার জন্য এখানে আছি' },
       content: {
         en: 'These guidelines are here to create a safe and respectful community. If you have any questions or thoughts about them, please don’t hesitate to reach out to us. Open communication is a cornerstone of our cooperative.',
-        bn: 'এই নির্দেশিকাগুলি একটি নিরাপদ এবং সম্মানজনক সম্প্রদায় তৈরি করার জন্য এখানে রয়েছে। এগুলি সম্পর্কে আপনার কোনো প্রশ্ন বা চিন্তা থাকলে, অনুগ্রহ করে আমাদের সাথে যোগাযোগ করতে দ্বিধা করবেন না। উন্মুক্ত যোগাযোগ আমাদের সমবায়ের একটি ভিত্তিপ্রস্তর।'
+        bn: 'এই নির্দেশিকাগুলি একটি নিরাপদ এবং সম্মানজনক সমিতি তৈরি করার জন্য এখানে রয়েছে। এগুলি সম্পর্কে আপনার কোনো প্রশ্ন বা চিন্তা থাকলে, অনুগ্রহ করে আমাদের সাথে যোগাযোগ করতে দ্বিধা করবেন না। উন্মুক্ত যোগাযোগ আমাদের সমবায়ের একটি ভিত্তিপ্রস্তর।'
       }
     }
   }
