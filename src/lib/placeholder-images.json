@@ -3,115 +3,115 @@
     {
       "id": "hero-dairy",
       "description": "Cows on a dairy farm",
-      "imageUrl": "https://images.unsplash.com/photo-1573731399281-6540bc50ed91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZGFpcnklMjBmYXJtfGVufDB8fHx8MTc2OTMzMjM2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1626561921730-200b9a3ecc95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkYWlyeSUyMGZhcm18ZW58MHx8fHwxNzY5OTM2NjkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "dairy farm"
     },
     {
       "id": "hero-pottery",
       "description": "Artisan making pottery",
-      "imageUrl": "https://images.unsplash.com/photo-1695740639466-7baecca4224d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxwb3R0ZXJ5JTIwbWFraW5nfGVufDB8fHx8MTc2OTI3NzMwMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1422246358533-95dcd3d48961?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3R0ZXJ5JTIwbWFraW5nfGVufDB8fHx8MTc2OTkzNjY5MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "pottery making"
     },
     {
       "id": "hero-textile",
       "description": "Woman weaving on a loom",
-      "imageUrl": "https://images.unsplash.com/photo-1719462193102-93fd0138f171?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3ZWF2aW5nJTIwbG9vbXxlbnwwfHx8fDE3NjkzMzIzNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1719462193102-93fd0138f171?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx3ZWF2aW5nJTIwbG9vbXxlbnwwfHx8fDE3Njk5MzY2OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "weaving loom"
     },
     {
       "id": "project-cows",
       "description": "Healthy cows in a field",
-      "imageUrl": "https://images.unsplash.com/photo-1629745295768-1a1db7213367?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb3dzJTIwZmllbGR8ZW58MHx8fHwxNzY5MzMyMzY3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1663081635275-939e71c9ca49?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb3dzJTIwZmllbGR8ZW58MHx8fHwxNzY5OTM2NjkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "cows field"
     },
     {
       "id": "project-goats",
       "description": "Goats on a farm",
-      "imageUrl": "https://images.unsplash.com/photo-1687704488504-2d5018a64a24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmYXJtJTIwZ29hdHN8ZW58MHx8fHwxNzY5MzMyMzY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1694653031434-2a5e1a7d0c07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmYXJtJTIwZ29hdHN8ZW58MHx8fHwxNzY5OTM2NjkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "farm goats"
     },
     {
       "id": "project-ducks",
       "description": "Ducks swimming in a pond",
-      "imageUrl": "https://images.unsplash.com/photo-1642799829907-8368607b9527?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkdWNrcyUyMHBvbmR8ZW58MHx8fHwxNzY5MzMyMzY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1634255071431-41ebb29ada10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxkdWNrcyUyMHBvbmR8ZW58MHx8fHwxNzY5OTM2NjkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "ducks pond"
     },
     {
       "id": "project-pottery-work",
       "description": "Finished pottery products on display",
-      "imageUrl": "https://images.unsplash.com/photo-1597696929644-a2157a251a43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3R0ZXJ5JTIwZGlzcGxheXxlbnwwfHx8fDE3NjkzMzIzNjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1597696929644-a2157a251a43?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3R0ZXJ5JTIwZGlzcGxheXxlbnwwfHx8fDE3Njk5MzY2OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "pottery display"
     },
     {
       "id": "project-weaving",
       "description": "Close-up of colorful woven fabric",
-      "imageUrl": "https://images.unsplash.com/photo-1754638987551-22fb7608436f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb2xvcmZ1bCUyMGZhYnJpY3xlbnwwfHx8fDE3NjkzMzIzNjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1754638987551-22fb7608436f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb2xvcmZ1bCUyMGZhYnJpY3xlbnwwfHx8fDE3Njk5MzY2OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "colorful fabric"
     },
     {
       "id": "project-artisan",
       "description": "An artisan woman smiling",
-      "imageUrl": "https://images.unsplash.com/photo-1719154717749-0d05f61a0588?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhcnRpc2FuJTIwd29tYW58ZW58MHx8fHwxNzY5MzMyMzY2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1719154717733-d37860cdee24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhcnRpc2FuJTIwd29tYW58ZW58MHx8fHwxNzY5OTM2NjkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "artisan woman"
     },
     {
       "id": "registration-cert",
       "description": "Government registration certificate",
-      "imageUrl": "https://images.unsplash.com/photo-1769038947088-62455c949efc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxvZmZpY2lhbCUyMGNlcnRpZmljYXRlfGVufDB8fHx8MTc2OTMzMjM2N3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1742415888265-d5044039d8e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxvZmZpY2lhbCUyMGNlcnRpZmljYXRlfGVufDB8fHx8MTc2OTkzNjY5MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "official certificate"
     },
     {
       "id": "impact-rahima",
       "description": "A Bangladeshi woman works on a traditional weaving loom.",
-      "imageUrl": "https://images.unsplash.com/photo-1598967936145-481358b5327e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYW5nbGFkZXNoaSUyMHdvbWFuJTIwd2VhdmluZ3xlbnwwfHx8fDE3Njk2NTQ3NTV8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1661932905363-503f1d2bdd56?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiYW5nbGFkZXNoaSUyMHdlYXZpbmd8ZW58MHx8fHwxNzY5OTM2NjkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bangladeshi weaving"
     },
     {
       "id": "impact-water-pump",
       "description": "Village children gather to collect fresh water from a hand pump.",
-      "imageUrl": "https://images.unsplash.com/photo-1594945439433-853047a27549?q=80&w=1080&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1645103620336-dd803960e7e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx2aWxsYWdlJTIwY2hpbGRyZW58ZW58MHx8fHwxNzY5OTM2NjkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "village children"
     },
     {
       "id": "impact-pottery-man",
       "description": "An experienced Bangladeshi potter shapes clay on his wheel.",
-      "imageUrl": "https://images.unsplash.com/photo-1605640154032-c1328f8f4a3a?q=80&w=1080&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1716876995651-1ff85b65a6d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiYW5nbGFkZXNoaSUyMHBvdHRlcnxlbnwwfHx8fDE3Njk5MzY2OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bangladeshi potter"
     },
     {
       "id": "impact-handicraft-women",
       "description": "A group of women in a Bangladeshi village work together at sewing machines.",
-      "imageUrl": "https://images.unsplash.com/photo-1610258285516-249c5a09e0f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYW5nbGFkZXNoaSUyMHdvbWVuJTIwc2V3aW5nfGVufDB8fHx8fDE3Njk2NTUxNTV8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1641810290383-ed6bd3d9e415?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3b21lbiUyMHNld2luZ3xlbnwwfHx8fDE3Njk5MzY2OTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "women sewing"
     },
     {
       "id": "gallery-jute-harvest",
       "description": "Woman harvesting jute in a field",
-      "imageUrl": "https://images.unsplash.com/photo-1618960192484-18d531a7c788?q=80&w=1080&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1763301745979-8f85a0faa817?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxqdXRlJTIwaGFydmVzdHxlbnwwfHx8fDE3Njk5MzY2OTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "jute harvest"
     },
     {
       "id": "gallery-fishing-net",
       "description": "Fisherman casting a net in the river",
-      "imageUrl": "https://images.unsplash.com/photo-1516893498844-766a4f91e321?q=80&w=1080&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1502312288937-ab7650a1ed41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmaXNoaW5nJTIwbmV0fGVufDB8fHx8MTc2OTkzNjY5MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "fishing net"
     },
     {
       "id": "gallery-village-play",
       "description": "Children playing football in a village",
-      "imageUrl": "https://images.unsplash.com/photo-1599228642909-5d392552e6f4?q=80&w=1080&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/flagged/photo-1567116681178-c326fa4e2c8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjaGlsZHJlbiUyMHBsYXlpbmd8ZW58MHx8fHwxNzY5OTM2NjkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "children playing"
     },
     {
       "id": "gallery-market",
       "description": "A bustling village vegetable market",
-      "imageUrl": "https://images.unsplash.com/photo-1595085409393-e35f792a77d5?q=80&w=1080&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1668939207331-16c6d93adf07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx2aWxsYWdlJTIwbWFya2V0fGVufDB8fHx8MTc2OTkzNjY5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "village market"
     },
     {
       "id": "gallery-jute-crafts",
       "description": "Handmade jute crafts",
-      "imageUrl": "https://images.unsplash.com/photo-1579979219313-059e19a62235?q=80&w=1080&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1768102366381-c615ef9d12c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxqdXRlJTIwY3JhZnRzfGVufDB8fHx8MTc2OTkzNjY5MXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "jute crafts"
     }
   ]
