@@ -14,6 +14,9 @@
 # Misc
 .DS_Store
 
+# TypeScript
+*.tsbuildinfo
+
 # Local source assets (not needed for build)
 /images/
 

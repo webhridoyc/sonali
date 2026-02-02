@@ -13,6 +13,7 @@ import {
   ICON_PATH,
   LOGO_PATH,
   SITE_DESCRIPTION_EN,
+  SITE_KEYWORDS,
   SITE_NAME_EN,
   SITE_NAME_BN,
   SITE_URL,
@@ -41,13 +42,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME_EN}`,
   },
   description: SITE_DESCRIPTION_EN,
-  keywords: [
-    'Sonali Shokal',
-    'Somobay Somity in Savar',
-    'Ashulia Cooperative Society',
-    'cooperative society Dhaka',
-    'সোনালী সকাল সমবায় সমিতি',
-  ],
+  keywords: SITE_KEYWORDS,
   alternates: {
     canonical: '/',
   },
@@ -124,6 +119,7 @@ export default function RootLayout({
     name: SITE_NAME_EN,
     url: SITE_URL,
     inLanguage: ['en', 'bn'],
+    keywords: SITE_KEYWORDS.join(', '),
   };
 
   return (

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { DEFAULT_OG_IMAGE_PATH, SITE_DESCRIPTION_EN, SITE_NAME_EN } from '@/lib/seo';
+import { DEFAULT_OG_IMAGE_PATH, SITE_KEYWORDS, SITE_NAME_EN } from '@/lib/seo';
 
 const title = 'About';
 const description = `Learn about ${SITE_NAME_EN}: our mission, committee, and official registration details.`;
@@ -7,6 +7,7 @@ const description = `Learn about ${SITE_NAME_EN}: our mission, committee, and of
 export const metadata: Metadata = {
   title,
   description,
+  keywords: [...SITE_KEYWORDS, `About ${SITE_NAME_EN}`],
   alternates: { canonical: '/about' },
   openGraph: {
     title: `${title} | ${SITE_NAME_EN}`,

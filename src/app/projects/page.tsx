@@ -9,6 +9,16 @@ import { translations } from '@/lib/translations';
 export default function ProjectsPage() {
   const { t, lang } = useLanguage();
 
+  type GalleryImageItem = {
+    id: string;
+    title: string;
+  };
+
+  type GallerySectionProps = {
+    title: string;
+    images: GalleryImageItem[];
+  };
+
   const galleryImages = {
     livestock: [
       { id: 'project-cows', title: t('projects.cows') },
@@ -24,11 +34,11 @@ export default function ProjectsPage() {
 
   const impactStories = translations.projects.impactStories;
 
-  const GallerySection = ({ title, images }) => (
+  const GallerySection = ({ title, images }: GallerySectionProps) => (
     <section className="mb-16">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">{title}</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {images.map((img) => {
+        {images.map((img: GalleryImageItem) => {
           const imageData = PlaceHolderImages.find((i) => i.id === img.id);
           if (!imageData) return null;
           return (
