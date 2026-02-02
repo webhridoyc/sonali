@@ -13,3 +13,9 @@
 
 # Misc
 .DS_Store
+
+# Local source assets (not needed for build)
+/images/
+
+# Generated intermediate favicon source
+/public/favicon-square.png

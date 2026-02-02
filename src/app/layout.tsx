@@ -7,6 +7,18 @@ import { Footer } from '@/components/layout/footer';
 import { LanguageProvider } from '@/context/language-context';
 import './globals.css';
 import { FirebaseClientProvider } from '@/firebase/client-provider';
+import {
+  APPLE_ICON_PATH,
+  DEFAULT_OG_IMAGE_PATH,
+  ICON_PATH,
+  LOGO_PATH,
+  SITE_DESCRIPTION_EN,
+  SITE_NAME_EN,
+  SITE_NAME_BN,
+  SITE_URL,
+  absoluteUrl,
+  withAssetVersion,
+} from '@/lib/seo';
 
 const poppins = Poppins({
   subsets: ['latin', 'latin-ext'],
@@ -23,9 +35,12 @@ const hindSiliguri = Hind_Siliguri({
 });
 
 export const metadata: Metadata = {
-  title: 'Sonali Shokal Somobay Somity | Official Website',
-  description:
-    'Official portal for Sonali Shokal Somobay Somity, a Government-registered cooperative society in Savar, Dhaka, focused on eliminating rural poverty through livestock, textiles, handicrafts, and pottery projects.',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_NAME_EN} | Official Website`,
+    template: `%s | ${SITE_NAME_EN}`,
+  },
+  description: SITE_DESCRIPTION_EN,
   keywords: [
     'Sonali Shokal',
     'Somobay Somity in Savar',
@@ -33,6 +48,46 @@ export const metadata: Metadata = {
     'cooperative society Dhaka',
     'সোনালী সকাল সমবায় সমিতি',
   ],
+  alternates: {
+    canonical: '/',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    url: SITE_URL,
+    title: SITE_NAME_EN,
+    description: SITE_DESCRIPTION_EN,
+    siteName: SITE_NAME_EN,
+    locale: 'en_US',
+    images: [
+      {
+        url: DEFAULT_OG_IMAGE_PATH,
+        alt: SITE_NAME_EN,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: SITE_NAME_EN,
+    description: SITE_DESCRIPTION_EN,
+    images: [DEFAULT_OG_IMAGE_PATH],
+  },
+  icons: {
+    icon: [{ url: withAssetVersion(ICON_PATH), type: 'image/png' }],
+    apple: [{ url: withAssetVersion(APPLE_ICON_PATH), type: 'image/png' }],
+    shortcut: [withAssetVersion(ICON_PATH)],
+    other: [{ rel: 'icon', url: withAssetVersion('/favicon.ico') }],
+  },
 };
 
 export const viewport: Viewport = {
@@ -44,12 +99,52 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const organizationJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: SITE_NAME_EN,
+    alternateName: SITE_NAME_BN,
+    url: SITE_URL,
+    logo: absoluteUrl(LOGO_PATH),
+    email: 'sonalisokalsomobaysomiti@gmail.com',
+    telephone: '+8801883088338',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Baid Gao, Pagla Bazar, Kabirpur, Ashulia',
+      addressLocality: 'Savar',
+      addressRegion: 'Dhaka',
+      addressCountry: 'BD',
+    },
+    sameAs: ['https://www.facebook.com/sonalisokalss'],
+  };
+
+  const websiteJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SITE_NAME_EN,
+    url: SITE_URL,
+    inLanguage: ['en', 'bn'],
+  };
+
   return (
     <html
       lang="en"
       className={`${poppins.variable} ${hindSiliguri.variable} font-body antialiased`}
       suppressHydrationWarning
     >
+      <head>
+        <link rel="canonical" href={absoluteUrl('/')} />
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+      </head>
       <body>
         <FirebaseClientProvider>
           <LanguageProvider>
