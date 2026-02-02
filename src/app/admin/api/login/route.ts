@@ -29,20 +29,34 @@ export async function POST(request: Request) {
   }
 
   const now = Math.floor(Date.now() / 1000);
-  const ttl = Number(process.env.ADMIN_SESSION_TTL_SECONDS || 60 * 60 * 12);
+  // Default to a shorter session. You can override via ADMIN_SESSION_TTL_SECONDS.
+  const ttl = Number(process.env.ADMIN_SESSION_TTL_SECONDS || 60 * 30);
   const payload = { iat: now, exp: now + ttl };
   const token = await createAdminSessionToken(payload, sessionSecret);
 
+  const persist = process.env.ADMIN_SESSION_PERSIST === 'true';
+
   const response = NextResponse.json({ success: true });
-  response.cookies.set({
-    name: ADMIN_SESSION_COOKIE,
-    value: token,
-    httpOnly: true,
-    sameSite: 'lax',
-    secure: process.env.NODE_ENV === 'production',
-    path: '/admin',
-    maxAge: ttl,
-  });
+  response.cookies.set(
+    persist
+      ? {
+          name: ADMIN_SESSION_COOKIE,
+          value: token,
+          httpOnly: true,
+          sameSite: 'strict',
+          secure: process.env.NODE_ENV === 'production',
+          path: '/admin',
+          maxAge: ttl,
+        }
+      : {
+          name: ADMIN_SESSION_COOKIE,
+          value: token,
+          httpOnly: true,
+          sameSite: 'strict',
+          secure: process.env.NODE_ENV === 'production',
+          path: '/admin',
+        }
+  );
 
   return response;
 }
