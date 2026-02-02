@@ -3,6 +3,7 @@
 
 import * as z from 'zod';
 import { Resend } from 'resend';
+import { adminServerTimestamp, getAdminFirestore } from '@/firebase/admin';
 
 // Mock database delay
 const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -63,30 +64,44 @@ export async function applyForMembership(values: z.infer<typeof applicationSchem
   }
   
   const { photo, nomineePhoto, ...formData } = validatedFields.data;
-  
+
+  // Persist to Firestore (required) so every submission shows up in the admin dashboard.
+  const db = getAdminFirestore();
+  if (!db) {
+    return { error: 'Server is not configured to store submissions yet. Please try again later.', success: false };
+  }
+
+  try {
+    await db.collection('membershipApplications').add({
+      ...formData,
+      submittedAt: adminServerTimestamp(),
+      source: 'website',
+    });
+  } catch (error) {
+    console.error('Firestore persistence failed:', error);
+    return { error: 'Failed to save your application. Please try again.', success: false };
+  }
+
+  // Send email notification (best-effort)
   const resendApiKey = process.env.RESEND_API_KEY;
   const recipient = process.env.RESEND_RECIPIENT_EMAIL;
   const from = process.env.RESEND_FROM_EMAIL;
 
-  if (!resendApiKey || !recipient || !from) {
-    console.error("Resend environment variables are not set. Please check RESEND_API_KEY, RESEND_RECIPIENT_EMAIL, and RESEND_FROM_EMAIL.");
-    return { error: 'Server is not configured to send emails.', success: false };
-  }
-
-  try {
-    const resend = new Resend(resendApiKey);
-    await resend.emails.send({
-      from,
-      to: recipient,
-      subject: `New Membership Application: ${formData.nameEn}`,
-      html: `
-        <h1>New Membership Application</h1>
-        <pre><code>${JSON.stringify(formData, null, 2)}</code></pre>
-      `
-    });
-  } catch (error) {
-    console.error('Email sending failed:', error);
-    return { error: 'Failed to send email due to a server error.', success: false };
+  if (resendApiKey && recipient && from) {
+    try {
+      const resend = new Resend(resendApiKey);
+      await resend.emails.send({
+        from,
+        to: recipient,
+        subject: `New Membership Application: ${formData.nameEn}`,
+        html: `
+          <h1>New Membership Application</h1>
+          <pre><code>${JSON.stringify(formData, null, 2)}</code></pre>
+        `,
+      });
+    } catch (error) {
+      console.error('Email sending failed:', error);
+    }
   }
 
   await sleep(1000);
@@ -108,32 +123,47 @@ export async function submitInquiry(values: z.infer<typeof contactSchema>) {
         return { error: 'Invalid fields!', success: false };
     }
 
+
+    // Persist to Firestore (required) so every submission shows up in the admin dashboard.
+    const db = getAdminFirestore();
+    if (!db) {
+      return { error: 'Server is not configured to store submissions yet. Please try again later.', success: false };
+    }
+
+    try {
+      await db.collection('contactInquiries').add({
+        ...validatedFields.data,
+        submittedAt: adminServerTimestamp(),
+        source: 'website',
+      });
+    } catch (error) {
+      console.error('Firestore persistence failed:', error);
+      return { error: 'Failed to save your message. Please try again.', success: false };
+    }
+
+    // Send email notification (best-effort)
     const resendApiKey = process.env.RESEND_API_KEY;
     const recipient = process.env.RESEND_RECIPIENT_EMAIL;
     const from = process.env.RESEND_FROM_EMAIL;
 
-    if (!resendApiKey || !recipient || !from) {
-      console.error("Resend environment variables are not set. Please check RESEND_API_KEY, RESEND_RECIPIENT_EMAIL, and RESEND_FROM_EMAIL.");
-      return { error: 'Server is not configured to send emails.', success: false };
-    }
-    
-    try {
-      const resend = new Resend(resendApiKey);
-      await resend.emails.send({
+    if (resendApiKey && recipient && from) {
+      try {
+        const resend = new Resend(resendApiKey);
+        await resend.emails.send({
           from,
           to: recipient,
           subject: `New Contact Inquiry from ${validatedFields.data.name}`,
           html: `
-          <h1>New Contact Inquiry</h1>
-          <p><strong>Name:</strong> ${validatedFields.data.name}</p>
-          <p><strong>Phone:</strong> ${validatedFields.data.phone}</p>
-          <p><strong>Inquiry:</strong></p>
-          <p>${validatedFields.data.inquiry}</p>
-          `
-      });
-    } catch (error) {
-      console.error('Email sending failed:', error);
-      return { error: 'Failed to send email due to a server error.', success: false };
+            <h1>New Contact Inquiry</h1>
+            <p><strong>Name:</strong> ${validatedFields.data.name}</p>
+            <p><strong>Phone:</strong> ${validatedFields.data.phone}</p>
+            <p><strong>Inquiry:</strong></p>
+            <p>${validatedFields.data.inquiry}</p>
+          `,
+        });
+      } catch (error) {
+        console.error('Email sending failed:', error);
+      }
     }
 
     await sleep(1000);

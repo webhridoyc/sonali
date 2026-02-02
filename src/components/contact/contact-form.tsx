@@ -49,7 +49,7 @@ export function ContactForm() {
       toast({
         variant: 'destructive',
         title: t('memberPortal.submitError'),
-        description: t('memberPortal.submitErrorDesc'),
+        description: result.error || t('memberPortal.submitErrorDesc'),
       });
     }
   }
