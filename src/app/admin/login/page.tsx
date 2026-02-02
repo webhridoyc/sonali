@@ -1,4 +1,4 @@
-import { AdminLoginForm } from './admin-login-form';
+import { AdminLoginForm } from '@/app/admin/login/admin-login-form';
 
 function sanitizeNext(nextValue: unknown): string {
   if (typeof nextValue !== 'string' || !nextValue) return '/admin';
