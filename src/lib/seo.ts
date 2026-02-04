@@ -207,6 +207,7 @@ export const ORGANIZATION_SCHEMA = {
   name: SITE_NAME_EN,
   alternateName: SITE_NAME_BN,
   url: SITE_URL,
+  image: absoluteUrl(LOGO_PATH),
   logo: {
     '@type': 'ImageObject',
     url: absoluteUrl(LOGO_PATH),
@@ -223,6 +224,11 @@ export const ORGANIZATION_SCHEMA = {
     addressRegion: 'Dhaka',
     postalCode: '1344',
     addressCountry: 'BD',
+  },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 23.8987,
+    longitude: 90.2881,
   },
   areaServed: {
     '@type': 'GeoCircle',

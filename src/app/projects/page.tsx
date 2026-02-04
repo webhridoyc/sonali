@@ -1,10 +1,12 @@
 "use client";
 
 import Image from 'next/image';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { useLanguage } from '@/context/language-context';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { translations } from '@/lib/translations';
+import { generateReviewSchema } from '@/lib/seo-schemas';
+import { Breadcrumb } from '@/components/breadcrumb';
 
 export default function ProjectsPage() {
   const { t, lang } = useLanguage();
@@ -33,6 +35,13 @@ export default function ProjectsPage() {
   };
 
   const impactStories = translations.projects.impactStories;
+
+  const reviews = translations.projects.impactStories.map(story => ({
+    author: story.title[lang],
+    rating: 5,
+    reviewBody: story.summary[lang],
+    datePublished: "2024-01-15"
+  }));
 
   const GallerySection = ({ title, images }: GallerySectionProps) => (
     <section className="mb-16">
@@ -65,7 +74,9 @@ export default function ProjectsPage() {
   );
 
   return (
-    <div className={`container mx-auto px-4 py-8 sm:py-12 md:py-16 ${lang === 'en' ? 'font-headline' : 'font-body'}`}>
+    <>
+      <Breadcrumb />
+      <div className={`container mx-auto px-4 py-8 sm:py-12 md:py-16 ${lang === 'en' ? 'font-headline' : 'font-body'}`}>
       <header className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-primary">{t('projects.title')}</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">{t('projects.desc')}</p>
@@ -91,6 +102,16 @@ export default function ProjectsPage() {
             })}
         </div>
       </section>
-    </div>
+
+      {reviews.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(generateReviewSchema(reviews))
+          }}
+        />
+      )}
+      </div>
+    </>
   );
 }

@@ -7,6 +7,7 @@ import { useLanguage } from '@/context/language-context';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { useEffect, useState } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
+import { Breadcrumb } from '@/components/breadcrumb';
 
 export default function GalleryPage() {
   const { t, lang } = useLanguage();
@@ -69,7 +70,9 @@ export default function GalleryPage() {
 
 
   return (
-    <div className={`container mx-auto px-4 py-8 sm:py-12 md:py-16 ${lang === 'en' ? 'font-headline' : 'font-body'}`}>
+    <>
+      <Breadcrumb />
+      <div className={`container mx-auto px-4 py-8 sm:py-12 md:py-16 ${lang === 'en' ? 'font-headline' : 'font-body'}`}>
       <header className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-primary">{t('gallery.title')}</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">{t('gallery.desc')}</p>
@@ -96,6 +99,7 @@ export default function GalleryPage() {
           </div>
         )}
       </section>
-    </div>
+      </div>
+    </>
   );
 }
