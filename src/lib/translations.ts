@@ -1,7 +1,7 @@
 
 export const translations = {
   site: {
-    name: { en: 'Sonali Shokal', bn: 'সোনালী সকাল' }
+    name: { en: 'Sonali Sokal', bn: 'সোনালী সকাল' }
   },
   nav: {
     home: { en: 'Home', bn: 'হোম' },
@@ -14,7 +14,7 @@ export const translations = {
   },
   home: {
     intro: {
-      title: { en: 'Welcome to Sonali Shokal Somobay Somity', bn: 'সোনালী সকাল সমবায় সমিতিতে আপনাকে স্বাগতম' },
+      title: { en: 'Welcome to Sonali Sokal Somobay Somity', bn: 'সোনালী সকাল সমবায় সমিতিতে আপনাকে স্বাগতম' },
       text: { en: 'Founded with the core objective of eradicating rural poverty, we are a government-registered cooperative dedicated to creating a self-reliant community through sustainable livelihood projects in livestock, textiles, handicrafts, and pottery.', bn: 'গ্রামীণ দারিদ্র্য দূরীকরণের মূল উদ্দেশ্য নিয়ে প্রতিষ্ঠিত, আমরা একটি সরকারি নিবন্ধিত সমবায় সমিতি যা গবাদিপশু, বস্ত্র, হস্তশিল্প এবং মৃৎশিল্পে টেকসই জীবিকা প্রকল্পের মাধ্যমে একটি আত্মনির্ভরশীল সমাজ গঠনে নিবেদিত।' }
     },
     impact: {
@@ -53,9 +53,9 @@ export const translations = {
     learnMore: { en: 'Learn About Our Mission', bn: 'আমাদের লক্ষ্য সম্পর্কে জানুন' },
   },
   about: {
-    title: { en: 'About Sonali Shokal Somobay Somity', bn: 'সোনালী সকাল সমবায় সমিতি সম্পর্কে' },
+    title: { en: 'About Sonali Sokal Somobay Somity', bn: 'সোনালী সকাল সমবায় সমিতি সম্পর্কে' },
     missionTitle: { en: 'Our Mission & Vision', bn: 'আমাদের লক্ষ্য ও উদ্দেশ্য' },
-    missionText: { en: 'Sonali Shokal Somobay Somity was founded with the core objective of eradicating rural poverty and creating a self-reliant community in the Ashulia region. Our vision is to empower every member through cooperative efforts, providing sustainable livelihood opportunities and fostering socio-economic development. We believe that by working together, we can achieve collective prosperity and build a brighter future for generations to come.', bn: 'গ্রামীণ দারিদ্র্য দূরীকরণ এবং আশুলিয়া অঞ্চলে একটি আত্মনির্ভরশীল সমিতি তৈরির মূল উদ্দেশ্য নিয়ে সোনালী সকাল সমবায় সমিতি প্রতিষ্ঠিত হয়েছিল। আমাদের লক্ষ্য হলো সমবায় প্রচেষ্টার মাধ্যমে প্রতিটি সদস্যকে ক্ষমতায়ন করা, টেকসই জীবিকার সুযোগ প্রদান এবং আর্থ-সামাজিক উন্নয়নকে উৎসাহিত করা। আমরা বিশ্বাস করি যে একসাথে কাজ করার মাধ্যমে আমরা সম্মিলিত সমৃদ্ধি অর্জন করতে এবং আগামী প্রজন্মের জন্য একটি উজ্জ্বল ভবিষ্যৎ গড়তে পারি।' },
+    missionText: { en: 'Sonali Sokal Somobay Somity was founded with the core objective of eradicating rural poverty and creating a self-reliant community in the Ashulia region. Our vision is to empower every member through cooperative efforts, providing sustainable livelihood opportunities and fostering socio-economic development. We believe that by working together, we can achieve collective prosperity and build a brighter future for generations to come.', bn: 'গ্রামীণ দারিদ্র্য দূরীকরণ এবং আশুলিয়া অঞ্চলে একটি আত্মনির্ভরশীল সমিতি তৈরির মূল উদ্দেশ্য নিয়ে সোনালী সকাল সমবায় সমিতি প্রতিষ্ঠিত হয়েছিল। আমাদের লক্ষ্য হলো সমবায় প্রচেষ্টার মাধ্যমে প্রতিটি সদস্যকে ক্ষমতায়ন করা, টেকসই জীবিকার সুযোগ প্রদান এবং আর্থ-সামাজিক উন্নয়নকে উৎসাহিত করা। আমরা বিশ্বাস করি যে একসাথে কাজ করার মাধ্যমে আমরা সম্মিলিত সমৃদ্ধি অর্জন করতে এবং আগামী প্রজন্মের জন্য একটি উজ্জ্বল ভবিষ্যৎ গড়তে পারি।' },
     structureTitle: { en: 'Executive Committee', bn: 'কার্যনির্বাহী কমিটি' },
     committee: [
       { post: { en: 'President', bn: 'সভাপতি' }, name: { en: 'Md. John Doe', bn: 'মোঃ জন ডো' } },
@@ -65,7 +65,7 @@ export const translations = {
       { post: { en: 'Member', bn: 'সদস্য' }, name: { en: 'Mr. Rakib Hasan', bn: 'জনাব রাকিব হাসান' } },
     ],
     legalTitle: { en: 'Legal & Registration', bn: 'আইনি ও নিবন্ধন' },
-    legalText: { en: 'Sonali Shokal Somobay Somity is a fully recognized and legally compliant entity, registered under the Cooperative Societies Act of Bangladesh. Our commitment to transparency and accountability is paramount.', bn: 'সোনালী সকাল সমবায় সমিতি বাংলাদেশের সমবায় সমিতি আইনের অধীনে নিবন্ধিত একটি সম্পূর্ণ স্বীকৃত এবং আইনগতভাবে অনুবর্তী সত্তা। স্বচ্ছতা এবং জবাবদিহিতার প্রতি আমাদের প্রতিশ্রুতি সর্বাধিক।' },
+    legalText: { en: 'Sonali Sokal Somobay Somity is a fully recognized and legally compliant entity, registered under the Cooperative Societies Act of Bangladesh. Our commitment to transparency and accountability is paramount.', bn: 'সোনালী সকাল সমবায় সমিতি বাংলাদেশের সমবায় সমিতি আইনের অধীনে নিবন্ধিত একটি সম্পূর্ণ স্বীকৃত এবং আইনগতভাবে অনুবর্তী সত্তা। স্বচ্ছতা এবং জবাবদিহিতার প্রতি আমাদের প্রতিশ্রুতি সর্বাধিক।' },
     regNo: { en: 'Government Registration No:', bn: 'সরকারি নিবন্ধন নং:' },
     viewCert: { en: 'View Certificate', bn: 'শংসাপত্র দেখুন' },
   },
@@ -212,7 +212,7 @@ export const translations = {
     terms: { en: 'Terms & Conditions', bn: 'শর্তাবলী' },
     contactInfo: { en: 'Contact Information', bn: 'যোগাযোগের তথ্য' },
     address: { en: 'Baid Gao, Pagla Bazar, Kabirpur, Ashulia, Savar, Dhaka', bn: 'বাইদ গাও, পাগলা বাজার, কবিরপুর, আশুলিয়া, সাভার, ঢাকা' },
-    copyright: { en: 'Sonali Shokal Somobay Somity', bn: 'সোনালী সকাল সমবায় সমিতি' },
+    copyright: { en: 'Sonali Sokal Somobay Somity', bn: 'সোনালী সকাল সমবায় সমিতি' },
   },
   formValidation: {
     required: { en: "This field is required", bn: "এই ঘরটি পূরণ করা আবশ্যক" },
@@ -227,7 +227,7 @@ export const translations = {
     introduction: {
       title: { en: 'Welcome to Our Community', bn: 'আমাদের সমিতিতে স্বাগতম' },
       content: {
-        en: 'Welcome to the official online home of Sonali Shokal Somobay Somity. This space is created for our members, partners, and anyone interested in our mission to build a self-reliant community. By using our website, you become a part of our digital community. We ask that you read and respect these guidelines, which are designed to ensure a positive and productive environment for everyone.',
+        en: 'Welcome to the official online home of Sonali Sokal Somobay Somity. This space is created for our members, partners, and anyone interested in our mission to build a self-reliant community. By using our website, you become a part of our digital community. We ask that you read and respect these guidelines, which are designed to ensure a positive and productive environment for everyone.',
         bn: 'সোনালী সকাল সমবায় সমিতির অফিসিয়াল অনলাইন হোমে আপনাকে স্বাগতম। এই স্থানটি আমাদের সদস্য, অংশীদার এবং আমাদের আত্মনির্ভরশীল সমিতি গঠনের মিশনে আগ্রহী যে কারো জন্য তৈরি করা হয়েছে। আমাদের ওয়েবসাইট ব্যবহার করে, আপনি আমাদের ডিজিটাল সমিতির অংশ হয়ে ওঠেন। আমরা অনুরোধ করছি আপনি এই নির্দেশিকাগুলি পড়ুন এবং সম্মান করুন, যা প্রত্যেকের জন্য একটি ইতিবাচক এবং উৎপাদনশীল পরিবেশ নিশ্চিত করার জন্য ডিজাইন করা হয়েছে।'
       }
     },
@@ -248,14 +248,14 @@ export const translations = {
     intellectualProperty: {
       title: { en: 'Our Stories and Identity', bn: 'আমাদের গল্প ও পরিচয়' },
       content: {
-        en: 'The name Sonali Shokal, our logo, and all the stories, images, and content shared here represent our collective journey and identity. They are protected by copyright. We are proud of our story and encourage you to share it, but please do so respectfully and do not use our materials for commercial purposes without our permission.',
+        en: 'The name Sonali Sokal, our logo, and all the stories, images, and content shared here represent our collective journey and identity. They are protected by copyright. We are proud of our story and encourage you to share it, but please do so respectfully and do not use our materials for commercial purposes without our permission.',
         bn: 'সোনালী সকাল নাম, আমাদের লোগো এবং এখানে শেয়ার করা সমস্ত গল্প, ছবি এবং বিষয়বস্তু আমাদের সম্মিলিত যাত্রা এবং পরিচয়ের প্রতিনিধিত্ব করে। সেগুলি কপিরাইট দ্বারা সুরক্ষিত। আমরা আমাদের গল্প নিয়ে গর্বিত এবং আপনাকে এটি শেয়ার করতে উৎসাহিত করি, তবে অনুগ্রহ করে সম্মানपूर्वक তা করুন এবং আমাদের অনুমতি ছাড়া বাণিজ্যিক উদ্দেশ্যে আমাদের উপকরণ ব্যবহার করবেন না।'
       }
     },
     limitation: {
       title: { en: 'Our Promise and Its Limits', bn: 'আমাদের প্রতিশ্রুতি এবং এর সীমাবদ্ধতা' },
       content: {
-        en: 'We are committed to providing accurate information and running our services with integrity. However, Sonali Shokal Somobay Somity and its leadership cannot be held liable for any indirect damages that may arise from using this website. We operate with transparency and good faith, but your use of this service is at your own discretion.',
+        en: 'We are committed to providing accurate information and running our services with integrity. However, Sonali Sokal Somobay Somity and its leadership cannot be held liable for any indirect damages that may arise from using this website. We operate with transparency and good faith, but your use of this service is at your own discretion.',
         bn: 'আমরা নির্ভুল তথ্য সরবরাহ করতে এবং সততার সাথে আমাদের পরিষেবাগুলি পরিচালনা করতে প্রতিশ্রুতিবদ্ধ। তবে, এই ওয়েবসাইট ব্যবহার থেকে উদ্ভূত হতে পারে এমন কোনো পরোক্ষ ক্ষতির জন্য সোনালী সকাল সমবায় সমিতি এবং এর নেতৃত্বকে দায়ী করা যাবে না। আমরা স্বচ্ছতা এবং সরল বিশ্বাসে কাজ করি, তবে এই পরিষেবার আপনার ব্যবহার আপনার নিজস্ব বিবেচনার উপর নির্ভর করে।'
       }
     },
