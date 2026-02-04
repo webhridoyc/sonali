@@ -15,12 +15,17 @@ import {
 } from "@/components/ui/dialog"
 import { ScrollArea } from '@/components/ui/scroll-area';
 import Link from 'next/link';
+import { generateHowToSchema } from '@/lib/seo-schemas';
+import { membershipHowTo } from '@/lib/howto-data';
+import { Breadcrumb } from '@/components/breadcrumb';
 
 export default function MemberPortalPage() {
   const { t, lang } = useLanguage();
 
   return (
-    <div className={`container mx-auto px-4 py-8 sm:py-12 md:py-16 ${lang === 'en' ? 'font-headline' : 'font-body'}`}>
+    <>
+      <Breadcrumb />
+      <div className={`container mx-auto px-4 py-8 sm:py-12 md:py-16 ${lang === 'en' ? 'font-headline' : 'font-body'}`}>
       <header className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-primary">{t('memberPortal.title')}</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">{t('memberPortal.desc')}</p>
@@ -70,6 +75,18 @@ export default function MemberPortalPage() {
           </Dialog>
         </section>
       </div>
-    </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            generateHowToSchema(
+              lang === 'bn' ? membershipHowTo.bn.steps : membershipHowTo.en.steps
+            )
+          )
+        }}
+      />
+      </div>
+    </>
   );
 }

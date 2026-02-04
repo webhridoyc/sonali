@@ -6,12 +6,51 @@ import { MapPin, Phone, Facebook, Mail } from 'lucide-react';
 import { Map } from '@/components/contact/map';
 import { ContactForm } from '@/components/contact/contact-form';
 import { Button } from '@/components/ui/button';
+import { Breadcrumb } from '@/components/breadcrumb';
 
 export default function ContactPage() {
   const { t, lang } = useLanguage();
 
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "FinancialService",
+    "name": "Sonali Shokal Somobay Somity",
+    "image": "https://sonalisokalsomobaysomity.com/logo.png",
+    "@id": "https://sonalisokalsomobaysomity.com",
+    "url": "https://sonalisokalsomobaysomity.com",
+    "telephone": "+8801883088338",
+    "email": "sonalisokalsomobaysomiti@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Baid Gao, Pagla Bazar, Kabirpur, Ashulia",
+      "addressLocality": "Savar",
+      "addressRegion": "Dhaka",
+      "postalCode": "1344",
+      "addressCountry": "BD"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 23.8987,
+      "longitude": 90.2881
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/sonalisokalss"
+    ],
+    "priceRange": "$$"
+  };
+
   return (
-    <div className={`container mx-auto px-4 py-8 sm:py-12 md:py-16 ${lang === 'en' ? 'font-headline' : 'font-body'}`}>
+    <>
+      <Breadcrumb />
+      <div className={`container mx-auto px-4 py-8 sm:py-12 md:py-16 ${lang === 'en' ? 'font-headline' : 'font-body'}`}>
       <header className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-primary">{t('contact.title')}</h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">{t('contact.desc')}</p>
@@ -70,6 +109,14 @@ export default function ContactPage() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">{t('contact.officeTitle')}</h2>
         <Map />
       </section>
-    </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(localBusinessSchema)
+        }}
+      />
+      </div>
+    </>
   );
 }
