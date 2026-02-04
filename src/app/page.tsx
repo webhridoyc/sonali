@@ -30,6 +30,23 @@ export default function Home() {
       </div>
       <SanchaySection />
       <JoinUsSection />
+      
+      {/* Voice Search Optimization Content */}
+      <div className="sr-only">
+        <h2>Common Questions About Sonali Shokal Somobay Somity</h2>
+        <div>
+          <h3>What is Sonali Shokal?</h3>
+          <p>Sonali Shokal Somobay Somity is a government-registered cooperative society in Ashulia, Savar, Dhaka.</p>
+        </div>
+        <div>
+          <h3>Where are you located?</h3>
+          <p>We are located at Baid Gao, Pagla Bazar, Kabirpur, Ashulia, Savar, Dhaka.</p>
+        </div>
+        <div>
+          <h3>How to become a member?</h3>
+          <p>Apply online through our member portal or download the application form.</p>
+        </div>
+      </div>
     </div>
   );
 }

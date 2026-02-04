@@ -260,46 +260,105 @@ export const FINANCIAL_SERVICE_SCHEMA = {
   '@type': 'FinancialService',
   '@id': `${SITE_URL}/#financialservice`,
   name: SITE_NAME_EN,
-  description: 'Cooperative society providing savings schemes, loans, and financial services to rural communities',
+  alternateName: SITE_NAME_BN,
   url: SITE_URL,
-  provider: {
-    '@id': `${SITE_URL}/#organization`,
+  description: 'Cooperative society providing savings schemes, loans, and financial services to rural communities.',
+  image: `${SITE_URL}/logo.png`,
+  logo: {
+    '@type': 'ImageObject',
+    url: `${SITE_URL}/logo.png`,
+    width: 512,
+    height: 512,
   },
-  areaServed: {
-    '@type': 'Place',
-    name: 'Ashulia, Savar, Dhaka, Bangladesh',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: 'Baid Gao, Pagla Bazar, Kabirpur, Ashulia',
+    addressLocality: 'Savar',
+    addressRegion: 'Dhaka',
+    postalCode: '1344',
+    addressCountry: 'BD',
   },
-  serviceType: [
-    'Savings Account',
-    'Monthly DPS (Deposit Pension Scheme)',
-    'FDR (Fixed Deposit Receipt)',
-    'Daily Savings Account',
-    'Personal Loan',
-    'Business Loan',
-    'Micro Credit',
-  ],
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 23.8987,
+    longitude: 90.2881,
+  },
+  telephone: '+8801883088338',
+  email: 'sonalisokalsomobaysomiti@gmail.com',
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
-    name: 'Financial Products',
+    name: 'Financial Services',
     itemListElement: [
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Savings Schemes',
-          description: 'High-profit savings accounts with flexible options',
+          name: 'Savings Account',
+          description: 'High-return savings schemes with competitive interest rates for members',
         },
       },
       {
         '@type': 'Offer',
         itemOffered: {
           '@type': 'Service',
-          name: 'Easy Loan Services',
-          description: 'Low-interest loans for personal and business needs',
+          name: 'Monthly DPS',
+          description: 'Monthly Deposit Pension Scheme with guaranteed returns and flexible terms',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'FDR',
+          description: 'Fixed Deposit Return schemes with attractive interest rates and secure returns',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Daily Savings',
+          description: 'Convenient daily savings program for regular small contributions',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Personal Loan',
+          description: 'Easy personal loans with low interest rates and quick approval process',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Business Loan',
+          description: 'Small business loans to support local entrepreneurs and community development',
+        },
+      },
+      {
+        '@type': 'Offer',
+        itemOffered: {
+          '@type': 'Service',
+          name: 'Micro Credit',
+          description: 'Micro-financing solutions for community projects and small ventures',
         },
       },
     ],
   },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'],
+      opens: '09:00',
+      closes: '17:00'
+    }
+  ],
+  sameAs: [
+    'https://www.facebook.com/sonalisokalss'
+  ],
+  priceRange: '$$'
 };
 
 // Breadcrumb helper function
