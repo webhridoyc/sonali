@@ -32,7 +32,7 @@ export default function Home() {
       <JoinUsSection />
       
       {/* Voice Search Optimization Content */}
-      <div className="sr-only" aria-hidden="true">
+      <div className="sr-only">
         <h2>Common Questions About Sonali Shokal Somobay Somity</h2>
         <div>
           <h3>What is Sonali Shokal?</h3>
