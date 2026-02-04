@@ -84,7 +84,7 @@ export const translations = {
       },
       {
         imageId: "impact-water-pump",
-        title: { en: "Pagla Bazar's Progress", bn: "পাগলা বাজারের অগ্রগতি" },
+        title: { en: "Pagla Bazar's Progress", bn: "গ্রাম উন্নয়নে অগ্রগতি" },
         story: { en: 'The village of Pagla Bazar faced water scarcity issues affecting their livestock. Our cooperative funded the installation of a new tube well, ensuring a consistent water supply for the animals and improving the overall health and productivity of the local farms.', bn: 'পাগলা বাজার গ্রামটি পানির ঘাটতিতে ভুগছিল যা তাদের গবাদিপশুর উপর প্রভাব ফেলছিল। আমাদের সমবায় একটি নতুন টিউবওয়েল স্থাপনের জন্য অর্থায়ন করেছে, যা পশুদের জন্য একটি ধারাবাহিক পানি সরবরাহ নিশ্চিত করেছে এবং স্থানীয় খামারগুলির সামগ্রিক স্বাস্থ্য ও উৎপাদনশীলতা উন্নত করেছে।' },
         summary: { en: 'Our cooperative funded a new tube well, resolving water scarcity issues and improving the health of livestock for local farms.', bn: 'আমাদের সমবায় একটি নতুন টিউবওয়েল অর্থায়ন করেছে, যা পানির ঘাটতি সমস্যার সমাধান করেছে এবং স্থানীয় খামারগুলির গবাদিপশুর স্বাস্থ্য উন্নত করেছে।' }
       },
