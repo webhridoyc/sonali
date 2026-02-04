@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { useEffect, useState } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
+import { Breadcrumb } from '@/components/breadcrumb';
 
 export default function TermsPage() {
   const { t, lang } = useLanguage();
@@ -25,7 +26,10 @@ export default function TermsPage() {
   ];
 
   return (
-    <div className={`container mx-auto px-4 py-8 sm:py-12 md:py-16 ${isClient ? (lang === 'en' ? 'font-headline' : 'font-body') : ''}`}>
+    <>
+      <Breadcrumb />
+      
+      <div className={`container mx-auto px-4 py-8 sm:py-12 md:py-16 ${isClient ? (lang === 'en' ? 'font-headline' : 'font-body') : ''}`}>
       <header className="text-center mb-12">
         {isClient ? (
           <h1 className="text-4xl md:text-5xl font-bold text-primary">{t('terms.title')}</h1>
@@ -63,5 +67,6 @@ export default function TermsPage() {
         </CardContent>
       </Card>
     </div>
+    </>
   );
 }

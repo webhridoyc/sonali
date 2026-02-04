@@ -7,13 +7,19 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
 import { Download } from 'lucide-react';
 import { translations } from '@/lib/translations';
+import { generateFAQSchema } from '@/lib/seo-schemas';
+import { faqData } from '@/lib/faq-data';
+import { Breadcrumb } from '@/components/breadcrumb';
 
 export default function AboutPage() {
   const { t, lang } = useLanguage();
   const registrationCert = PlaceHolderImages.find((img) => img.id === 'registration-cert');
 
   return (
-    <div className={`container mx-auto px-4 py-8 sm:py-12 md:py-16 ${lang === 'en' ? 'font-headline' : 'font-body'}`}>
+    <>
+      <Breadcrumb />
+      
+      <div className={`container mx-auto px-4 py-8 sm:py-12 md:py-16 ${lang === 'en' ? 'font-headline' : 'font-body'}`}>
       <header className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-primary">{t('about.title')}</h1>
       </header>
@@ -84,6 +90,18 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            generateFAQSchema(
+              lang === 'bn' ? faqData.bn.slice(0, 4) : faqData.en.slice(0, 4)
+            )
+          )
+        }}
+      />
     </div>
+    </>
   );
 }
