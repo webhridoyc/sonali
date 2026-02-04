@@ -33,10 +33,10 @@ export default function Home() {
       
       {/* Voice Search Optimization Content */}
       <div className="sr-only">
-        <h2>Common Questions About Sonali Shokal Somobay Somity</h2>
+        <h2>Common Questions About Sonali Sokal Somobay Somity</h2>
         <div>
-          <h3>What is Sonali Shokal?</h3>
-          <p>Sonali Shokal Somobay Somity is a government-registered cooperative society in Ashulia, Savar, Dhaka.</p>
+          <h3>What is Sonali Sokal?</h3>
+          <p>Sonali Sokal Somobay Somity is a government-registered cooperative society in Ashulia, Savar, Dhaka.</p>
         </div>
         <div>
           <h3>Where are you located?</h3>

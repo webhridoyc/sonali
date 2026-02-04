@@ -1,8 +1,8 @@
 export const faqData = {
   en: [
     {
-      question: 'What is Sonali Shokal Somobay Somity?',
-      answer: 'Sonali Shokal Somobay Somity is a government-registered cooperative society (Registration No. 00034) based in Ashulia, Savar, Dhaka. We focus on eliminating rural poverty through community development, offering savings schemes, easy loans, and financial services to our members.',
+      question: 'What is Sonali Sokal Somobay Somity?',
+      answer: 'Sonali Sokal Somobay Somity is a government-registered cooperative society (Registration No. 00034) based in Ashulia, Savar, Dhaka. We focus on eliminating rural poverty through community development, offering savings schemes, easy loans, and financial services to our members.',
     },
     {
       question: 'How can I become a member?',
