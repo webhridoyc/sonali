@@ -11,14 +11,14 @@ import {
   APPLE_ICON_PATH,
   DEFAULT_OG_IMAGE_PATH,
   ICON_PATH,
-  LOGO_PATH,
   SITE_DESCRIPTION_EN,
   SITE_KEYWORDS,
   SITE_NAME_EN,
-  SITE_NAME_BN,
   SITE_URL,
   absoluteUrl,
   withAssetVersion,
+  ORGANIZATION_SCHEMA,
+  FINANCIAL_SERVICE_SCHEMA,
 } from '@/lib/seo';
 
 const poppins = Poppins({
@@ -94,25 +94,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const organizationJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: SITE_NAME_EN,
-    alternateName: SITE_NAME_BN,
-    url: SITE_URL,
-    logo: absoluteUrl(LOGO_PATH),
-    email: 'sonalisokalsomobaysomiti@gmail.com',
-    telephone: '+8801883088338',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'Baid Gao, Pagla Bazar, Kabirpur, Ashulia',
-      addressLocality: 'Savar',
-      addressRegion: 'Dhaka',
-      addressCountry: 'BD',
-    },
-    sameAs: ['https://www.facebook.com/sonalisokalss'],
-  };
-
   const websiteJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
@@ -133,7 +114,12 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(ORGANIZATION_SCHEMA) }}
+        />
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(FINANCIAL_SERVICE_SCHEMA) }}
         />
         <script
           type="application/ld+json"
