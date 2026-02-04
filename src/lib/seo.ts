@@ -94,5 +94,5 @@ export function absoluteUrl(pathname: string): string {
   return `${SITE_URL}${path}`;
 }
 
-// Re-export BREADCRUMB_SCHEMA for convenience
-export { BREADCRUMB_SCHEMA } from './seo-schemas';
+// Re-export breadcrumb schema generator for convenience
+export { generateBreadcrumbSchema } from './seo-schemas';

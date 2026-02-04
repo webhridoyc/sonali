@@ -111,7 +111,7 @@ export function generateEventSchema(event: {
 }
 
 // Breadcrumb Schema
-export function BREADCRUMB_SCHEMA(items: Array<{name: string, url: string}>) {
+export function generateBreadcrumbSchema(items: Array<{name: string, url: string}>) {
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",

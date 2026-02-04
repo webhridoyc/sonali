@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import { usePathname } from 'next/navigation';
-import { BREADCRUMB_SCHEMA } from '@/lib/seo';
+import { generateBreadcrumbSchema } from '@/lib/seo';
 import { useLanguage } from '@/context/language-context';
 
 export function Breadcrumb() {
@@ -29,7 +29,7 @@ export function Breadcrumb() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(BREADCRUMB_SCHEMA(breadcrumbItems))
+          __html: JSON.stringify(generateBreadcrumbSchema(breadcrumbItems))
         }}
       />
       <nav aria-label="Breadcrumb" className="container mx-auto px-4 py-4">
