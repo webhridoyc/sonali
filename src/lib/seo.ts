@@ -225,11 +225,6 @@ export const ORGANIZATION_SCHEMA = {
     postalCode: '1344',
     addressCountry: 'BD',
   },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: 23.8987,
-    longitude: 90.2881,
-  },
   areaServed: {
     '@type': 'GeoCircle',
     geoMidpoint: {
@@ -267,8 +262,8 @@ export const FINANCIAL_SERVICE_SCHEMA = {
   logo: {
     '@type': 'ImageObject',
     url: `${SITE_URL}/logo.png`,
-    width: 512,
-    height: 512,
+    width: '512',
+    height: '512',
   },
   address: {
     '@type': 'PostalAddress',
@@ -294,7 +289,7 @@ export const FINANCIAL_SERVICE_SCHEMA = {
         itemOffered: {
           '@type': 'Service',
           name: 'Savings Account',
-          description: 'High-return savings schemes with competitive interest rates for members',
+          description: 'High-return savings schemes with competitive interest rates',
         },
       },
       {
@@ -302,7 +297,7 @@ export const FINANCIAL_SERVICE_SCHEMA = {
         itemOffered: {
           '@type': 'Service',
           name: 'Monthly DPS',
-          description: 'Monthly Deposit Pension Scheme with guaranteed returns and flexible terms',
+          description: 'Monthly Deposit Pension Scheme with guaranteed returns',
         },
       },
       {
@@ -310,7 +305,7 @@ export const FINANCIAL_SERVICE_SCHEMA = {
         itemOffered: {
           '@type': 'Service',
           name: 'FDR',
-          description: 'Fixed Deposit Return schemes with attractive interest rates and secure returns',
+          description: 'Fixed Deposit Return with attractive interest rates',
         },
       },
       {
@@ -318,7 +313,7 @@ export const FINANCIAL_SERVICE_SCHEMA = {
         itemOffered: {
           '@type': 'Service',
           name: 'Daily Savings',
-          description: 'Convenient daily savings program for regular small contributions',
+          description: 'Convenient daily savings program',
         },
       },
       {
@@ -326,7 +321,7 @@ export const FINANCIAL_SERVICE_SCHEMA = {
         itemOffered: {
           '@type': 'Service',
           name: 'Personal Loan',
-          description: 'Easy personal loans with low interest rates and quick approval process',
+          description: 'Easy personal loans with low interest rates',
         },
       },
       {
@@ -334,7 +329,7 @@ export const FINANCIAL_SERVICE_SCHEMA = {
         itemOffered: {
           '@type': 'Service',
           name: 'Business Loan',
-          description: 'Small business loans to support local entrepreneurs and community development',
+          description: 'Small business loans for entrepreneurs',
         },
       },
       {
@@ -342,7 +337,7 @@ export const FINANCIAL_SERVICE_SCHEMA = {
         itemOffered: {
           '@type': 'Service',
           name: 'Micro Credit',
-          description: 'Micro-financing solutions for community projects and small ventures',
+          description: 'Micro-financing for community projects',
         },
       },
     ],
