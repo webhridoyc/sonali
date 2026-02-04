@@ -1,19 +1,19 @@
 export const SITE_URL = 'https://sonalisokalsomobaysomity.com';
 
-export const SITE_NAME_EN = 'Sonali Shokal Somobay Somity';
+export const SITE_NAME_EN = 'Sonali Sokal Somobay Somity';
 export const SITE_NAME_BN = 'সোনালী সকাল সমবায় সমিতি';
 
 export const SITE_DESCRIPTION_EN =
-  'Official portal for Sonali Shokal Somobay Somity (সোনালী সকাল সমবায় সমিতি), a Government-registered cooperative society in Ashulia (Savar), Dhaka, focused on eliminating rural poverty through community development projects.';
+  'Official portal for Sonali Sokal Somobay Somity (সোনালী সকাল সমবায় সমিতি), a Government-registered cooperative society in Ashulia (Savar), Dhaka, focused on eliminating rural poverty through community development projects.';
 
 export const SITE_DESCRIPTION_BN =
-  'সোনালী সকাল সমবায় সমিতি (Sonali Shokal Somobay Somity) এর অফিসিয়াল পোর্টাল, আশুলিয়া (সাভার), ঢাকায় অবস্থিত একটি সরকার-নিবন্ধিত সমবায় সমিতি যা গ্রামীণ দারিদ্র্য দূরীকরণে সম্প্রদায় উন্নয়ন প্রকল্পের মাধ্যমে কাজ করে।';
+  'সোনালী সকাল সমবায় সমিতি (Sonali Sokal Somobay Somity) এর অফিসিয়াল পোর্টাল, আশুলিয়া (সাভার), ঢাকায় অবস্থিত একটি সরকার-নিবন্ধিত সমবায় সমিতি যা গ্রামীণ দারিদ্র্য দূরীকরণে সম্প্রদায় উন্নয়ন প্রকল্পের মাধ্যমে কাজ করে।';
 
 const BRAND_KEYWORDS = [
   'সোনালী সকাল সমবায় সমিতি',
   'সোনালী সকাল সমবায় সমিতি লিমিটেড',
   'Sonali Sokal Cooperative Society',
-  'Sonali Shokal Somobay Somity',
+  'Sonali Sokal Somobay Somity',
   'Sonali Sokal Somobay Somiti',
   'Sonali Sokal Somobay Somity',
   'sonaly sokal somobay somity',
@@ -101,8 +101,8 @@ export function absoluteUrl(pathname: string): string {
 export const PAGE_METADATA = {
   home: {
     en: {
-      title: 'Home | Sonali Shokal Somobay Somity',
-      description: 'Join Sonali Shokal Somobay Somity - a trusted cooperative society in Ashulia, Savar offering best savings schemes, easy loans, and community development. Government-registered since 2022.',
+      title: 'Home | Sonali Sokal Somobay Somity',
+      description: 'Join Sonali Sokal Somobay Somity - a trusted cooperative society in Ashulia, Savar offering best savings schemes, easy loans, and community development. Government-registered since 2022.',
       keywords: ['cooperative society Bangladesh', 'savings scheme Dhaka', 'easy loan Ashulia', 'Savar cooperative', 'community development'],
       ogImage: '/images/hero-dairy.png',
     },
@@ -115,8 +115,8 @@ export const PAGE_METADATA = {
   },
   about: {
     en: {
-      title: 'About Us | Sonali Shokal Somobay Somity',
-      description: 'Learn about Sonali Shokal Somobay Somity - our mission to eliminate rural poverty, organizational structure, and Government registration #00034. Serving Ashulia community since 2022.',
+      title: 'About Us | Sonali Sokal Somobay Somity',
+      description: 'Learn about Sonali Sokal Somobay Somity - our mission to eliminate rural poverty, organizational structure, and Government registration #00034. Serving Ashulia community since 2022.',
       keywords: ['about cooperative society', 'registered cooperative', 'poverty alleviation', 'community organization', 'Ashulia cooperative'],
       ogImage: '/images/about-og.png',
     },
@@ -129,8 +129,8 @@ export const PAGE_METADATA = {
   },
   contact: {
     en: {
-      title: 'Contact Us | Sonali Shokal Somobay Somity',
-      description: 'Get in touch with Sonali Shokal Somobay Somity. Visit our office in Ashulia, Savar or call +880 1883-088338. Email: sonalisokalsomobaysomiti@gmail.com',
+      title: 'Contact Us | Sonali Sokal Somobay Somity',
+      description: 'Get in touch with Sonali Sokal Somobay Somity. Visit our office in Ashulia, Savar or call +880 1883-088338. Email: sonalisokalsomobaysomiti@gmail.com',
       keywords: ['contact cooperative society', 'Ashulia office', 'Savar address', 'cooperative phone number', 'reach us'],
       ogImage: '/images/contact-og.png',
     },
@@ -143,7 +143,7 @@ export const PAGE_METADATA = {
   },
   projects: {
     en: {
-      title: 'Community Projects | Sonali Shokal Somobay Somity',
+      title: 'Community Projects | Sonali Sokal Somobay Somity',
       description: 'Explore our community development projects: livestock farming, artisan support, and poverty alleviation initiatives. Real impact stories from Ashulia, Savar.',
       keywords: ['community projects', 'livestock farming', 'artisan support', 'poverty alleviation', 'rural development'],
       ogImage: '/images/projects-og.png',
@@ -157,8 +157,8 @@ export const PAGE_METADATA = {
   },
   gallery: {
     en: {
-      title: 'Photo Gallery | Sonali Shokal Somobay Somity',
-      description: 'View our photo gallery showcasing community activities, development projects, and success stories from Sonali Shokal Somobay Somity in Ashulia, Savar.',
+      title: 'Photo Gallery | Sonali Sokal Somobay Somity',
+      description: 'View our photo gallery showcasing community activities, development projects, and success stories from Sonali Sokal Somobay Somity in Ashulia, Savar.',
       keywords: ['photo gallery', 'community photos', 'project images', 'cooperative activities', 'success stories'],
       ogImage: '/images/gallery-og.png',
     },
@@ -171,8 +171,8 @@ export const PAGE_METADATA = {
   },
   'member-portal': {
     en: {
-      title: 'Member Portal | Sonali Shokal Somobay Somity',
-      description: 'Join Sonali Shokal Somobay Somity as a member. Apply online or download the application form. Start your journey to financial empowerment today.',
+      title: 'Member Portal | Sonali Sokal Somobay Somity',
+      description: 'Join Sonali Sokal Somobay Somity as a member. Apply online or download the application form. Start your journey to financial empowerment today.',
       keywords: ['member application', 'join cooperative', 'membership form', 'become member', 'cooperative registration'],
       ogImage: '/images/member-portal-og.png',
     },
@@ -185,8 +185,8 @@ export const PAGE_METADATA = {
   },
   terms: {
     en: {
-      title: 'Terms & Conditions | Sonali Shokal Somobay Somity',
-      description: 'Read the terms and conditions for using Sonali Shokal Somobay Somity website and services. Understand membership rules, website usage, and governing policies.',
+      title: 'Terms & Conditions | Sonali Sokal Somobay Somity',
+      description: 'Read the terms and conditions for using Sonali Sokal Somobay Somity website and services. Understand membership rules, website usage, and governing policies.',
       keywords: ['terms and conditions', 'membership rules', 'website policy', 'cooperative terms', 'usage guidelines'],
       ogImage: '/images/terms-og.png',
     },
@@ -235,7 +235,7 @@ export const ORGANIZATION_SCHEMA = {
     geoRadius: '50000',
   },
   foundingDate: '2022',
-  legalName: 'Sonali Shokal Somobay Somity Limited',
+  legalName: 'Sonali Sokal Somobay Somity Limited',
   taxID: '00034',
   sameAs: [
     'https://www.facebook.com/sonalisokalss',

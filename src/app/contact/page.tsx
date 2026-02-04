@@ -15,7 +15,7 @@ export default function ContactPage() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "FinancialService",
-    "name": "Sonali Shokal Somobay Somity",
+    "name": "Sonali Sokal Somobay Somity",
     "image": absoluteUrl(LOGO_PATH),
     "@id": SITE_URL,
     "url": SITE_URL,
