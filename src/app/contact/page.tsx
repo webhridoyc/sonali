@@ -1,7 +1,7 @@
 "use client";
 
 import { useLanguage } from '@/context/language-context';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { MapPin, Phone, Facebook, Mail } from 'lucide-react';
 import { Map } from '@/components/contact/map';
 import { ContactForm } from '@/components/contact/contact-form';
