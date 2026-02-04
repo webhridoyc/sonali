@@ -10,6 +10,9 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   images: {
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
+    minimumCacheTTL: 60,
     remotePatterns: [
       {
         protocol: 'https',
@@ -37,6 +40,11 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  compress: true,
+  poweredByHeader: false,
+  generateEtags: true,
+  // Enable static optimization
+  reactStrictMode: true,
 };
 
 export default nextConfig;

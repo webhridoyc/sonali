@@ -30,6 +30,27 @@ export default function Home() {
       </div>
       <SanchaySection />
       <JoinUsSection />
+      
+      {/* Voice Search Optimization - Hidden Q&A content for crawlers */}
+      <div className="sr-only">
+        <h2>Common Questions About Sonali Shokal Somobay Somity</h2>
+        <div>
+          <h3>What is Sonali Shokal?</h3>
+          <p>Sonali Shokal Somobay Somity is a government-registered cooperative society in Ashulia, Savar, Dhaka. We focus on poverty eradication through sustainable livelihood projects.</p>
+        </div>
+        <div>
+          <h3>Where are you located?</h3>
+          <p>We are located in Ashulia, Savar, Dhaka, Bangladesh. Our office is at Baid Gao, Pagla Bazar, Kabirpur, Ashulia.</p>
+        </div>
+        <div>
+          <h3>How can I join?</h3>
+          <p>You can join by applying online through our member portal or downloading the application form from our website.</p>
+        </div>
+        <div>
+          <h3>What services do you offer?</h3>
+          <p>We offer savings schemes, loan facilities, skill development training, and participation in cooperative projects.</p>
+        </div>
+      </div>
     </div>
   );
 }

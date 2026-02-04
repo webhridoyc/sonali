@@ -93,3 +93,6 @@ export function absoluteUrl(pathname: string): string {
   const path = pathname.startsWith('/') ? pathname : `/${pathname}`;
   return `${SITE_URL}${path}`;
 }
+
+// Re-export BREADCRUMB_SCHEMA for convenience
+export { BREADCRUMB_SCHEMA } from './seo-schemas';

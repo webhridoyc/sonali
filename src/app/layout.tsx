@@ -130,6 +130,9 @@ export default function RootLayout({
     >
       <head>
         <link rel="canonical" href={absoluteUrl('/')} />
+        <link rel="alternate" hrefLang="en" href={absoluteUrl('/en')} />
+        <link rel="alternate" hrefLang="bn" href={absoluteUrl('/bn')} />
+        <link rel="alternate" hrefLang="x-default" href={absoluteUrl('/')} />
         <script
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger

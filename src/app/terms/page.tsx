@@ -5,6 +5,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { useEffect, useState } from 'react';
 import { Skeleton } from '@/components/ui/skeleton';
+import { Breadcrumb } from '@/components/breadcrumb';
 
 export default function TermsPage() {
   const { t, lang } = useLanguage();
@@ -25,19 +26,21 @@ export default function TermsPage() {
   ];
 
   return (
-    <div className={`container mx-auto px-4 py-8 sm:py-12 md:py-16 ${isClient ? (lang === 'en' ? 'font-headline' : 'font-body') : ''}`}>
-      <header className="text-center mb-12">
-        {isClient ? (
-          <h1 className="text-4xl md:text-5xl font-bold text-primary">{t('terms.title')}</h1>
-        ) : (
-          <Skeleton className="h-12 w-3/4 mx-auto" />
-        )}
-        {isClient ? (
-          <p className="mt-4 text-sm text-muted-foreground">{t('terms.lastUpdated')}</p>
-        ) : (
-          <Skeleton className="h-4 w-1/4 mx-auto mt-4" />
-        )}
-      </header>
+    <>
+      <Breadcrumb />
+      <div className={`container mx-auto px-4 py-8 sm:py-12 md:py-16 ${isClient ? (lang === 'en' ? 'font-headline' : 'font-body') : ''}`}>
+        <header className="text-center mb-12">
+          {isClient ? (
+            <h1 className="text-4xl md:text-5xl font-bold text-primary">{t('terms.title')}</h1>
+          ) : (
+            <Skeleton className="h-12 w-3/4 mx-auto" />
+          )}
+          {isClient ? (
+            <p className="mt-4 text-sm text-muted-foreground">{t('terms.lastUpdated')}</p>
+          ) : (
+            <Skeleton className="h-4 w-1/4 mx-auto mt-4" />
+          )}
+        </header>
 
       <Card className="max-w-4xl mx-auto">
         <CardContent className="p-8 md:p-10 space-y-8">
@@ -63,5 +66,6 @@ export default function TermsPage() {
         </CardContent>
       </Card>
     </div>
+    </>
   );
 }
