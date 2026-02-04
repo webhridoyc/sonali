@@ -103,12 +103,14 @@ export default function ProjectsPage() {
         </div>
       </section>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(generateReviewSchema(reviews))
-        }}
-      />
+      {reviews.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(generateReviewSchema(reviews))
+          }}
+        />
+      )}
       </div>
     </>
   );

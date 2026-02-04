@@ -39,6 +39,11 @@ export function generateReviewSchema(reviews: Array<{
   reviewBody: string;
   datePublished: string;
 }>) {
+  // Handle empty reviews array
+  if (reviews.length === 0) {
+    return null;
+  }
+  
   const averageRating = reviews.reduce((sum, r) => sum + r.rating, 0) / reviews.length;
   
   return {

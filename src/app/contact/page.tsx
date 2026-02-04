@@ -7,6 +7,7 @@ import { Map } from '@/components/contact/map';
 import { ContactForm } from '@/components/contact/contact-form';
 import { Button } from '@/components/ui/button';
 import { Breadcrumb } from '@/components/breadcrumb';
+import { SITE_URL, absoluteUrl, LOGO_PATH } from '@/lib/seo';
 
 export default function ContactPage() {
   const { t, lang } = useLanguage();
@@ -15,9 +16,9 @@ export default function ContactPage() {
     "@context": "https://schema.org",
     "@type": "FinancialService",
     "name": "Sonali Shokal Somobay Somity",
-    "image": "https://sonalisokalsomobaysomity.com/logo.png",
-    "@id": "https://sonalisokalsomobaysomity.com",
-    "url": "https://sonalisokalsomobaysomity.com",
+    "image": absoluteUrl(LOGO_PATH),
+    "@id": SITE_URL,
+    "url": SITE_URL,
     "telephone": "+8801883088338",
     "email": "sonalisokalsomobaysomiti@gmail.com",
     "address": {
