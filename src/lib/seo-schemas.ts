@@ -22,7 +22,7 @@ export function generateHowToSchema(steps: Array<{ name: string; text: string }>
     '@context': 'https://schema.org',
     '@type': 'HowTo',
     name: 'How to Become a Member',
-    description: 'Step-by-step guide to joining Sonali Shokal Somobay Somity',
+    description: 'Step-by-step guide to joining Sonali Sokal Somobay Somity',
     step: steps.map((step, index) => ({
       '@type': 'HowToStep',
       position: index + 1,
