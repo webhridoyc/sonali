@@ -5,15 +5,28 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useLanguage } from '@/context/language-context';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Button } from '@/components/ui/button';
-import { Download } from 'lucide-react';
+import { Download, Quote, ShieldCheck, Users, TrendingUp, Lock } from 'lucide-react';
 import { translations } from '@/lib/translations';
-import { generateFAQSchema } from '@/lib/seo-schemas';
+import { generateFAQSchema, generateOrganizationReviewSchema } from '@/lib/seo-schemas';
 import { faqData } from '@/lib/faq-data';
 import { Breadcrumb } from '@/components/breadcrumb';
+
+const ICON_MAP: Record<string, React.ElementType> = {
+  shield: ShieldCheck,
+  users: Users,
+  'trending-up': TrendingUp,
+  lock: Lock,
+};
 
 export default function AboutPage() {
   const { t, lang } = useLanguage();
   const registrationCert = PlaceHolderImages.find((img) => img.id === 'registration-cert');
+  const aboutReviews = translations.about.reviews.map((r) => ({
+    author: r.author[lang],
+    reviewBody: r.body[lang],
+    datePublished: r.datePublished,
+  }));
+  const reviewSchema = generateOrganizationReviewSchema(aboutReviews);
 
   return (
     <>
@@ -50,6 +63,52 @@ export default function AboutPage() {
               </ul>
             </CardContent>
           </Card>
+        </div>
+      </section>
+
+      <section id="why-choose" className="mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">{t('about.whyChooseTitle')}</h2>
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {translations.about.whyChooseItems.map((item, index) => {
+            const IconComp = ICON_MAP[item.icon] ?? ShieldCheck;
+            return (
+              <Card key={index} className="text-center shadow-sm hover:shadow-md transition-shadow">
+                <CardContent className="pt-6 pb-4 flex flex-col items-center gap-3">
+                  <div className="rounded-full bg-primary/10 p-3">
+                    <IconComp className="h-6 w-6 text-primary" />
+                  </div>
+                  <h3 className="font-semibold text-lg">{item.title[lang]}</h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{item.text[lang]}</p>
+                </CardContent>
+              </Card>
+            );
+          })}
+        </div>
+      </section>
+
+      <section id="reviews" className="mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">{t('about.reviewsTitle')}</h2>
+        <p className="text-center text-muted-foreground max-w-3xl mx-auto mb-10">{t('about.reviewsIntro')}</p>
+
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {translations.about.reviews.map((review, index) => (
+            <Card key={index} className="shadow-sm hover:shadow-md transition-shadow">
+              <CardHeader className="pb-3">
+                <div className="flex items-start gap-3">
+                  <div className="rounded-full bg-primary/10 p-2 mt-0.5">
+                    <Quote className="h-4 w-4 text-primary" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-lg">{review.author[lang]}</CardTitle>
+                    <p className="text-sm text-muted-foreground">{review.role[lang]}</p>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground leading-relaxed italic">&ldquo;{review.body[lang]}&rdquo;</p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </section>
 
@@ -102,6 +161,15 @@ export default function AboutPage() {
           )
         }}
       />
+
+      {reviewSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(reviewSchema),
+          }}
+        />
+      )}
       </div>
     </>
   );

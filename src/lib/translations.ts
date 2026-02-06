@@ -1,4 +1,4 @@
-
+﻿
 export const translations = {
   site: {
     name: { en: 'Sonali Shokal', bn: 'সোনালী সকাল' }
@@ -56,6 +56,90 @@ export const translations = {
     title: { en: 'About Sonali Shokal Somobay Somity', bn: 'সোনালী সকাল সমবায় সমিতি সম্পর্কে' },
     missionTitle: { en: 'Our Mission & Vision', bn: 'আমাদের লক্ষ্য ও উদ্দেশ্য' },
     missionText: { en: 'Sonali Shokal Somobay Somity was founded with the core objective of eradicating rural poverty and creating a self-reliant community in the Ashulia region. Our vision is to empower every member through cooperative efforts, providing sustainable livelihood opportunities and fostering socio-economic development. We believe that by working together, we can achieve collective prosperity and build a brighter future for generations to come.', bn: 'গ্রামীণ দারিদ্র্য দূরীকরণ এবং আশুলিয়া অঞ্চলে একটি আত্মনির্ভরশীল সমিতি তৈরির মূল উদ্দেশ্য নিয়ে সোনালী সকাল সমবায় সমিতি প্রতিষ্ঠিত হয়েছিল। আমাদের লক্ষ্য হলো সমবায় প্রচেষ্টার মাধ্যমে প্রতিটি সদস্যকে ক্ষমতায়ন করা, টেকসই জীবিকার সুযোগ প্রদান এবং আর্থ-সামাজিক উন্নয়নকে উৎসাহিত করা। আমরা বিশ্বাস করি যে একসাথে কাজ করার মাধ্যমে আমরা সম্মিলিত সমৃদ্ধি অর্জন করতে এবং আগামী প্রজন্মের জন্য একটি উজ্জ্বল ভবিষ্যৎ গড়তে পারি।' },
+    reviewsTitle: { en: 'Member Reviews & Testimonials', bn: 'সদস্যদের মতামত' },
+    reviewsIntro: {
+      en: 'A few words shared by members and local community participants about our cooperative work and services.',
+      bn: 'সমিতির কার্যক্রম ও সেবা সম্পর্কে সদস্য ও স্থানীয় অংশগ্রহণকারীদের কিছু মতামত।'
+    },
+    reviews: [
+      {
+        author: { en: 'Md. Rahim Uddin', bn: 'মোঃ রহিম উদ্দিন' },
+        role: { en: 'Savings Program Member', bn: 'সঞ্চয় কার্যক্রমের সদস্য' },
+        datePublished: '2025-12-15',
+        body: {
+          en: 'Before joining, I had no savings discipline. The monthly DPS scheme taught me to set aside even small amounts regularly. Within two years my family built a real safety net — something I never imagined possible.',
+          bn: 'যোগদানের আগে আমার সঞ্চয়ের কোনো অভ্যাস ছিল না। মাসিক ডিপিএস স্কিম আমাকে প্রতি মাসে অল্প টাকাও আলাদা রাখতে শিখিয়েছে। দুই বছরে আমার পরিবার একটি সত্যিকারের সুরক্ষা জাল তৈরি করেছে — যা কখনও সম্ভব হবে ভাবিনি।'
+        }
+      },
+      {
+        author: { en: 'Salma Akter', bn: 'সালমা আক্তার' },
+        role: { en: 'Textile Program Artisan', bn: 'বস্ত্র প্রকল্পের কারিগর' },
+        datePublished: '2025-11-20',
+        body: {
+          en: 'The weaving training transformed my life. I went from doing odd jobs to earning a steady income selling handloom products. My children are now in school, and I feel proud to support my family on my own.',
+          bn: 'তাঁত প্রশিক্ষণ আমার জীবন বদলে দিয়েছে। আগে এটা-সেটা কাজ করতাম, এখন হাতে বোনা পণ্য বিক্রি করে নিয়মিত আয় করি। আমার সন্তানেরা এখন স্কুলে যাচ্ছে আর নিজের পায়ে দাঁড়াতে পেরে গর্বিত বোধ করি।'
+        }
+      },
+      {
+        author: { en: 'Md. Jahangir Alam', bn: 'মোঃ জাহাঙ্গীর আলম' },
+        role: { en: 'Livestock Farming Beneficiary', bn: 'গবাদিপশু পালন সুবিধাভোগী' },
+        datePublished: '2025-10-10',
+        body: {
+          en: 'With a small loan from the society, I started a goat-rearing project. The cooperative gave practical advice and regular follow-ups. Now I supply milk and meat locally and have repaid the loan within a year.',
+          bn: 'সমিতি থেকে একটি ছোট ঋণ নিয়ে আমি ছাগল পালন শুরু করি। সমবায় ব্যবহারিক পরামর্শ ও নিয়মিত তদারকি দিয়েছে। এখন স্থানীয়ভাবে দুধ ও মাংস সরবরাহ করি এবং এক বছরের মধ্যেই ঋণ পরিশোধ করেছি।'
+        }
+      },
+      {
+        author: { en: 'Nasima Begum', bn: 'নাসিমা বেগম' },
+        role: { en: 'Handicraft Collective Member', bn: 'হস্তশিল্প সমবায়ের সদস্য' },
+        datePublished: '2025-09-05',
+        body: {
+          en: 'Our women\'s handicraft group got market access through the society. We now sell jute bags and baskets in Dhaka city markets. The extra income has given us real dignity and hope for the future.',
+          bn: 'আমাদের মহিলা হস্তশিল্প দল সমিতির মাধ্যমে বাজারে প্রবেশের সুযোগ পেয়েছে। এখন আমরা ঢাকা শহরের বাজারে পাটের ব্যাগ ও ঝুড়ি বিক্রি করি। বাড়তি আয় আমাদের সত্যিকারের মর্যাদা ও ভবিষ্যতের আশা দিয়েছে।'
+        }
+      },
+      {
+        author: { en: 'Md. Faruq Hossain', bn: 'মোঃ ফারুক হোসেন' },
+        role: { en: 'Micro-Loan Recipient', bn: 'ক্ষুদ্রঋণ গ্রহীতা' },
+        datePublished: '2025-08-18',
+        body: {
+          en: 'The low-interest loan helped me expand my small grocery shop. Unlike other lenders, the society treated me with respect and gave me flexible repayment terms. My business has grown threefold since then.',
+          bn: 'স্বল্প সুদের ঋণ আমার ছোট মুদি দোকান বড় করতে সাহায্য করেছে। অন্যান্য ঋণদাতাদের মতো নয়, সমিতি সম্মানের সাথে ব্যবহার করেছে এবং নমনীয় পরিশোধের সুযোগ দিয়েছে। তখন থেকে আমার ব্যবসা তিনগুণ বৃদ্ধি পেয়েছে।'
+        }
+      },
+      {
+        author: { en: 'Ayesha Khatun', bn: 'আয়েশা খাতুন' },
+        role: { en: 'Community Development Volunteer', bn: 'সম্প্রদায় উন্নয়ন স্বেচ্ছাসেবক' },
+        datePublished: '2025-07-22',
+        body: {
+          en: 'I joined as a volunteer and witnessed how transparent and accountable the committee is. Every taka is accounted for. This level of trust is rare and it motivates the entire community to participate.',
+          bn: 'আমি স্বেচ্ছাসেবক হিসেবে যোগ দিয়ে দেখেছি কমিটি কতটা স্বচ্ছ ও জবাবদিহিমূলক। প্রতিটি টাকার হিসাব রাখা হয়। এই স্তরের আস্থা বিরল এবং এটি পুরো সম্প্রদায়কে অংশগ্রহণে উৎসাহিত করে।'
+        }
+      }
+    ],
+    whyChooseTitle: { en: 'Why Choose Our Cooperative?', bn: 'আমাদের সমবায় কেন বেছে নেবেন?' },
+    whyChooseItems: [
+      {
+        icon: 'shield',
+        title: { en: 'Government Registered', bn: 'সরকার নিবন্ধিত' },
+        text: { en: 'Fully compliant under the Cooperative Societies Act — Reg. No. 00034.', bn: 'সমবায় সমিতি আইনের অধীনে সম্পূর্ণ অনুবর্তী — নিবন্ধন নং ০০০৩৪।' }
+      },
+      {
+        icon: 'users',
+        title: { en: 'Member-First Approach', bn: 'সদস্য-কেন্দ্রিক দৃষ্টিভঙ্গি' },
+        text: { en: 'Every decision is made collectively. Profits are reinvested in community projects.', bn: 'প্রতিটি সিদ্ধান্ত সম্মিলিতভাবে নেওয়া হয়। লাভ সম্প্রদায় প্রকল্পে পুনরায় বিনিয়োগ করা হয়।' }
+      },
+      {
+        icon: 'trending-up',
+        title: { en: 'Proven Impact', bn: 'প্রমাণিত প্রভাব' },
+        text: { en: 'Livestock, textile, pottery and handicraft projects empowering families across Ashulia since 2022.', bn: '২০২২ সাল থেকে গবাদিপশু, বস্ত্র, মৃৎশিল্প ও হস্তশিল্প প্রকল্প আশুলিয়ার পরিবারগুলোকে ক্ষমতায়ন করছে।' }
+      },
+      {
+        icon: 'lock',
+        title: { en: 'Transparent & Accountable', bn: 'স্বচ্ছ ও জবাবদিহিমূলক' },
+        text: { en: 'Monthly audits, open financial records, and regular member meetings ensure full transparency.', bn: 'মাসিক নিরীক্ষা, উন্মুক্ত আর্থিক রেকর্ড এবং নিয়মিত সদস্য সভা সম্পূর্ণ স্বচ্ছতা নিশ্চিত করে।' }
+      }
+    ],
     structureTitle: { en: 'Executive Committee', bn: 'কার্যনির্বাহী কমিটি' },
     committee: [
       { post: { en: 'President', bn: 'সভাপতি' }, name: { en: 'Md. John Doe', bn: 'মোঃ জন ডো' } },

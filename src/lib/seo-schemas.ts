@@ -75,3 +75,63 @@ export function generateReviewSchema(reviews: Array<{
     })),
   };
 }
+
+// Safer Organization Review schema generator.
+// Use this when you want to publish member testimonials as reviews WITHOUT implying star ratings.
+// If ratings are provided for all reviews, it will also include AggregateRating.
+export function generateOrganizationReviewSchema(reviews: Array<{
+  author: string;
+  reviewBody: string;
+  datePublished: string;
+  rating?: number;
+}>) {
+  if (reviews.length === 0) {
+    return null;
+  }
+
+  const ratings = reviews
+    .map(r => r.rating)
+    .filter((r): r is number => typeof r === 'number' && Number.isFinite(r));
+
+  const shouldIncludeAggregate = ratings.length === reviews.length && ratings.length > 0;
+  const averageRating = shouldIncludeAggregate
+    ? ratings.reduce((sum, r) => sum + r, 0) / ratings.length
+    : null;
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
+    name: SITE_NAME_EN,
+    ...(shouldIncludeAggregate
+      ? {
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: averageRating!.toFixed(1),
+            reviewCount: reviews.length,
+            bestRating: '5',
+            worstRating: '1',
+          },
+        }
+      : {}),
+    review: reviews.map(review => ({
+      '@type': 'Review',
+      author: {
+        '@type': 'Person',
+        name: review.author,
+      },
+      datePublished: review.datePublished,
+      reviewBody: review.reviewBody,
+      ...(typeof review.rating === 'number' && Number.isFinite(review.rating)
+        ? {
+            reviewRating: {
+              '@type': 'Rating',
+              ratingValue: String(review.rating),
+              bestRating: '5',
+              worstRating: '1',
+            },
+          }
+        : {}),
+    })),
+  };
+}
